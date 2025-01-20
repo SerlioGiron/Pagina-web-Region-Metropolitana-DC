@@ -20,12 +20,18 @@ const currentYear = new Date().getFullYear();
  
 export function FooterWithSocialLinks() {
   return (
-    <footer className="relative w-full">
+    <footer className="relative w-full pt-10">
       <div className="mx-auto w-full max-w-7xl px-8">
         <div className="grid grid-cols-1 justify-between gap-4 md:grid-cols-2">
-          <Typography variant="h5" className="mb-6">
-            Material Tailwind
-          </Typography>
+          <div className="flex flex-col items-center justify-center md:justify-start">
+            <Typography variant="h5" className="mb-6">
+            Horarios de atencion
+            </Typography>
+            <Typography variant="h6" className="mb-6">
+              7:00 am - 5:00 pm
+            </Typography>
+          </div>
+
           <div className="grid grid-cols-3 justify-between gap-4">
             {LINKS.map(({ title, items }) => (
               <ul key={title}>
