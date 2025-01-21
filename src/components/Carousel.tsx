@@ -5,6 +5,7 @@ export function CarouselDefault() {
     return (
         <Carousel
           autoplay={true}
+          loop={true}
           className="h-[600px] w-full"
           navigation={({ setActiveIndex, activeIndex, length }) => (
             <div className="absolute bottom-4 left-2/4 z-50 flex -translate-x-2/4 gap-2">

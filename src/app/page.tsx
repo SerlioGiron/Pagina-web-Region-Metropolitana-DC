@@ -9,7 +9,7 @@ import {Noticias} from "../components/Noticias";
 
 export default function Home() {
     return (
-        <div className="-m-6 max-h-[768px] w-[calc(100%+48px)]">
+        <div className="max-h-[768px]">
             <StickyNavbar />
             <CarouselDefault />
             <Noticias />
