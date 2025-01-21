@@ -26,7 +26,7 @@ export function StickyNavbar() {
         color="blue-gray"
         className="p-1 font-normal"
       >
-        <a href="#" className="flex items-center">
+        <a href="/Region" className="flex items-center">
           Región Metropolitana de Salud
         </a>
       </Typography>
