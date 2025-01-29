@@ -8,8 +8,8 @@ export function Establecimientos() {
     const handleOpen = (value) => setOpen(open === value ? 0 : value);
     const data = [
         {
-            label: "Establecimiento #1",
-            value: "establecimiento-1",
+            label: "Red #1",
+            value: "red-1",
             items: [
                 {
                     title: "HTML Guide",
@@ -22,8 +22,8 @@ export function Establecimientos() {
             ],
         },
         {
-            label: "Establecimiento #2",
-            value: "establecimiento-2",
+            label: "Red #2",
+            value: "red-2",
             items: [
                 {
                     title: "HTML Guide",
@@ -36,8 +36,8 @@ export function Establecimientos() {
             ],
         },
         {
-            label: "Establecimiento #3",
-            value: "establecimiento-3",
+            label: "Red #3",
+            value: "red-3",
             items: [
                 {
                     title: "HTML Guide",
@@ -50,8 +50,8 @@ export function Establecimientos() {
             ],
         },
         {
-            label: "Establecimiento #4",
-            value: "establecimiento-4",
+            label: "Red #4",
+            value: "red-4",
             items: [
                 {
                     title: "HTML Guide",
@@ -64,59 +64,59 @@ export function Establecimientos() {
             ],
         },
         {
-            label: "Establecimiento #5",
-            value: "establecimiento-5",
+            label: "Red #5",
+            value: "red-5",
             items: [
-            {
-                title: "HTML Guide",
-                desc: " Horarios de atención <br />  Ubicación <br />  Contactos <br />  Servicios que ofrece",
-            },
-            {
-                title: "HTML5 Features",
-                desc: "Explore the new features in HTML5.",
-            },
+                {
+                    title: "HTML Guide",
+                    desc: " Horarios de atención <br />  Ubicación <br />  Contactos <br />  Servicios que ofrece",
+                },
+                {
+                    title: "HTML5 Features",
+                    desc: "Explore the new features in HTML5.",
+                },
             ],
         },
         {
-            label: "Establecimiento #6",
-            value: "establecimiento-6",
+            label: "Red #6",
+            value: "red-6",
             items: [
-            {
-                title: "HTML Guide",
-                desc: " Horarios de atención <br />  Ubicación <br />  Contactos <br />  Servicios que ofrece",
-            },
-            {
-                title: "HTML5 Features",
-                desc: "Explore the new features in HTML5.",
-            },
+                {
+                    title: "HTML Guide",
+                    desc: " Horarios de atención <br />  Ubicación <br />  Contactos <br />  Servicios que ofrece",
+                },
+                {
+                    title: "HTML5 Features",
+                    desc: "Explore the new features in HTML5.",
+                },
             ],
         },
         {
-            label: "Establecimiento #7",
-            value: "establecimiento-7",
+            label: "Red #7",
+            value: "red-7",
             items: [
-            {
-                title: "HTML Guide",
-                desc: " Horarios de atención <br />  Ubicación <br />  Contactos <br />  Servicios que ofrece",
-            },
-            {
-                title: "HTML5 Features",
-                desc: "Explore the new features in HTML5.",
-            },
+                {
+                    title: "HTML Guide",
+                    desc: " Horarios de atención <br />  Ubicación <br />  Contactos <br />  Servicios que ofrece",
+                },
+                {
+                    title: "HTML5 Features",
+                    desc: "Explore the new features in HTML5.",
+                },
             ],
         },
         {
-            label: "Establecimiento #8",
-            value: "establecimiento-8",
+            label: "Red #8",
+            value: "red-8",
             items: [
-            {
-                title: "HTML Guide",
-                desc: " Horarios de atención <br />  Ubicación <br />  Contactos <br />  Servicios que ofrece",
-            },
-            {
-                title: "HTML5 Features",
-                desc: "Explore the new features in HTML5.",
-            },
+                {
+                    title: "HTML Guide",
+                    desc: " Horarios de atención <br />  Ubicación <br />  Contactos <br />  Servicios que ofrece",
+                },
+                {
+                    title: "HTML5 Features",
+                    desc: "Explore the new features in HTML5.",
+                },
             ],
         }
     ];
