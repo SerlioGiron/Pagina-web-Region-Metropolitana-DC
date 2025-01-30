@@ -44,14 +44,14 @@ export function StickyNavbar() {
   );
 
   return (
-    <Navbar className="sticky top-0 z-30 h-max max-w-full rounded-none px-4 py-2 lg:px-8 lg:py-4">
+    <Navbar className="sticky top-0 z-30 mx-auto rounded-none rounded-b-[30px] px-4 py-2 lg:px-8 lg:py-3 shadow-none">
       <div className="flex items-center justify-between text-blue-gray-900">
         <Typography
           as="a"
           href="/"
-          className="mr-4 cursor-pointer py-1.5 font-medium"
+          className="cursor-pointer py-1.5 font-medium"
         >
-          Material Tailwind
+          Region Metropolitana de Salud
         </Typography>
         <div className="hidden lg:flex justify-center w-full">
           {navList}

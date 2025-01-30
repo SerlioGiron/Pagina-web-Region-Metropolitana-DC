@@ -1,13 +1,15 @@
 "use client";
 import {Carousel} from "../app/MTailwind";
 import {HorizontalCard} from "./HorizontalCard";
+import {noticias} from "../data/noticias";
+
 
 export function Noticias() {
     return (
         <div style={{height: "100vh"}} className="bg-white">
             <Carousel
                 loop={true}
-                prevArrow={({ handlePrev }) => (
+                prevArrow={({handlePrev}) => (
                     <button
                         className="absolute top-2/4 left-4 -translate-y-2/4 rounded-full bg-black p-2"
                         onClick={handlePrev}
@@ -28,7 +30,7 @@ export function Noticias() {
                         </svg>
                     </button>
                 )}
-                nextArrow={({ handleNext }) => (
+                nextArrow={({handleNext}) => (
                     <button
                         className="absolute top-2/4 right-4 -translate-y-2/4 rounded-full bg-black p-2"
                         onClick={handleNext}
@@ -67,16 +69,9 @@ export function Noticias() {
                     </div>
                 )}
             >
-                {/* <div className="flex h-full items-center justify-center"> */}
-                    <HorizontalCard />
-                {/* </div> */}
-                {/* <div className="flex h-full items-center justify-center"> */}
-                    <HorizontalCard />
-                {/* </div> */}
-                {/* <div className="flex h-full items-center justify-center"> */}
-                    <HorizontalCard />
-                {/* </div> */}
-                
+                {noticias.map((noticia, index) => (
+                    <HorizontalCard key={index} noticia={noticia} />
+                ))}
             </Carousel>
         </div>
     );
