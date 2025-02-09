@@ -48,7 +48,6 @@ function BlogContent() {
 export default function Blog() {
     return (
         <div className="justify-center items-center flex flex-col">
-            <StickyNavbar />
             <Suspense
                 fallback={<h2>Cargando...</h2>}
             >
