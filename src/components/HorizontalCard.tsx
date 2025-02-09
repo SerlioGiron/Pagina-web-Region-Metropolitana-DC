@@ -9,6 +9,8 @@ import {
   } from "../app/MTailwind";
    
   export function HorizontalCard({ noticia }) {
+    const content = noticia.content.slice(0, 500);
+    const truncatedContent = content.concat("...");
     return (
       <Card className="rounded-none h-full w-full flex-row">
         <CardHeader
@@ -30,7 +32,7 @@ import {
             {noticia.title}
           </Typography>
           <Typography color="gray" className="mb-8 font-normal">
-            {noticia.content}
+            {truncatedContent}
           </Typography>
           <Link href={`/Blog-page?id=${noticia.id}`} className="inline-block">
             <Button variant="text" className="flex items-center gap-2">

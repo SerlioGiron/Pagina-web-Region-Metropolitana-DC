@@ -9,7 +9,7 @@ export default function Blog() {
     const id = searchParams.get("id");
     const noticia = noticias.find((noticia) => noticia.id === Number(id));
     return (
-        <div className="max-h-[768px]">
+        <div className="justify-center items-center flex flex-col">
             <StickyNavbar />
             <Typography
                 as="h1"
@@ -24,7 +24,7 @@ export default function Blog() {
                 alt="noticia"
                 className="w-full h-96 object-cover"
             />
-            <Typography variant="p" color="gray" className="mt-8 px-4">
+            <Typography variant="p" color="gray" className="mt-8 px-[16%] text-justify justify-center">
                 {noticia.content}
             </Typography>
         </div>

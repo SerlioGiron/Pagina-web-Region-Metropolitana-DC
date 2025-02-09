@@ -14,7 +14,7 @@ export function Preguntas() {
     const [openAcc1, setOpenAcc1] = React.useState(true);
     const [openAcc2, setOpenAcc2] = React.useState(true);
     const [openAcc3, setOpenAcc3] = React.useState(true);
-
+z
     const handleOpenAcc1 = () => setOpenAcc1((cur) => !cur);
     const handleOpenAcc2 = () => setOpenAcc2((cur) => !cur);
     const handleOpenAcc3 = () => setOpenAcc3((cur) => !cur);
