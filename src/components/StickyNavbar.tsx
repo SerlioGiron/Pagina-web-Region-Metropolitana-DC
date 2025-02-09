@@ -5,7 +5,7 @@ import {
   Collapse ,
   Typography,
   IconButton,
-} from "../app/MTailwind";
+} from "@material-tailwind/react";
 import Link from "next/link";
 
 export function StickyNavbar() {
@@ -24,8 +24,7 @@ export function StickyNavbar() {
         as="li"
         variant="small"
         color="blue-gray"
-        className="p-1 font-normal"
-      >
+        className="p-1 font-normal"  placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}      >
         <a href="/Region" className="flex items-center">
           Región Metropolitana de Salud
         </a>
@@ -34,8 +33,7 @@ export function StickyNavbar() {
         as="li"
         variant="small"
         color="blue-gray"
-        className="p-1 font-normal"
-      >
+        className="p-1 font-normal"  placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}      >
         <Link href="/Marco-Normativo" className="flex items-center">
           Marco Normativo
         </Link>
@@ -44,20 +42,19 @@ export function StickyNavbar() {
   );
 
   return (
-    <Navbar className="sticky top-0 z-30 mx-auto rounded-none rounded-b-[30px] px-4 py-2 lg:px-8 lg:py-3 shadow-none">
+    <Navbar className="sticky top-0 z-30 mx-auto rounded-none rounded-b-[30px] px-4 py-2 lg:px-8 lg:py-3 shadow-none"  placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
       <div className="flex items-center justify-between text-blue-gray-900">
         <Typography
           as="a"
           href="/"
-          className="cursor-pointer py-1.5 font-medium"
-        >
+          className="cursor-pointer py-1.5 font-medium"  placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}        >
           Region Metropolitana de Salud
         </Typography>
         <div className="hidden lg:flex justify-center w-full">
           {navList}
         </div>
         <div className="flex gap-4 text-blue-gray-900 sm:justify-center">
-            <Typography as="a" href="#" className="opacity-80 transition-opacity hover:opacity-100">
+            <Typography as="a" href="#" className="opacity-80 transition-opacity hover:opacity-100"  placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
               <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                 <path
                   fillRule="evenodd"
@@ -66,7 +63,7 @@ export function StickyNavbar() {
                 />
               </svg>
             </Typography>
-            <Typography as="a" href="#" className="opacity-80 transition-opacity hover:opacity-100">
+            <Typography as="a" href="#" className="opacity-80 transition-opacity hover:opacity-100"  placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
               <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                 <path
                   fillRule="evenodd"
@@ -75,12 +72,12 @@ export function StickyNavbar() {
                 />
               </svg>
             </Typography>
-            <Typography as="a" href="#" className="opacity-80 transition-opacity hover:opacity-100">
+            <Typography as="a" href="#" className="opacity-80 transition-opacity hover:opacity-100"  placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
               <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                 <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
               </svg>
             </Typography>
-            <Typography as="a" href="#" className="opacity-80 transition-opacity hover:opacity-100">
+            <Typography as="a" href="#" className="opacity-80 transition-opacity hover:opacity-100"  placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
               <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                 <path
                   fillRule="evenodd"
@@ -89,7 +86,7 @@ export function StickyNavbar() {
                 />
               </svg>
             </Typography>
-            <Typography as="a" href="#" className="opacity-80 transition-opacity hover:opacity-100">
+            <Typography as="a" href="#" className="opacity-80 transition-opacity hover:opacity-100"  placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
               <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                 <path
                   fillRule="evenodd"
@@ -103,8 +100,7 @@ export function StickyNavbar() {
           variant="text"
           className="ml-auto h-6 w-6 text-inherit hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden"
           ripple={false}
-          onClick={() => setOpenNav(!openNav)}
-        >
+          onClick={() => setOpenNav(!openNav)}  placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}        >
           {openNav ? (
             <svg
               xmlns="http://www.w3.org/2000/svg"

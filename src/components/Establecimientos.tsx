@@ -8,6 +8,7 @@ export function Establecimientos() {
     const handleOpen = (value) => setOpen(open === value ? 0 : value);
     const data = [
         {
+            key: 1,
             label: "Red #1",
             value: "red-1",
             items: [
@@ -22,6 +23,7 @@ export function Establecimientos() {
             ],
         },
         {
+            key: 2,
             label: "Red #2",
             value: "red-2",
             items: [
@@ -36,6 +38,7 @@ export function Establecimientos() {
             ],
         },
         {
+            key: 3,
             label: "Red #3",
             value: "red-3",
             items: [
@@ -50,6 +53,7 @@ export function Establecimientos() {
             ],
         },
         {
+            key: 4,
             label: "Red #4",
             value: "red-4",
             items: [
@@ -64,6 +68,7 @@ export function Establecimientos() {
             ],
         },
         {
+            key: 5,
             label: "Red #5",
             value: "red-5",
             items: [
@@ -78,6 +83,7 @@ export function Establecimientos() {
             ],
         },
         {
+            key: 6,
             label: "Red #6",
             value: "red-6",
             items: [
@@ -92,6 +98,7 @@ export function Establecimientos() {
             ],
         },
         {
+            key: 7,
             label: "Red #7",
             value: "red-7",
             items: [
@@ -106,6 +113,7 @@ export function Establecimientos() {
             ],
         },
         {
+            key: 8,
             label: "Red #8",
             value: "red-8",
             items: [
@@ -127,26 +135,25 @@ export function Establecimientos() {
                 className="bg-transparent"
                 indicatorProps={{
                     className: "bg-gray-900/10 shadow-none !text-gray-900",
-                }}
-            >
+                }} placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}            >
                 {data.map(({ label, value }) => (
-                    <Tab key={value} value={value}>
+                    <Tab key={value} value={value} placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
                         {label}
                     </Tab>
                 ))}
             </TabsHeader>
-            <TabsBody>
+            <TabsBody placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
                 {data.map(({ value, items }) => (
                     <TabPanel key={value} value={value} className="space-y-4">
                         {items.map((item, index) => (
-                            <Accordion open={open === index}>
-                                <AccordionHeader onClick={() => handleOpen(1)}>
-                                    <Typography variant="h6" color="blue-gray">
+                            <Accordion key={index} open={open === index} placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
+                                <AccordionHeader onClick={() => handleOpen(1)} placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
+                                    <Typography variant="h6" color="blue-gray"  placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
                                         {item.title}
                                     </Typography>
                                 </AccordionHeader>
                                 <AccordionBody>
-                                    <Typography dangerouslySetInnerHTML={{ __html: item.desc }} />
+                                    <Typography  placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} children={""} />
                                 </AccordionBody>
                             </Accordion>
                         ))}

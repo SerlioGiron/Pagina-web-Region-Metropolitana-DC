@@ -9,7 +9,7 @@ export function Noticias() {
         <div style={{height: "100vh"}} className="bg-white">
             <Carousel
                 loop={true}
-                prevArrow={({handlePrev}) => (
+                prevArrow={({ handlePrev }) => (
                     <button
                         className="absolute top-2/4 left-4 -translate-y-2/4 rounded-full bg-black p-2"
                         onClick={handlePrev}
@@ -25,12 +25,11 @@ export function Noticias() {
                             <path
                                 strokeLinecap="round"
                                 strokeLinejoin="round"
-                                d="M15 19l-7-7 7-7"
-                            />
+                                d="M15 19l-7-7 7-7" />
                         </svg>
                     </button>
                 )}
-                nextArrow={({handleNext}) => (
+                nextArrow={({ handleNext }) => (
                     <button
                         className="absolute top-2/4 right-4 -translate-y-2/4 rounded-full bg-black p-2"
                         onClick={handleNext}
@@ -46,29 +45,24 @@ export function Noticias() {
                             <path
                                 strokeLinecap="round"
                                 strokeLinejoin="round"
-                                d="M9 5l7 7-7 7"
-                            />
+                                d="M9 5l7 7-7 7" />
                         </svg>
                     </button>
                 )}
                 autoplay={true}
                 className="rounded-none"
-                navigation={({setActiveIndex, activeIndex, length}) => (
+                navigation={({ setActiveIndex, activeIndex, length }) => (
                     <div className="absolute bottom-4 left-2/4 z-50 flex -translate-x-2/4 gap-2">
                         {new Array(length).fill("").map((_, i) => (
                             <span
                                 key={i}
-                                className={`block h-1 cursor-pointer rounded-2xl transition-all content-[''] ${
-                                    activeIndex === i
+                                className={`block h-1 cursor-pointer rounded-2xl transition-all content-[''] ${activeIndex === i
                                         ? "w-8 bg-black"
-                                        : "w-4 bg-black/50"
-                                }`}
-                                onClick={() => setActiveIndex(i)}
-                            />
+                                        : "w-4 bg-black/50"}`}
+                                onClick={() => setActiveIndex(i)} />
                         ))}
                     </div>
-                )}
-            >
+                )} placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}            >
                 {noticias.map((noticia, index) => (
                     <HorizontalCard key={index} noticia={noticia} />
                 ))}

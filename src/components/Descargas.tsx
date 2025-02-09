@@ -97,15 +97,14 @@ export function DescargasTab() {
                 className="bg-transparent"
                 indicatorProps={{
                     className: "bg-gray-900/10 shadow-none !text-gray-900",
-                }}
-            >
+                }}  placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}            >
                 {data.map(({label, value}) => (
-                    <Tab key={value} value={value}>
+                    <Tab key={value} value={value}  placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
                         {label}
                     </Tab>
                 ))}
             </TabsHeader>
-            <TabsBody>
+            <TabsBody  placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
                 {data.map(({value, cards}) => (
                     <TabPanel
                         key={value}
@@ -113,21 +112,20 @@ export function DescargasTab() {
                         className="grid grid-cols-1 md:grid-cols-2 gap-4"
                     >
                         {cards.map((card, index) => (
-                            <Card className="mt-6 w-96">
-                                <CardBody>
+                            <Card className="mt-6 w-96"  placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
+                                <CardBody  placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
                                     <Typography
                                         variant="h5"
                                         color="blue-gray"
-                                        className="mb-2"
-                                    >
+                                        className="mb-2"  placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}                                    >
                                         {card.title}
                                     </Typography>
-                                    <Typography>
+                                    <Typography  placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
                                         {card.desc}
                                     </Typography>
                                 </CardBody>
-                                <CardFooter className="pt-0">
-                                    <Button>Descargar</Button>
+                                <CardFooter className="pt-0"  placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
+                                    <Button  placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>Descargar</Button>
                                 </CardFooter>
                             </Card>
                         ))}
