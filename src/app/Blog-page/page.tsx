@@ -15,8 +15,7 @@ export default function Blog() {
                 as="h1"
                 variant="h1"
                 color="blue-gray"
-                className="text-center mt-8"
-            >
+                className="text-center mt-8" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}            >
                 {noticia.title}
             </Typography>
             <img
@@ -24,7 +23,7 @@ export default function Blog() {
                 alt="noticia"
                 className="w-full h-96 object-cover"
             />
-            <Typography variant="p" color="gray" className="mt-8 px-[16%] text-justify justify-center">
+            <Typography variant="paragraph" color="gray" className="mt-8 px-[16%] text-justify justify-center" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
                 {noticia.content}
             </Typography>
         </div>
