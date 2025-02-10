@@ -62,7 +62,7 @@ export function Noticias() {
                                 onClick={() => setActiveIndex(i)} />
                         ))}
                     </div>
-                )} placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}            >
+                )} placeholder={undefined} >
                 {noticias.map((noticia, index) => (
                     <HorizontalCard key={index} noticia={noticia} />
                 ))}

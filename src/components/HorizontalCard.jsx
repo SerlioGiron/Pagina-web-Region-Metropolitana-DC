@@ -12,29 +12,29 @@ import {
     const content = noticia.content.slice(0, 500);
     const truncatedContent = content.concat("...");
     return (
-      <Card className="rounded-none h-full w-full flex-row" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
+      <Card className="rounded-none h-full w-full flex-row">
         <CardHeader
           shadow={false}
           floated={false}
-          className="m-0 w-2/5 shrink-0 rounded-none" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}        >
+          className="m-0 w-2/5 shrink-0 rounded-none"        >
           <img
             src={noticia.image}
             alt="card-image"
             className="h-full w-full object-cover"
           />
         </CardHeader>
-        <CardBody placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
-          <Typography variant="h6" color="gray" className="mb-4 uppercase" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
+        <CardBody>
+          <Typography variant="h6" color="gray" className="mb-4 uppercase">
             startups
           </Typography>
-          <Typography variant="h4" color="blue-gray" className="mb-2" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
+          <Typography variant="h4" color="blue-gray" className="mb-2">
             {noticia.title}
           </Typography>
-          <Typography color="gray" className="mb-8 font-normal" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
+          <Typography color="gray" className="mb-8 font-normal">
             {truncatedContent}
           </Typography>
           <Link href={`/Blog-page?id=${noticia.id}`} className="inline-block">
-            <Button variant="text" className="flex items-center gap-2" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
+            <Button variant="text" className="flex items-center gap-2">
               Saber Mas
               <svg
                 xmlns="http://www.w3.org/2000/svg"

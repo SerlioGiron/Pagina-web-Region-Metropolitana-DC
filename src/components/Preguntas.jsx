@@ -20,17 +20,17 @@ export function Preguntas() {
     const handleOpenAcc3 = () => setOpenAcc3((cur) => !cur);
 
     return (
-        <Card className="rounded-none h-full w-full flex-row"  placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
-            <CardBody  placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
+        <Card className="rounded-none h-full w-full flex-row"  >
+            <CardBody  >
                 <div className=" p-4">
                     <Typography
                         variant="h6"
                         color="gray"
-                        className="mb-4 uppercase"  placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}                    >
+                        className="mb-4 uppercase"                      >
                         Preguntas Frecuentes
                     </Typography>
-                    <Accordion open={openAcc1}  placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
-                        <AccordionHeader onClick={handleOpenAcc1}  placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
+                    <Accordion open={openAcc1}  >
+                        <AccordionHeader onClick={handleOpenAcc1}  >
                             What is Material Tailwind?
                         </AccordionHeader>
                         <AccordionBody>
@@ -41,8 +41,8 @@ export function Preguntas() {
                             dreams.
                         </AccordionBody>
                     </Accordion>
-                    <Accordion open={openAcc2}  placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
-                        <AccordionHeader onClick={handleOpenAcc2}  placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
+                    <Accordion open={openAcc2}  >
+                        <AccordionHeader onClick={handleOpenAcc2}  >
                             How to use Material Tailwind?
                         </AccordionHeader>
                         <AccordionBody>
@@ -53,8 +53,8 @@ export function Preguntas() {
                             dreams.
                         </AccordionBody>
                     </Accordion>
-                    <Accordion open={openAcc3}  placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
-                        <AccordionHeader onClick={handleOpenAcc3}  placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
+                    <Accordion open={openAcc3}  >
+                        <AccordionHeader onClick={handleOpenAcc3}  >
                             What can I do with Material Tailwind?
                         </AccordionHeader>
                         <AccordionBody>
@@ -70,7 +70,7 @@ export function Preguntas() {
             <CardHeader
                 shadow={false}
                 floated={false}
-                className="m-0 w-2/5 shrink-0 rounded-none"  placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}            >
+                className="m-0 w-2/5 shrink-0 rounded-none">
                 <img
                     src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1471&q=80"
                     alt="card-image"
