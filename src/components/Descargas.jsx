@@ -2,6 +2,33 @@
 import {Tabs, TabsHeader, TabsBody, Tab, TabPanel, CardFooter} from "../app/MTailwind";
 import {Card, CardHeader, CardBody, Typography, Button} from "../app/MTailwind";
 
+const handleDownload = async (fileUrl, fileName) => {
+    try {
+      // For files stored on your server or public URL
+      const response = await fetch(fileUrl);
+      const blob = await response.blob();
+      
+      // Create a temporary URL for the blob
+      const url = window.URL.createObjectURL(blob);
+      
+      // Create a temporary link element
+      const link = document.createElement('a');
+      link.href = url;
+      link.download = fileName || 'document'; // Default filename if none provided
+      
+      // Append to document, click, and cleanup
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+      
+      // Release the blob URL
+      window.URL.revokeObjectURL(url);
+    } catch (error) {
+      console.error('Download failed:', error);
+      // Handle error - you might want to show a notification to the user
+    }
+}
+
 export function DescargasTab() {
     const data = [
         {
@@ -11,12 +38,12 @@ export function DescargasTab() {
                 {
                     title: "HTML Guide",
                     desc: "Learn the basics of HTML.",
-                    image: "https://via.placeholder.com/150",
+                    fileURL: "/documents/sample.pdf",
                 },
                 {
                     title: "HTML5 Features",
                     desc: "Explore the new features in HTML5.",
-                    image: "https://via.placeholder.com/150",
+                    fileURL: "/documents/sample.pdf",
                 },
             ],
         },
@@ -27,12 +54,12 @@ export function DescargasTab() {
                 {
                     title: "React Basics",
                     desc: "Learn how to get started with React.",
-                    image: "https://via.placeholder.com/150",
+                    fileURL: "/documents/sample.pdf",
                 },
                 {
                     title: "React Hooks",
                     desc: "Master the power of hooks in React.",
-                    image: "https://via.placeholder.com/150",
+                    fileURL: "/documents/sample.pdf",
                 },
             ],
         },
@@ -43,12 +70,12 @@ export function DescargasTab() {
                 {
                     title: "Vue Introduction",
                     desc: "Get started with Vue.js.",
-                    image: "https://via.placeholder.com/150",
+                    fileURL: "/documents/sample.pdf",
                 },
                 {
                     title: "Vue Directives",
                     desc: "Learn how to use directives in Vue.",
-                    image: "https://via.placeholder.com/150",
+                    fileURL: "/documents/sample.pdf",
                 },
             ],
         },
@@ -59,12 +86,12 @@ export function DescargasTab() {
                 {
                     title: "Angular Basics",
                     desc: "An introduction to Angular.",
-                    image: "https://via.placeholder.com/150",
+                    fileURL: "/documents/sample.pdf",
                 },
                 {
                     title: "Angular CLI",
                     desc: "Efficiently manage your Angular project.",
-                    image: "https://via.placeholder.com/150",
+                    fileURL: "/documents/sample.pdf",
                 },
             ],
         },
@@ -75,21 +102,24 @@ export function DescargasTab() {
                 {
                     title: "Svelte Overview",
                     desc: "Learn what makes Svelte unique.",
-                    image: "https://via.placeholder.com/150",
+                    fileURL: "/documents/sample.pdf",
                 },
                 {
                     title: "Svelte Stores",
                     desc: "Manage your state effectively with stores.",
-                    image: "https://via.placeholder.com/150",
+                    fileURL: "/documents/sample.pdf",
                 },
                 {
                     title: "Svelte Stores",
                     desc: "Manage your state effectively with stores.",
-                    image: "https://via.placeholder.com/150",
+                    fileURL: "/documents/sample.pdf",
                 },
             ],
         },
     ];
+
+
+    
 
     return (
         <Tabs value="html" className="pt-12 pb-12 max-w-[900px] mx-auto">
@@ -130,7 +160,7 @@ export function DescargasTab() {
                                     </Typography>
                                 </CardBody>
                                 <CardFooter className="pt-0"  >
-                                    <Button  >Descargar</Button>
+                                    <Button onClick={() => handleDownload(card.fileURL, "hola")} >Descargar</Button>
                                 </CardFooter>
                             </Card>
                         ))}
