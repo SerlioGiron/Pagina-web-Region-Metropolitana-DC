@@ -6,7 +6,7 @@ import {noticias} from "../data/noticias";
 
 export function Noticias() {
     return (
-        <div style={{height: "100vh"}} className="bg-white">
+        <div style={{height: "70vh"}} className="bg-white">
             <Carousel
                 loop={true}
                 prevArrow={({ handlePrev }) => (

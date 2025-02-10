@@ -153,7 +153,14 @@ export function Establecimientos() {
                                     </Typography>
                                 </AccordionHeader>
                                 <AccordionBody>
-                                    <Typography  />
+                                    <Typography variant="paragraph" color="gray"  >
+                                        {item.desc.split('<br />').map((line, i) => (
+                                            <React.Fragment key={i}>
+                                                {line}
+                                                <br />
+                                            </React.Fragment>
+                                        ))}
+                                    </Typography>
                                 </AccordionBody>
                             </Accordion>
                         ))}
