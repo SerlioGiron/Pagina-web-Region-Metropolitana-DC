@@ -26,19 +26,19 @@ export function HorizontalCard({ noticia }) {
     const truncatedContent = getContent();
 
     return (
-        <Card className="rounded-none w-full">
+        <Card className="rounded-none w-full pt-9">
             {/* Make card stack vertically on mobile screens */}
             <div className="flex flex-col lg:flex-row">
                 {/* Added max-h-96 to limit image height and relative positioning for image container */}
                 <CardHeader
                     shadow={false}
                     floated={false}
-                    className="relative m-0 w-full lg:w-2/5 shrink-0 rounded-none h-48 lg:h-96 max-h-96 overflow-hidden"
+                    className="relative m-0 w-full lg:w-2/5 shrink-0 rounded-none h-48 lg:h-96 overflow-hidden flex items-center justify-center"
                 >
                     <img
                         src={noticia.image}
                         alt="card-image"
-                        className="absolute top-0 left-0 h-full w-full object-cover"
+                        className="w-full h-full object-contain"
                     />
                 </CardHeader>
                 <CardBody className="flex flex-col h-full">
