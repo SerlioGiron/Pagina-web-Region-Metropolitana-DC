@@ -147,7 +147,7 @@ export function DescargasTab() {
                         className="grid grid-cols-1 md:grid-cols-2 gap-4"
                     >
                         {cards.map((card, index) => (
-                            <Card className="mt-6 w-96"  >
+                            <Card className="mt-6 w-full"  >
                                 <CardBody  >
                                     <Typography
                                         variant="h5"
