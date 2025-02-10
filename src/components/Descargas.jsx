@@ -94,15 +94,20 @@ export function DescargasTab() {
     return (
         <Tabs value="html" className="pt-12 pb-12 max-w-[900px] mx-auto">
             <TabsHeader
-                className="bg-transparent"
-                indicatorProps={{
-                    className: "bg-gray-900/10 shadow-none !text-gray-900",
-                }}             >
-                {data.map(({label, value}) => (
-                    <Tab key={value} value={value} >
-                        {label}
-                    </Tab>
-                ))}
+            className="bg-transparent p-0 flex-wrap sm:flex-nowrap overflow-x-auto"
+            indicatorProps={{
+                className: "bg-gray-900/10 shadow-none !text-gray-900",
+            }}
+            >
+            {data.map(({ label, value }) => (
+                <Tab
+                key={value}
+                value={value}
+                className="min-w-max px-4 py-2 text-sm sm:text-base whitespace-nowrap"
+                >
+                {label}
+                </Tab>
+            ))}
             </TabsHeader>
             <TabsBody  >
                 {data.map(({value, cards}) => (
