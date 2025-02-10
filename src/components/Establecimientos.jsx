@@ -135,25 +135,25 @@ export function Establecimientos() {
                 className="bg-transparent"
                 indicatorProps={{
                     className: "bg-gray-900/10 shadow-none !text-gray-900",
-                }} placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}            >
+                }}             >
                 {data.map(({ label, value }) => (
-                    <Tab key={value} value={value} placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
+                    <Tab key={value} value={value} >
                         {label}
                     </Tab>
                 ))}
             </TabsHeader>
-            <TabsBody placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
+            <TabsBody >
                 {data.map(({ value, items }) => (
                     <TabPanel key={value} value={value} className="space-y-4">
                         {items.map((item, index) => (
-                            <Accordion key={index} open={open === index} placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
-                                <AccordionHeader onClick={() => handleOpen(1)} placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
-                                    <Typography variant="h6" color="blue-gray"  placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
+                            <Accordion key={index} open={open === index} >
+                                <AccordionHeader onClick={() => handleOpen(1)} >
+                                    <Typography variant="h6" color="blue-gray"  >
                                         {item.title}
                                     </Typography>
                                 </AccordionHeader>
                                 <AccordionBody>
-                                    <Typography  placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} children={""} />
+                                    <Typography  />
                                 </AccordionBody>
                             </Accordion>
                         ))}

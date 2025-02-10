@@ -6,7 +6,6 @@ import {noticias} from "@/data/noticias";
 import {Suspense} from "react";
 import dynamic from "next/dynamic";
 
-//const BlogContent = dynamic(() => import("./Blog-content"), { ssr: false });
 
 function BlogContent() {
     const searchParams = useSearchParams();
@@ -20,9 +19,6 @@ function BlogContent() {
                 variant="h1"
                 color="blue-gray"
                 className="text-center mt-8"
-                placeholder={undefined}
-                onPointerEnterCapture={undefined}
-                onPointerLeaveCapture={undefined}
             >
                 {noticia.title}
             </Typography>
@@ -35,9 +31,6 @@ function BlogContent() {
                 variant="paragraph"
                 color="gray"
                 className="mt-8 px-[16%] text-justify justify-center"
-                placeholder={undefined}
-                onPointerEnterCapture={undefined}
-                onPointerLeaveCapture={undefined}
             >
                 {noticia.content}
             </Typography>
