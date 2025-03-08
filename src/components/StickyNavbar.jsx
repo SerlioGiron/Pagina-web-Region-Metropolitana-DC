@@ -25,8 +25,8 @@ export function StickyNavbar() {
         variant="small"
         color="blue-gray"
         className="p-1 font-normal"        >
-        <a href="/Region" className="flex items-center">
-          Región Metropolitana de Salud
+        <a href="/" className="flex items-center">
+          Inicio
         </a>
       </Typography>
       <Typography
@@ -34,10 +34,37 @@ export function StickyNavbar() {
         variant="small"
         color="blue-gray"
         className="p-1 font-normal"        >
+        <a href="/SobreNosotros" className="flex items-center">
+          Sobre Nosotros
+        </a>
+      </Typography>
+      <Typography
+        as="li"
+        variant="small"
+        color="blue-gray"
+        className="p-1 font-normal"        >
+        <Link href="/" className="flex items-center">
+          Departamentos y unidades
+        </Link>
+      </Typography>
+      <Typography
+        as="li"
+        variant="small"
+        color="blue-gray"
+        className="p-1 font-normal"        >
+        <Link href="/" className="flex items-center">
+          Establecimientos de Salud
+        </Link>
+      </Typography>
+      {/* <Typography
+        as="li"
+        variant="small"
+        color="blue-gray"
+        className="p-1 font-normal"        >
         <Link href="/Marco-Normativo" className="flex items-center">
           Marco Normativo
         </Link>
-      </Typography>
+      </Typography> */}
     </ul>
   );
 
@@ -48,12 +75,12 @@ export function StickyNavbar() {
           as="a"
           href="/"
           className="cursor-pointer py-1.5 font-medium"          >
-          Region Metropolitana de Salud
+          Region Metropolitana del Distrito Central
         </Typography>
         <div className="hidden lg:flex justify-center w-full">
           {navList}
         </div>
-        <div className="flex gap-4 text-blue-gray-900 sm:justify-center">
+        <div className="hidden lg:flex gap-4 text-blue-gray-900 sm:justify-center">
             <Typography as="a" href="#" className="opacity-80 transition-opacity hover:opacity-100"  >
               <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                 <path
