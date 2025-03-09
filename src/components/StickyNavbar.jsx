@@ -43,7 +43,7 @@ export function StickyNavbar() {
         variant="small"
         color="blue-gray"
         className="p-1 font-normal"        >
-        <Link href="/" className="flex items-center">
+        <Link href="/Departamentos" className="flex items-center">
           Departamentos y unidades
         </Link>
       </Typography>
@@ -52,7 +52,7 @@ export function StickyNavbar() {
         variant="small"
         color="blue-gray"
         className="p-1 font-normal"        >
-        <Link href="/" className="flex items-center">
+        <Link href="/Establecimientos" className="flex items-center">
           Establecimientos de Salud
         </Link>
       </Typography>

@@ -1,11 +1,25 @@
 "use client";
 import React from "react";
-import { Tabs, TabsHeader, TabsBody, Tab, TabPanel } from "../app/MTailwind";
-import { Accordion, AccordionHeader, AccordionBody, Typography } from "../app/MTailwind";
+import {Tabs, TabsHeader, TabsBody, Tab, TabPanel} from "../app/MTailwind";
+import {
+    Accordion,
+    AccordionHeader,
+    AccordionBody,
+    Typography,
+} from "../app/MTailwind";
 
 export function Establecimientos() {
-    const [open, setOpen] = React.useState(1);
-    const handleOpen = (value) => setOpen(open === value ? 0 : value);
+    const [open, setOpen] = React.useState(null);
+    const [openItems, setOpenItems] = React.useState([]);
+
+    const handleOpen = (tabValue, index) => {
+        const compositeKey = `${tabValue}-${index}`;
+        setOpenItems((prev) =>
+            prev.includes(compositeKey)
+                ? prev.filter((item) => item !== compositeKey)
+                : [...prev, compositeKey]
+        );
+    };
     const data = [
         {
             key: 1,
@@ -13,11 +27,11 @@ export function Establecimientos() {
             value: "red-1",
             items: [
                 {
-                    title: "HTML Guide",
+                    title: "red 1 establecimiento 1",
                     desc: " Horarios de atención <br />  Ubicación <br />  Contactos <br />  Servicios que ofrece",
                 },
                 {
-                    title: "HTML5 Features",
+                    title: "red 1 establecimiento 2",
                     desc: "Explore the new features in HTML5.",
                 },
             ],
@@ -28,11 +42,11 @@ export function Establecimientos() {
             value: "red-2",
             items: [
                 {
-                    title: "HTML Guide",
+                    title: "red 2 establecimiento 1",
                     desc: " Horarios de atención <br />  Ubicación <br />  Contactos <br />  Servicios que ofrece",
                 },
                 {
-                    title: "HTML5 Features",
+                    title: "red 2 establecimiento 2",
                     desc: "Explore the new features in HTML5.",
                 },
             ],
@@ -43,11 +57,11 @@ export function Establecimientos() {
             value: "red-3",
             items: [
                 {
-                    title: "HTML Guide",
+                    title: "red 3 establecimiento 1",
                     desc: " Horarios de atención <br />  Ubicación <br />  Contactos <br />  Servicios que ofrece",
                 },
                 {
-                    title: "HTML5 Features",
+                    title: "red 3 establecimiento 2",
                     desc: "Explore the new features in HTML5.",
                 },
             ],
@@ -58,11 +72,11 @@ export function Establecimientos() {
             value: "red-4",
             items: [
                 {
-                    title: "HTML Guide",
+                    title: "red 4 establecimiento 1",
                     desc: " Horarios de atención <br />  Ubicación <br />  Contactos <br />  Servicios que ofrece",
                 },
                 {
-                    title: "HTML5 Features",
+                    title: "red 4 establecimiento 2",
                     desc: "Explore the new features in HTML5.",
                 },
             ],
@@ -73,11 +87,11 @@ export function Establecimientos() {
             value: "red-5",
             items: [
                 {
-                    title: "HTML Guide",
+                    title: "red 5 establecimiento 1",
                     desc: " Horarios de atención <br />  Ubicación <br />  Contactos <br />  Servicios que ofrece",
                 },
                 {
-                    title: "HTML5 Features",
+                    title: "red 5 establecimiento 2",
                     desc: "Explore the new features in HTML5.",
                 },
             ],
@@ -88,11 +102,11 @@ export function Establecimientos() {
             value: "red-6",
             items: [
                 {
-                    title: "HTML Guide",
+                    title: "red 6 establecimiento 1",
                     desc: " Horarios de atención <br />  Ubicación <br />  Contactos <br />  Servicios que ofrece",
                 },
                 {
-                    title: "HTML5 Features",
+                    title: "red 6 establecimiento 2",
                     desc: "Explore the new features in HTML5.",
                 },
             ],
@@ -103,11 +117,11 @@ export function Establecimientos() {
             value: "red-7",
             items: [
                 {
-                    title: "HTML Guide",
+                    title: "red 7 establecimiento 1",
                     desc: " Horarios de atención <br />  Ubicación <br />  Contactos <br />  Servicios que ofrece",
                 },
                 {
-                    title: "HTML5 Features",
+                    title: "red 7 establecimiento 2",
                     desc: "Explore the new features in HTML5.",
                 },
             ],
@@ -118,55 +132,87 @@ export function Establecimientos() {
             value: "red-8",
             items: [
                 {
-                    title: "HTML Guide",
+                    title: "red 8 establecimiento 1",
                     desc: " Horarios de atención <br />  Ubicación <br />  Contactos <br />  Servicios que ofrece",
                 },
                 {
-                    title: "HTML5 Features",
+                    title: "red 8 establecimiento 2",
                     desc: "Explore the new features in HTML5.",
                 },
             ],
-        }
+        },
     ];
 
+    const handleTabChange = () => {
+        setOpenItems([]); // Reset openItems when tab changes
+    };
+
     return (
-        <Tabs value="establecimiento-1" orientation="horizontal" className="pt-12 pb-12 max-w-[1100px] mx-auto">
-            <TabsHeader
-                className="bg-transparent"
-                indicatorProps={{
-                    className: "bg-gray-900/10 shadow-none !text-gray-900",
-                }}             >
-                {data.map(({ label, value }) => (
-                    <Tab key={value} value={value} >
-                        {label}
-                    </Tab>
-                ))}
-            </TabsHeader>
-            <TabsBody >
-                {data.map(({ value, items }) => (
-                    <TabPanel key={value} value={value} className="space-y-4">
-                        {items.map((item, index) => (
-                            <Accordion key={index} open={open === index} >
-                                <AccordionHeader onClick={() => handleOpen(1)} >
-                                    <Typography variant="h6" color="blue-gray"  >
-                                        {item.title}
-                                    </Typography>
-                                </AccordionHeader>
-                                <AccordionBody>
-                                    <Typography variant="paragraph" color="gray"  >
-                                        {item.desc.split('<br />').map((line, i) => (
-                                            <React.Fragment key={i}>
-                                                {line}
-                                                <br />
-                                            </React.Fragment>
-                                        ))}
-                                    </Typography>
-                                </AccordionBody>
-                            </Accordion>
-                        ))}
-                    </TabPanel>
-                ))}
-            </TabsBody>
-        </Tabs>
+        <div>
+            
+            <Tabs
+                value="red-1"
+                orientation="horizontal"
+                className="pt-12 pb-12 max-w-[1100px] mx-auto"
+                onChange={handleTabChange}
+            >
+                <TabsHeader
+                    className="bg-transparent"
+                    indicatorProps={{
+                        className: "bg-gray-900/10 shadow-none !text-gray-900",
+                    }}
+                >
+                    {data.map(({label, value}) => (
+                        <Tab key={value} value={value}>
+                            {label}
+                        </Tab>
+                    ))}
+                </TabsHeader>
+                <TabsBody>
+                    {data.map(({value, items}) => (
+                        <TabPanel
+                            key={value}
+                            value={value}
+                            className="space-y-4"
+                        >
+                            {items.map((item, index) => (
+                                <Accordion
+                                    key={index}
+                                    open={openItems.includes(
+                                        `${value}-${index}`
+                                    )}
+                                >
+                                    <AccordionHeader
+                                        onClick={() => handleOpen(value, index)}
+                                    >
+                                        <Typography
+                                            variant="h6"
+                                            color="blue-gray"
+                                        >
+                                            {item.title}
+                                        </Typography>
+                                    </AccordionHeader>
+                                    <AccordionBody>
+                                        <Typography
+                                            variant="paragraph"
+                                            color="gray"
+                                        >
+                                            {item.desc
+                                                .split("<br />")
+                                                .map((line, i) => (
+                                                    <React.Fragment key={i}>
+                                                        {line}
+                                                        <br />
+                                                    </React.Fragment>
+                                                ))}
+                                        </Typography>
+                                    </AccordionBody>
+                                </Accordion>
+                            ))}
+                        </TabPanel>
+                    ))}
+                </TabsBody>
+            </Tabs>
+        </div>
     );
 }
