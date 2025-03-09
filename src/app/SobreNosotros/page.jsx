@@ -63,8 +63,6 @@ export default function Region() {
                 <Mision />
                 <Vision />
             </div>
-            <Noticias />
-            <Galeria />
             <FooterWithSocialLinks />
         </div>
     );
