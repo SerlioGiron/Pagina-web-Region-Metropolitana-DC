@@ -10,7 +10,7 @@ import Link from "next/link";
 
 export function StickyNavbar() {
     const [openNav, setOpenNav] = React.useState(false);
-    const [navHeight, setNavHeight] = React.useState("h-14");
+    const [navHeight, setNavHeight] = React.useState("h-[10vh]");
 
 
     React.useEffect(() => {
@@ -22,9 +22,9 @@ export function StickyNavbar() {
 
     React.useEffect(() => {
       if (openNav) {
-          setNavHeight("h-auto min-h-32"); // Increase height when menu is open
+        setNavHeight("h-auto min-h-[30vh]"); // Increase height more when menu is open
       } else {
-          setNavHeight("h-14"); // Default height when menu is closed
+        setNavHeight("h-[10vh]"); // Default height when menu is closed
       }
   }, [openNav]);
 
@@ -83,7 +83,7 @@ export function StickyNavbar() {
     );
 
     return (
-      <Navbar className={`w-full sticky top-0 z-30 mx-auto rounded-none shadow-none transition-all duration-300 ${navHeight}`}>
+      <Navbar className={`w-full sticky top-0 z-30 mx-auto rounded-none shadow-none transition-all duration-300 h-14 sm:${navHeight} md:h-17 lg:h-20 xl:h-24 `}>
             <div className="flex items-center justify-between text-blue-gray-900">
                 <Typography
                     as="a"

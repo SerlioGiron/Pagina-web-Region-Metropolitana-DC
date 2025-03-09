@@ -1,12 +1,12 @@
-'use client';
-import { Noticias } from "../../components/Noticias";
-import { CarouselDefault } from "../../components/Carousel";
-import { StickyNavbar } from "../../components/StickyNavbar";
-import { FooterWithSocialLinks } from '../../components/Footer';
-import { Galeria } from "../../components/Galeria";
+"use client";
+import {Noticias} from "../../components/Noticias";
+import {CarouselDefault} from "../../components/Carousel";
+import {StickyNavbar} from "../../components/StickyNavbar";
+import {FooterWithSocialLinks} from "../../components/Footer";
+import {Galeria} from "../../components/Galeria";
 
-import { Card, CardBody, Typography } from "@material-tailwind/react";
-import { GlobeAltIcon, LightBulbIcon } from "@heroicons/react/24/solid";
+import {Card, CardBody, Typography} from "@material-tailwind/react";
+import {GlobeAltIcon, LightBulbIcon} from "@heroicons/react/24/solid";
 
 const Mision = () => {
     return (
@@ -62,6 +62,13 @@ export default function Region() {
             <div className="flex flex-col md:flex-row gap-8 p-8 items-center justify-center">
                 <Mision />
                 <Vision />
+            </div>
+            <div className="flex justify-center">
+                <img
+                    src="/assets/organigrama_page-0001.jpg"
+                    alt="Página del PDF"
+                    className="max-w-4xl"
+                />
             </div>
             <FooterWithSocialLinks />
         </div>
