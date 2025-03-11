@@ -63,11 +63,11 @@ export default function Region() {
                 <Mision />
                 <Vision />
             </div>
-            <div className="flex justify-center">
+            <div className="flex justify-center px-4 sm:px-6 lg:px-8">
                 <img
                     src="/assets/organigrama_page-0001.jpg"
-                    alt="Página del PDF"
-                    className="max-w-4xl"
+                    alt="Organigrama"
+                    className="w-full max-w-4xl object-contain"
                 />
             </div>
             <FooterWithSocialLinks />
