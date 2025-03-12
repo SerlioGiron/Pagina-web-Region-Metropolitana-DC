@@ -11,6 +11,25 @@ import {
 export function Establecimientos() {
     const [open, setOpen] = React.useState(null);
     const [openItems, setOpenItems] = React.useState([]);
+    const [isVertical, setIsVertical] = React.useState(false);
+
+    React.useEffect(() => {
+        // Check screen width on mount and when window resizes
+        const handleResize = () => {
+            setIsVertical(window.innerWidth < 768); // 768px is typical tablet breakpoint
+        };
+        
+        // Set initial orientation
+        handleResize();
+        
+        // Add event listener
+        window.addEventListener('resize', handleResize);
+        
+        // Clean up
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []);
 
     const handleOpen = (tabValue, index) => {
         const compositeKey = `${tabValue}-${index}`;
@@ -152,12 +171,16 @@ export function Establecimientos() {
             
             <Tabs
                 value="red-1"
-                orientation="horizontal"
-                className="pt-12 pb-12 max-w-[1100px] mx-auto"
+                orientation={isVertical ? "vertical" : "horizontal"}
+                className={`pt-12 pb-12 mx-auto ${isVertical ? 'max-w-[95%]' : 'max-w-[1100px]'}`}
                 onChange={handleTabChange}
             >
                 <TabsHeader
-                    className="bg-transparent"
+                    className={`bg-transparent ${
+                        isVertical 
+                            ? 'flex-col justify-start items-start w-full max-w-[200px] mr-4'
+                            : ''
+                    }`}
                     indicatorProps={{
                         className: "bg-gray-900/10 shadow-none !text-gray-900",
                     }}
@@ -168,7 +191,7 @@ export function Establecimientos() {
                         </Tab>
                     ))}
                 </TabsHeader>
-                <TabsBody>
+                <TabsBody className={isVertical ? "flex-grow" : ""}>
                     {data.map(({value, items}) => (
                         <TabPanel
                             key={value}
