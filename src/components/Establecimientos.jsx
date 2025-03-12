@@ -42,124 +42,316 @@ export function Establecimientos() {
     const data = [
         {
             key: 1,
-            label: "Red #1",
+            label: "RED CRUCITAS",
             value: "red-1",
             items: [
                 {
-                    title: "red 1 establecimiento 1",
-                    desc: " Horarios de atención <br />  Ubicación <br />  Contactos <br />  Servicios que ofrece",
+                    title: "Crucitas (CIS)",
+                    desc: "Horarios de atención <br />  Ubicación <br />  Contactos <br />  Servicios que ofrece",
                 },
                 {
-                    title: "red 1 establecimiento 2",
-                    desc: "Explore the new features in HTML5.",
+                    title: "La Cuesta (UAPS)",
+                    desc: "Horarios de atención <br />  Ubicación <br />  Contactos <br />  Servicios que ofrece",
+                },
+                {
+                    title: "San José de Soroguara (UAPS)",
+                    desc: "Horarios de atención <br />  Ubicación <br />  Contactos <br />  Servicios que ofrece",
+                },
+                {
+                    title: "3 de Mayo (CIS)",
+                    desc: "Horarios de atención <br />  Ubicación <br />  Contactos <br />  Servicios que ofrece",
+                },
+                {
+                    title: "Alemania (CIS)",
+                    desc: "Horarios de atención <br />  Ubicación <br />  Contactos <br />  Servicios que ofrece",
+                },
+                {
+                    title: "Divanna (CIS)",
+                    desc: "Horarios de atención <br />  Ubicación <br />  Contactos <br />  Servicios que ofrece",
                 },
             ],
         },
         {
             key: 2,
-            label: "Red #2",
+            label: "RED SANTA FE",
             value: "red-2",
             items: [
                 {
-                    title: "red 2 establecimiento 1",
-                    desc: " Horarios de atención <br />  Ubicación <br />  Contactos <br />  Servicios que ofrece",
+                    title: "Carrizal (CIS)",
+                    desc: "Horarios de atención <br />  Ubicación <br />  Contactos <br />  Servicios que ofrece",
                 },
                 {
-                    title: "red 2 establecimiento 2",
-                    desc: "Explore the new features in HTML5.",
+                    title: "Nueva Capital (UAPS)",
+                    desc: "Horarios de atención <br />  Ubicación <br />  Contactos <br />  Servicios que ofrece",
                 },
+                {
+                    title: "Centroamérica Oeste (CIS JAPÓN)",
+                    desc: "Horarios de atención <br />  Ubicación <br />  Contactos <br />  Servicios que ofrece",
+                },
+                {
+                    title: "San Francisco (CIS)",
+                    desc: "Horarios de atención <br />  Ubicación <br />  Contactos <br />  Servicios que ofrece",
+                },
+                {
+                    title: "Edén (CIS)",
+                    desc: "Horarios de atención <br />  Ubicación <br />  Contactos <br />  Servicios que ofrece",
+                },
+                {
+                    title: "21 de febrero (CIS)",
+                    desc: "Horarios de atención <br />  Ubicación <br />  Contactos <br />  Servicios que ofrece",
+                }
             ],
         },
         {
             key: 3,
-            label: "Red #3",
+            label: "RED VILLA ADELA",
             value: "red-3",
             items: [
                 {
-                    title: "red 3 establecimiento 1",
-                    desc: " Horarios de atención <br />  Ubicación <br />  Contactos <br />  Servicios que ofrece",
+                    title: "Villa Adela (CIS)",
+                    desc: "Horarios de atención <br />  Ubicación <br />  Contactos <br />  Servicios que ofrece",
                 },
                 {
-                    title: "red 3 establecimiento 2",
-                    desc: "Explore the new features in HTML5.",
+                    title: "Mateo (UAPS)",
+                    desc: "Horarios de atención <br />  Ubicación <br />  Contactos <br />  Servicios que ofrece",
                 },
+                {
+                    title: "Cruz Roja (UAPS)",
+                    desc: "Horarios de atención <br />  Ubicación <br />  Contactos <br />  Servicios que ofrece",
+                },
+                {
+                    title: "Santa Rosa (UAPS)",
+                    desc: "Horarios de atención <br />  Ubicación <br />  Contactos <br />  Servicios que ofrece",
+                },
+                {
+                    title: "Tizatillo (UAPS)",
+                    desc: "Horarios de atención <br />  Ubicación <br />  Contactos <br />  Servicios que ofrece",
+                },
+                {
+                    title: "Yaguacire (UAPS)",
+                    desc: "Horarios de atención <br />  Ubicación <br />  Contactos <br />  Servicios que ofrece",
+                },
+                {
+                    title: "Concepción de Río Grande (CIS)",
+                    desc: "Horarios de atención <br />  Ubicación <br />  Contactos <br />  Servicios que ofrece",
+                },
+                {
+                    title: "Flor del Campo (CIS)",
+                    desc: "Horarios de atención <br />  Ubicación <br />  Contactos <br />  Servicios que ofrece",
+                },
+                {
+                    title: "Nueva Esperanza (CIS)",
+                    desc: "Horarios de atención <br />  Ubicación <br />  Contactos <br />  Servicios que ofrece",
+                },
+                {
+                    title: "Torres (CIS)",
+                    desc: "Horarios de atención <br />  Ubicación <br />  Contactos <br />  Servicios que ofrece",
+                }
             ],
         },
         {
             key: 4,
-            label: "Red #4",
+            label: "RED EL SITIO",
             value: "red-4",
             items: [
                 {
-                    title: "red 4 establecimiento 1",
-                    desc: " Horarios de atención <br />  Ubicación <br />  Contactos <br />  Servicios que ofrece",
+                    title: "San Miguel (CIS)",
+                    desc: "Horarios de atención <br />  Ubicación <br />  Contactos <br />  Servicios que ofrece",
                 },
                 {
-                    title: "red 4 establecimiento 2",
-                    desc: "Explore the new features in HTML5.",
+                    title: "El Manchén (CIS)",
+                    desc: "Horarios de atención <br />  Ubicación <br />  Contactos <br />  Servicios que ofrece",
                 },
+                {
+                    title: "Jutiapa (UAPS)",
+                    desc: "Horarios de atención <br />  Ubicación <br />  Contactos <br />  Servicios que ofrece",
+                },
+                {
+                    title: "Piligüin (UAPS)",
+                    desc: "Horarios de atención <br />  Ubicación <br />  Contactos <br />  Servicios que ofrece",
+                },
+                {
+                    title: "San Juancito (UAPS)",
+                    desc: "Horarios de atención <br />  Ubicación <br />  Contactos <br />  Servicios que ofrece",
+                }
             ],
         },
         {
             key: 5,
-            label: "Red #5",
+            label: "RED RÍO ABAJO",
             value: "red-5",
             items: [
                 {
-                    title: "red 5 establecimiento 1",
-                    desc: " Horarios de atención <br />  Ubicación <br />  Contactos <br />  Servicios que ofrece",
+                    title: "El Chile (CIS)",
+                    desc: "Horarios de atención <br />  Ubicación <br />  Contactos <br />  Servicios que ofrece",
                 },
                 {
-                    title: "red 5 establecimiento 2",
-                    desc: "Explore the new features in HTML5.",
+                    title: "Monte Redondo (UAPS)",
+                    desc: "Horarios de atención <br />  Ubicación <br />  Contactos <br />  Servicios que ofrece",
                 },
+                {
+                    title: "Río Abajo (UAPS)",
+                    desc: "Horarios de atención <br />  Ubicación <br />  Contactos <br />  Servicios que ofrece",
+                },
+                {
+                    title: "Río Hondo (UAPS)",
+                    desc: "Horarios de atención <br />  Ubicación <br />  Contactos <br />  Servicios que ofrece",
+                },
+                {
+                    title: "Las Pilas (UAPS)",
+                    desc: "Horarios de atención <br />  Ubicación <br />  Contactos <br />  Servicios que ofrece",
+                },
+                {
+                    title: "La Venta del Norte (UAPS)",
+                    desc: "Horarios de atención <br />  Ubicación <br />  Contactos <br />  Servicios que ofrece",
+                },
+                {
+                    title: "El Bosque (CIS)",
+                    desc: "Horarios de atención <br />  Ubicación <br />  Contactos <br />  Servicios que ofrece",
+                },
+                {
+                    title: "Cofradía (UAPS)",
+                    desc: "Horarios de atención <br />  Ubicación <br />  Contactos <br />  Servicios que ofrece",
+                },
+                {
+                    title: "Carpintero (UAPS)",
+                    desc: "Horarios de atención <br />  Ubicación <br />  Contactos <br />  Servicios que ofrece",
+                },
+                {
+                    title: "Brisas del Picacho (UAPS)",
+                    desc: "Horarios de atención <br />  Ubicación <br />  Contactos <br />  Servicios que ofrece",
+                }
             ],
         },
         {
             key: 6,
-            label: "Red #6",
+            label: "RED KENNEDY",
             value: "red-6",
             items: [
                 {
-                    title: "red 6 establecimiento 1",
-                    desc: " Horarios de atención <br />  Ubicación <br />  Contactos <br />  Servicios que ofrece",
+                    title: "Pedregal (CIS)",
+                    desc: "Horarios de atención <br />  Ubicación <br />  Contactos <br />  Servicios que ofrece",
                 },
                 {
-                    title: "red 6 establecimiento 2",
-                    desc: "Explore the new features in HTML5.",
+                    title: "Oscar A. Flores (UAPS)",
+                    desc: "Horarios de atención <br />  Ubicación <br />  Contactos <br />  Servicios que ofrece",
                 },
+                {
+                    title: "Monterrey (UAPS)",
+                    desc: "Horarios de atención <br />  Ubicación <br />  Contactos <br />  Servicios que ofrece",
+                },
+                {
+                    title: "La Joya (UAPS)",
+                    desc: "Horarios de atención <br />  Ubicación <br />  Contactos <br />  Servicios que ofrece",
+                },
+                {
+                    title: "La Cañada (UAPS)",
+                    desc: "Horarios de atención <br />  Ubicación <br />  Contactos <br />  Servicios que ofrece",
+                },
+                {
+                    title: "Solidaridad Honduras (UAPS)",
+                    desc: "Horarios de atención <br />  Ubicación <br />  Contactos <br />  Servicios que ofrece",
+                }
             ],
         },
         {
             key: 7,
-            label: "Red #7",
+            label: "RED ALONSO SUAZO",
             value: "red-7",
             items: [
                 {
-                    title: "red 7 establecimiento 1",
-                    desc: " Horarios de atención <br />  Ubicación <br />  Contactos <br />  Servicios que ofrece",
+                    title: "Alonso Suazo (CIS)",
+                    desc: "Horarios de atención <br />  Ubicación <br />  Contactos <br />  Servicios que ofrece",
                 },
                 {
-                    title: "red 7 establecimiento 2",
-                    desc: "Explore the new features in HTML5.",
+                    title: "Nueva Suyapa (CIS)",
+                    desc: "Horarios de atención <br />  Ubicación <br />  Contactos <br />  Servicios que ofrece",
                 },
+                {
+                    title: "Villanueva (CIS)",
+                    desc: "Horarios de atención <br />  Ubicación <br />  Contactos <br />  Servicios que ofrece",
+                },
+                {
+                    title: "San Benito (CIS)",
+                    desc: "Horarios de atención <br />  Ubicación <br />  Contactos <br />  Servicios que ofrece",
+                },
+                {
+                    title: "San Juan del Rancho (UAPS)",
+                    desc: "Horarios de atención <br />  Ubicación <br />  Contactos <br />  Servicios que ofrece",
+                },
+                {
+                    title: "Santa Elena (UAPS)",
+                    desc: "Horarios de atención <br />  Ubicación <br />  Contactos <br />  Servicios que ofrece",
+                },
+                {
+                    title: "Aguacate (UAPS)",
+                    desc: "Horarios de atención <br />  Ubicación <br />  Contactos <br />  Servicios que ofrece",
+                },
+                {
+                    title: "Villa Vieja (UAPS)",
+                    desc: "Horarios de atención <br />  Ubicación <br />  Contactos <br />  Servicios que ofrece",
+                },
+                {
+                    title: "La Puerta (UAPS)",
+                    desc: "Horarios de atención <br />  Ubicación <br />  Contactos <br />  Servicios que ofrece",
+                }
             ],
         },
         {
             key: 8,
-            label: "Red #8",
+            label: "RED ZAMBRANO",
             value: "red-8",
             items: [
                 {
-                    title: "red 8 establecimiento 1",
-                    desc: " Horarios de atención <br />  Ubicación <br />  Contactos <br />  Servicios que ofrece",
+                    title: "Zambrano (CIS)",
+                    desc: "Horarios de atención <br />  Ubicación <br />  Contactos <br />  Servicios que ofrece",
                 },
                 {
-                    title: "red 8 establecimiento 2",
-                    desc: "Explore the new features in HTML5.",
+                    title: "Río Frío (UAPS)",
+                    desc: "Horarios de atención <br />  Ubicación <br />  Contactos <br />  Servicios que ofrece",
                 },
+                {
+                    title: "San Francisco de Soroguara (UAPS)",
+                    desc: "Horarios de atención <br />  Ubicación <br />  Contactos <br />  Servicios que ofrece",
+                },
+                {
+                    title: "Las Botijas (UAPS)",
+                    desc: "Horarios de atención <br />  Ubicación <br />  Contactos <br />  Servicios que ofrece",
+                },
+                {
+                    title: "Divina Providencia (UAPS)",
+                    desc: "Horarios de atención <br />  Ubicación <br />  Contactos <br />  Servicios que ofrece",
+                },
+                {
+                    title: "Támara (CIS)",
+                    desc: "Horarios de atención <br />  Ubicación <br />  Contactos <br />  Servicios que ofrece",
+                },
+                {
+                    title: "San Miguel Arcángel (UAPS)",
+                    desc: "Horarios de atención <br />  Ubicación <br />  Contactos <br />  Servicios que ofrece",
+                },
+                {
+                    title: "San Matías (UAPS)",
+                    desc: "Horarios de atención <br />  Ubicación <br />  Contactos <br />  Servicios que ofrece",
+                },
+                {
+                    title: "Villa Porvenir (UAPS)",
+                    desc: "Horarios de atención <br />  Ubicación <br />  Contactos <br />  Servicios que ofrece",
+                },
+                {
+                    title: "Ciudad España (UAPS)",
+                    desc: "Horarios de atención <br />  Ubicación <br />  Contactos <br />  Servicios que ofrece",
+                },
+                {
+                    title: "Penitenciaría Nacional de Támara",
+                    desc: "Horarios de atención <br />  Ubicación <br />  Contactos <br />  Servicios que ofrece",
+                },
+                {
+                    title: "PNFAS",
+                    desc: "Horarios de atención <br />  Ubicación <br />  Contactos <br />  Servicios que ofrece",
+                }
             ],
-        },
+        }
     ];
 
     const handleTabChange = () => {
