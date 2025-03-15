@@ -16,6 +16,7 @@ import {ChevronUpIcon} from "@heroicons/react/24/solid";
 
 function NavList() {
     const [openMenu, setOpenMenu] = React.useState(false);
+    const [openMenu2, setOpenMenu2] = React.useState(false);
     return (
         <ul className="my-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
             <Typography
@@ -39,6 +40,19 @@ function NavList() {
             >
                 <a
                     href="#"
+                    className="flex items-center hover:text-blue-500 transition-colors"
+                >
+                    Unidades
+                </a>
+            </Typography>
+            <Typography
+                as="li"
+                variant="small"
+                color="blue-gray"
+                className="p-1 font-medium"
+            >
+                <a
+                    href="/Departamentos/Marco-Normativo/marco-juridico"
                     className="flex items-center hover:text-blue-500 transition-colors"
                 >
                     Marco Juridico
@@ -68,9 +82,29 @@ function NavList() {
                     </Typography>
                 </MenuHandler>
                 <MenuList>
-                    <MenuItem>
-                        Constancia de Cumplimiento de Medidas Ambientales
-                    </MenuItem>
+                    <Menu
+                        placement="right-start"
+                        open={openMenu2}
+                        handler={setOpenMenu2}
+                        allowHover
+                        offset={15}
+                    >
+                        <MenuHandler className="flex items-center justify-between">
+                            <MenuItem>
+                                Constancia de Cumplimiento de medidas
+                                ambientales
+                                <ChevronUpIcon
+                                    strokeWidth={2.5}
+                                    className={`h-3.5 w-3.5 transition-transform ${
+                                        openMenu2 ? "rotate-90" : ""
+                                    }`}
+                                />
+                            </MenuItem>
+                        </MenuHandler>
+                        <MenuList>
+                            <MenuItem>Requisitos</MenuItem>
+                        </MenuList>
+                    </Menu>
                     <Menu
                         placement="right-start"
                         open={openMenu}
@@ -91,24 +125,11 @@ function NavList() {
                         </MenuHandler>
                         <MenuList>
                             <MenuItem>Requisitos</MenuItem>
+                            <MenuItem>Estandares</MenuItem>
                         </MenuList>
                     </Menu>
                 </MenuList>
             </Menu>
-
-            <Typography
-                as="li"
-                variant="small"
-                color="blue-gray"
-                className="p-1 font-medium"
-            >
-                <a
-                    href="#"
-                    className="flex items-center hover:text-blue-500 transition-colors"
-                >
-                    Horarios de atencion
-                </a>
-            </Typography>
         </ul>
     );
 }

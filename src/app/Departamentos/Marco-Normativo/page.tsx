@@ -14,8 +14,6 @@ export default function Marco_Normativo() {
             <NavbarSimple />
             <CarouselDefault />
             <Noticias />
-            <DescargasTab />
-            <Preguntas />
             <FooterWithSocialLinks />
         </div>
     );

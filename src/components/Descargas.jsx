@@ -36,94 +36,8 @@ const handleDownload = async (fileUrl, fileName) => {
     }
 };
 
-export function DescargasTab() {
-    const data = [
-        {
-            label: "Acuerdos",
-            value: "acuerdos",
-            cards: [
-                {
-                    title: "HTML Guide",
-                    desc: "Learn the basics of HTML.",
-                    fileURL: "/documents/sample.pdf",
-                },
-                {
-                    title: "HTML5 Features",
-                    desc: "Explore the new features in HTML5.",
-                    fileURL: "/documents/sample.pdf",
-                },
-            ],
-        },
-        {
-            label: "Listados oficiales",
-            value: "listados",
-            cards: [
-                {
-                    title: "React Basics",
-                    desc: "Learn how to get started with React.",
-                    fileURL: "/documents/sample.pdf",
-                },
-                {
-                    title: "React Hooks",
-                    desc: "Master the power of hooks in React.",
-                    fileURL: "/documents/sample.pdf",
-                },
-            ],
-        },
-        {
-            label: "Reglamentos",
-            value: "reglamentos",
-            cards: [
-                {
-                    title: "Vue Introduction",
-                    desc: "Get started with Vue.js.",
-                    fileURL: "/documents/sample.pdf",
-                },
-                {
-                    title: "Vue Directives",
-                    desc: "Learn how to use directives in Vue.",
-                    fileURL: "/documents/sample.pdf",
-                },
-            ],
-        },
-        {
-            label: "Leyes",
-            value: "leyes",
-            cards: [
-                {
-                    title: "Angular Basics",
-                    desc: "An introduction to Angular.",
-                    fileURL: "/documents/sample.pdf",
-                },
-                {
-                    title: "Angular CLI",
-                    desc: "Efficiently manage your Angular project.",
-                    fileURL: "/documents/sample.pdf",
-                },
-            ],
-        },
-        {
-            label: "Decretos",
-            value: "decretos",
-            cards: [
-                {
-                    title: "Svelte Overview",
-                    desc: "Learn what makes Svelte unique.",
-                    fileURL: "/documents/sample.pdf",
-                },
-                {
-                    title: "Svelte Stores",
-                    desc: "Manage your state effectively with stores.",
-                    fileURL: "/documents/sample.pdf",
-                },
-                {
-                    title: "Svelte Stores",
-                    desc: "Manage your state effectively with stores.",
-                    fileURL: "/documents/sample.pdf",
-                },
-            ],
-        },
-    ];
+export function DescargasTab({data}) {
+    
 
     return (
         <Tabs value="acuerdos" className="pt-12 pb-12 max-w-[900px] mx-auto">
@@ -163,7 +77,6 @@ export function DescargasTab() {
                                     >
                                         {card.title}
                                     </Typography>
-                                    <Typography>{card.desc}</Typography>
                                 </CardBody>
                                 <CardFooter className="pt-0">
                                     <Button
