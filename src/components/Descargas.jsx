@@ -8,6 +8,7 @@ import {
     CardFooter,
 } from "../app/MTailwind";
 import {Card, CardHeader, CardBody, Typography, Button} from "../app/MTailwind";
+import { EyeIcon } from "@heroicons/react/24/outline";
 
 const handleDownload = async (fileUrl, fileName) => {
     try {
@@ -78,7 +79,7 @@ export function DescargasTab({data}) {
                                         {card.title}
                                     </Typography>
                                 </CardBody>
-                                <CardFooter className="pt-0">
+                                <CardFooter className="pt-0 flex gap-2">
                                     <Button
                                         onClick={() =>
                                             handleDownload(
@@ -88,6 +89,13 @@ export function DescargasTab({data}) {
                                         }
                                     >
                                         Descargar
+                                    </Button>
+                                    <Button
+                                        className="flex items-center gap-2"
+                                        variant="outlined"
+                                        onClick={() => window.open(card.fileURL, '_blank')}
+                                    >
+                                        <EyeIcon className="h-5 w-5" /> Ver
                                     </Button>
                                 </CardFooter>
                             </Card>
