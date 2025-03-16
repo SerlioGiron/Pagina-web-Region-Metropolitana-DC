@@ -17,6 +17,17 @@ import {ChevronUpIcon} from "@heroicons/react/24/solid";
 function NavList() {
     const [openMenu, setOpenMenu] = React.useState(false);
     const [openMenu2, setOpenMenu2] = React.useState(false);
+    const [isMobile, setIsMobile] = React.useState(false);
+
+    React.useEffect(() => {
+        const checkIfMobile = () => {
+            setIsMobile(window.innerWidth < 768);
+        };
+        
+        checkIfMobile();
+        window.addEventListener("resize", checkIfMobile);
+        return () => window.removeEventListener("resize", checkIfMobile);
+    }, []);
 
     const handleMenuItemClick = (url) => {
         window.location.href = url;
@@ -101,7 +112,7 @@ function NavList() {
                 </MenuHandler>
                 <MenuList>
                     <Menu
-                        placement="right-start"
+                        placement={isMobile ? "bottom-end" : "right-start"}
                         open={openMenu2}
                         handler={setOpenMenu2}
                         allowHover
@@ -114,17 +125,17 @@ function NavList() {
                                 <ChevronUpIcon
                                     strokeWidth={2.5}
                                     className={`h-3.5 w-3.5 transition-transform ${
-                                        openMenu2 ? "rotate-90" : ""
+                                        openMenu2 ? (isMobile ? "rotate-180" : "rotate-90") : ""
                                     }`}
                                 />
                             </MenuItem>
                         </MenuHandler>
                         <MenuList>
-                            <MenuItem onClick={() => handleMenuItemClick("/Departamentos/Marco-Normativo/medidas-ambientales")}>Requisitos</MenuItem>
+                            <MenuItem onClick={() => window.open("/medidas-ambientales/DVMNR-064, 2da.V., Requisitos de Constancia de Cumplimiento de Medidas Ambientales CC.pdf", '_blank')}>Requisitos</MenuItem>
                         </MenuList>
                     </Menu>
                     <Menu
-                        placement="right-start"
+                        placement={isMobile ? "bottom-end" : "right-start"}
                         open={openMenu}
                         handler={setOpenMenu}
                         allowHover
@@ -136,7 +147,7 @@ function NavList() {
                                 <ChevronUpIcon
                                     strokeWidth={2.5}
                                     className={`h-3.5 w-3.5 transition-transform ${
-                                        openMenu ? "rotate-90" : ""
+                                        openMenu ? (isMobile ? "rotate-180" : "rotate-90") : ""
                                     }`}
                                 />
                             </MenuItem>
