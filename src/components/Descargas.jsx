@@ -40,7 +40,7 @@ export function DescargasTab({data}) {
     
 
     return (
-        <Tabs value="acuerdos" className="pt-12 pb-12 max-w-[900px] mx-auto">
+        <Tabs value={data[0].value} className="pt-12 pb-12 max-w-[900px] mx-auto">
             <TabsHeader
                 className="bg-transparent p-0 flex-wrap sm:flex-nowrap overflow-x-auto"
                 indicatorProps={{

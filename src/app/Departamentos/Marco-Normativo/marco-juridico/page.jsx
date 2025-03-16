@@ -32,7 +32,7 @@ export default function MarcoJuridico() {
             value: "reglamentos",
             cards: [
                 {
-                    title: "Reglamento General de Salud Ambiental, Acuerdo No. 0094-1997",
+                    title: "Reglamento General de Salud Ambiental, Acuerdo No 0094-1997",
                     fileURL: "/marco-juridico/Reglamentos/Reglamento General de Salud Ambiental Acuerdo No 0094 1997.pdf",
                 },
                 {
@@ -40,15 +40,15 @@ export default function MarcoJuridico() {
                     fileURL: "/marco-juridico/Reglamentos/Reglamento Manejo Desechos Peligrosos Generados en Establecimientos de Salud.pdf",
                 },
                 {
-                    title: "Reglamento para el Control Sanitario, Acuerdo No. 06-2005",
+                    title: "Reglamento para el Control Sanitario, Acuerdo No 06-2005",
                     fileURL: "/marco-juridico/Reglamentos/Reglamento para el Control Sanitario, Acuerdo No. 06-2005.pdf",
                 },
                 {
-                    title: "Reglamento para el Manejo Desechos Peligrosos, Acuerdo No. 07-2008",
+                    title: "Reglamento para el Manejo Desechos Peligrosos, Acuerdo No 07-2008",
                     fileURL: "/marco-juridico/Reglamentos/Reglamento para el Manejo Desechos Peligrosos, Acuerdo No. 07-2008.pdf",
                 },
                 {
-                    title: "Reglamento Técnico de Calidad de Agua Envasada y Hielo para Consumo Humano, Acuerdo No. 614-2007",
+                    title: "Reglamento Técnico de Calidad de Agua Envasada y Hielo para Consumo Humano, Acuerdo No 614-2007",
                     fileURL: "/marco-juridico/Reglamentos/Reglamento Técnico de Calidad de Agua Envasada y Hielo para Consumo Humano, Acuerdo No. 614-2007.pdf",
                 },
             ],
@@ -58,15 +58,15 @@ export default function MarcoJuridico() {
             value: "leyes",
             cards: [
                 {
-                    title: "Ley de Procedimiento Administrativo Actualizada Dic. 2015, Decreto No. 152-87",
+                    title: "Ley de Procedimiento Administrativo Actualizada Dic 2015, Decreto No 152-87",
                     fileURL: "/marco-juridico/Leyes/Ley de Procedimiento Administrativo Actualizada Dic. 2015, Decreto No. 152-87.pdf",
                 },
                 {
-                    title: "Ley de Simplificacion Administrativa, Decreto No. 255-2002",
+                    title: "Ley de Simplificacion Administrativa, Decreto No 255-2002",
                     fileURL: "/marco-juridico/Leyes/Ley de Simplificacion Administrativa, Decreto No. 255-2002.pdf",
                 },
                 {
-                    title: "Ley General de la Administración Pública, Decreto No. 146-86",
+                    title: "Ley General de la Administración Pública, Decreto No 146-86",
                     fileURL: "/marco-juridico/Leyes/Ley General de la Administración Pública, Decreto No. 146-86.pdf",
                 },
             ],

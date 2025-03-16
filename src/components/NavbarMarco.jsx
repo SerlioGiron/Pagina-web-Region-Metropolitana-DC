@@ -17,8 +17,26 @@ import {ChevronUpIcon} from "@heroicons/react/24/solid";
 function NavList() {
     const [openMenu, setOpenMenu] = React.useState(false);
     const [openMenu2, setOpenMenu2] = React.useState(false);
+
+    const handleMenuItemClick = (url) => {
+        window.location.href = url;
+    };
+
     return (
         <ul className="my-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
+            <Typography
+                as="li"
+                variant="small"
+                color="blue-gray"
+                className="p-1 font-medium"
+            >
+                <a
+                    href="/Departamentos/Marco-Normativo"
+                    className="flex items-center hover:text-blue-500 transition-colors"
+                >
+                    Inicio
+                </a>
+            </Typography>
             <Typography
                 as="li"
                 variant="small"
@@ -102,7 +120,7 @@ function NavList() {
                             </MenuItem>
                         </MenuHandler>
                         <MenuList>
-                            <MenuItem>Requisitos</MenuItem>
+                            <MenuItem onClick={() => handleMenuItemClick("/Departamentos/Marco-Normativo/medidas-ambientales")}>Requisitos</MenuItem>
                         </MenuList>
                     </Menu>
                     <Menu
@@ -124,8 +142,8 @@ function NavList() {
                             </MenuItem>
                         </MenuHandler>
                         <MenuList>
-                            <MenuItem>Requisitos</MenuItem>
-                            <MenuItem>Estandares</MenuItem>
+                            <MenuItem onClick={() => handleMenuItemClick("/Departamentos/Marco-Normativo/licencia-sanitaria/Requisitos")} >Requisitos</MenuItem>
+                            <MenuItem onClick={() => handleMenuItemClick("/Departamentos/Marco-Normativo/licencia-sanitaria/estandares")} >Estandares</MenuItem>
                         </MenuList>
                     </Menu>
                 </MenuList>
