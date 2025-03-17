@@ -7,6 +7,7 @@ import {FooterWithSocialLinks} from "../components/Footer";
 import {Carousel} from "./MTailwind";
 import {Noticias} from "../components/Noticias";
 import {YouTubeShort} from "../components/YouTubeShort";
+import {YouTubeShortCarousel} from "../components/YouTubeShortsCarousel";
 
 export default function Home() {
     return (
@@ -15,6 +16,7 @@ export default function Home() {
             <CarouselDefault />
             <YouTubeShort videoId="IUj3Hl0QTQ8" />
             <Noticias />
+            <YouTubeShortCarousel />
             <FooterWithSocialLinks />
         </div>
     );
