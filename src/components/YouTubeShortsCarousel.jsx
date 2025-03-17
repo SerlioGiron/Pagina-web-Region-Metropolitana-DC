@@ -4,8 +4,8 @@ import {Carousel} from "../app/MTailwind";
 export function YouTubeShortCarousel() {
     const videoIds = ["zHJCEX1rh8Q", "-NzgjWhUPdc", "YcqWuM75qFc"];
     return (
-        <div className="w-full flex justify-center p-4">
-            <div className="w-full ">
+        <div className="w-full flex justify-center p-4 bg-[#68c5d7] py-10">
+            <div className="w-full max-w-2xl mx-auto">
                 <Carousel
                     // autoplay={true}
                     loop={true}
@@ -30,7 +30,7 @@ export function YouTubeShortCarousel() {
                         <iframe
                             key={index}
                             className="h-full w-full rounded-lg shadow-lg"
-                            src={`https://www.youtube.com/embed/${videoId}?autoplay=1&mute=1&loop=1&playlist=${videoId}`}
+                            src={`https://www.youtube.com/embed/${videoId}?autoplay=0&mute=0&loop=1&playlist=${videoId}`}
                             title={`YouTube Short ${index + 1}`}
                             frameBorder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
