@@ -11,7 +11,7 @@ import {YouTubeShortCarousel} from "../components/YouTubeShortsCarousel";
 
 export default function Home() {
     return (
-        <div className="max-h-[768px]">
+        <div className="max-h-[600px]">
             <StickyNavbar />
             <CarouselDefault />
             <YouTubeShort videoId="IUj3Hl0QTQ8" />
