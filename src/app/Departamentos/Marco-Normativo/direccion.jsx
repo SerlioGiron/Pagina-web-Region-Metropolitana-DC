@@ -3,8 +3,8 @@ import {Button, Input, Textarea, Typography} from "@material-tailwind/react";
 
 export function ContactSection14() {
     return (
-        <section className="px-8 py-8 lg:py-16">
-            <div className="grid grid-cols-1 gap-x-12 gap-y-6 lg:grid-cols-2 items-start">
+        <section className="py-8 lg:py-8 ">
+            <div className=" px-8 py-8 grid grid-cols-1 gap-x-12 gap-y-6 lg:grid-cols-2 items-start bg-[#68c5d7]">
                 <img
                     src="/assets/direccion-marco.jpg"
                     alt="map"
@@ -23,16 +23,6 @@ export function ContactSection14() {
                 </div>
             </div>
             <div className="mt-12 flex flex-col items-center justify-center gap-2">
-                {/* <Typography className="font-medium !text-lg !text-gray-800">
-                        <span className="font-bold">
-                            Correo del Departamento:
-                        </span>{" "}
-                        dvmn.rsmtegucigalpa@gmail.com
-                    </Typography>
-                    <Typography className="font-medium !text-lg !text-gray-800">
-                        <span className="font-bold">Teléfono:</span> 2232-1139,
-                        2232-1685
-                    </Typography> */}
                 <div className="flex flex-col gap-4 lg:max-w-sm mx-auto">
                     <div>
                         <Typography
@@ -104,7 +94,7 @@ export function ContactSection14() {
                         </div> */}
 
                     <Button
-                        className="w-full mt-2"
+                        className="w-full mt-2 bg-[#68c5d7]"
                         color="gray"
                         onClick={() =>
                             (window.location.href =
