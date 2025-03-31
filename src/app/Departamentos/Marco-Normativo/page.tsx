@@ -6,6 +6,7 @@ import { Preguntas } from "../../../components/Preguntas";
 import { FooterWithSocialLinks } from '../../../components/Footer';
 import { DescargasTab } from "../../../components/Descargas";
 import { NavbarSimple } from "../../../components/NavbarMarco";
+import { ContactSection14 } from './direccion'
 
 export default function Marco_Normativo() {
     return (
@@ -14,6 +15,7 @@ export default function Marco_Normativo() {
             <NavbarSimple />
             <CarouselDefault />
             <Noticias />
+            <ContactSection14/>
             <FooterWithSocialLinks />
         </div>
     );
