@@ -70,8 +70,8 @@ export function ContactSection14() {
                                 variant="small"
                                 className="text-left !text-gray-700"
                             >
-                                Departamento de Vigilancia del Marco Normativo,
-                                Región Sanitaria Metropolitana, Tegucigalpa
+                                Barrio Morazán, calle hacia el Parque Cerro Juana Lainez, contiguo a CESCCO, frente al Cuartel General del
+                                Heroico y Benemérito Cuerpo de Bomberos de Honduras, Tegucigalpa M.D.C., Honduras C.A.
                             </Typography>
                         </div>
                     </div>
@@ -108,5 +108,3 @@ export function ContactSection14() {
         </section>
     );
 }
-
-export default ContactSection14;
