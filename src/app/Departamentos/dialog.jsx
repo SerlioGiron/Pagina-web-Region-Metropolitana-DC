@@ -1,4 +1,4 @@
-import { Typography } from "@material-tailwind/react";
+import {Typography} from "@material-tailwind/react";
 export function Dialog({
     open,
     setOpen,
@@ -15,7 +15,7 @@ export function Dialog({
             onClick={() => setOpen(false)}
         >
             <div
-                className="relative m-2 md:m-4 p-3 md:p-6 w-[95%] md:w-[85%] lg:w-3/5 max-w-[800px] max-h-[95vh] md:max-h-[90vh] rounded-lg bg-white shadow-sm flex flex-col"
+                className="relative m-2 md:m-4 p-3 md:p-6 w-[95%] md:w-[85%] lg:w-3/5 max-w-[800px] max-h-[65vh] md:max-h-[90vh] rounded-lg bg-white shadow-sm flex flex-col"
                 onClick={(e) => e.stopPropagation()}
             >
                 <Typography
