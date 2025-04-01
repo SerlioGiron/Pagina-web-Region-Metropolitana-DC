@@ -29,7 +29,7 @@ export function Dialog({
                     <Typography
                         variant="paragraph"
                         color="gray"
-                        className="mb-3 text-sm md:text-base"
+                        className="mb-3 text-sm md:text-base whitespace-pre-line"
                     >
                         {descripcion || "No hay descripción disponible."}
                     </Typography>

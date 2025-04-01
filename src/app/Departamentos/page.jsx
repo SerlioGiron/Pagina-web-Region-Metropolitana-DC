@@ -18,7 +18,13 @@ const UnitCard = ({title, link, descripcion, subsecciones}) => {
         <>
             <Card
                 className="shadow-md rounded-xl cursor-pointer"
-                onClick={handleClick}
+                onClick={() => {
+                    if (title === "Departamento de Vigilancia del Marco Normativo") {
+                        window.location.href = "/Departamentos/Marco-Normativo";
+                    } else {
+                        handleClick();
+                    }
+                }}
             >
                 <CardBody className="flex items-center space-x-4 p-4">
                     <div className="bg-[#68c5d7] p-3 rounded-full">
