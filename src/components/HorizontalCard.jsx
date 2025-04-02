@@ -36,7 +36,7 @@ export function HorizontalCard({ noticia }) {
                     className="relative m-0 w-full lg:w-2/5 shrink-0 rounded-none h-48 lg:h-96 overflow-hidden flex items-center justify-center"
                 >
                     <img
-                        src={noticia.image}
+                        src={noticia.images[0].src}
                         alt="card-image"
                         className="w-full h-full object-contain"
                     />
