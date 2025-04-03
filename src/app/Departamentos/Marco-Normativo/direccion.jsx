@@ -1,18 +1,19 @@
 import React from "react";
 import {Button, Input, Textarea, Typography} from "@material-tailwind/react";
+export function ContactSection14({direccion, telefono, correo, maps, foto}) {
+    console.log(foto);
 
-export function ContactSection14() {
     return (
         <section className="py-8 lg:py-8 ">
             <div className=" px-8 py-8 grid grid-cols-1 gap-x-12 gap-y-6 lg:grid-cols-2 items-start bg-[#68c5d7]">
                 <img
-                    src="/assets/direccion-marco.jpg"
+                    src={foto}
                     alt="map"
                     className="w-full h-full lg:max-h-[510px]"
                 />
                 <div className="w-full h-[400px] lg:h-[510px] rounded-lg overflow-hidden shadow-lg">
                     <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3869.655152021599!2d-87.2053601249034!3d14.097522986331336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTTCsDA1JzUxLjEiTiA4N8KwMTInMTAuMCJX!5e0!3m2!1ses-419!2shn!4v1743443866783!5m2!1ses-419!2shn"
+                        src={maps}
                         width="100%"
                         height="100%"
                         style={{border: 0}}
@@ -36,7 +37,7 @@ export function ContactSection14() {
                                 variant="small"
                                 className="text-left !text-gray-700"
                             >
-                                dvmn.rsmtegucigalpa@gmail.com
+                                {correo}
                             </Typography>
                         </div>
                     </div>
@@ -53,7 +54,7 @@ export function ContactSection14() {
                                 variant="small"
                                 className="text-left !text-gray-700"
                             >
-                                2232-1139, 2232-1685
+                                {telefono}
                             </Typography>
                         </div>
                     </div>
@@ -70,8 +71,7 @@ export function ContactSection14() {
                                 variant="small"
                                 className="text-left !text-gray-700"
                             >
-                                Barrio Morazán, calle hacia el Parque Cerro Juana Lainez, contiguo a CESCCO, frente al Cuartel General del
-                                Heroico y Benemérito Cuerpo de Bomberos de Honduras, Tegucigalpa M.D.C., Honduras C.A.
+                                {direccion}
                             </Typography>
                         </div>
                     </div>
@@ -98,7 +98,7 @@ export function ContactSection14() {
                         color="gray"
                         onClick={() =>
                             (window.location.href =
-                                "mailto:dvmn.rsmtegucigalpa@gmail.com")
+                                `mailto:${correo}`)
                         }
                     >
                         Enviar correo

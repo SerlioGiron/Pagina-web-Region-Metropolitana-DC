@@ -22,6 +22,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/app/MTailwind.jsx", "src/components/Carousel.jsx", "src/app/Blog-page/page.jsx", "src/app/Blog-page/page.jsx", "src/components/Establecimientos.jsx", "src/components/Descargas.jsx", "src/components/Galeria.jsx", "src/components/Footer.jsx", "src/components/StickyNavbar.jsx", "src/components/Preguntas.jsx", "src/components/Noticias.jsx", "src/components/HorizontalCard.jsx", "src/app/SobreNosotros/page.jsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/app/MTailwind.jsx", "src/components/Carousel.jsx", "src/app/Blog-page/page.jsx", "src/app/Blog-page/page.jsx", "src/components/Establecimientos.jsx", "src/components/Descargas.jsx", "src/components/Galeria.jsx", "src/components/Footer.jsx", "src/components/StickyNavbar.jsx", "src/components/Preguntas.jsx", "src/components/Noticias.jsx", "src/components/HorizontalCard.jsx", "src/app/SobreNosotros/page.jsx", "src/app/Departamentos/Marco-Normativo/page.jsx"],
   "exclude": ["node_modules"]
 }
