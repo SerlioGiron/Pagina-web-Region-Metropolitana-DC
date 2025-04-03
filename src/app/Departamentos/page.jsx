@@ -7,7 +7,7 @@ import {units} from "./info";
 import {Dialog} from "./dialog";
 import {useState} from "react";
 
-const UnitCard = ({title, link, descripcion, subsecciones}) => {
+const UnitCard = ({title, link, descripcion, subsecciones, tipo}) => {
     const [open, setOpen] = useState(false);
 
     const handleClick = () => {
@@ -42,6 +42,7 @@ const UnitCard = ({title, link, descripcion, subsecciones}) => {
                 link={link}
                 descripcion={descripcion}
                 subsecciones={subsecciones}
+                tipo={tipo}
             />
         </>
     );
@@ -62,6 +63,7 @@ export default function Departamentos() {
                         link={unit.link}
                         descripcion={unit.descripcion}
                         subsecciones={unit.subsecciones}
+                        tipo={unit.tipo}
                     />
                 ))}
             </div>

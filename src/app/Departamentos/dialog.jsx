@@ -6,6 +6,7 @@ export function Dialog({
     link,
     descripcion,
     subsecciones,
+    tipo
 }) {
     if (!open) return null;
 
@@ -41,21 +42,21 @@ export function Dialog({
                                 color="blue-gray"
                                 className="mb-2 text-base md:text-lg"
                             >
-                                Subsecciones
+                                {tipo}
                             </Typography>
                             {subsecciones.map((subseccion, index) => (
                                 <div key={index} className="mb-3">
                                     <Typography
                                         variant="small"
                                         color="blue-gray"
-                                        className="font-medium text-sm md:text-base"
+                                        className="font-medium text-sm md:text-base underline"
                                     >
                                         {subseccion.nombre}
                                     </Typography>
                                     <Typography
                                         variant="small"
                                         color="gray"
-                                        className="mt-1 text-xs md:text-sm"
+                                        className="mt-1 text-xs md:text-sm whitespace-pre-line bg-[#68c5d7] bg-opacity-15 p-2 rounded-md"
                                     >
                                         {subseccion.descripcion}
                                     </Typography>
