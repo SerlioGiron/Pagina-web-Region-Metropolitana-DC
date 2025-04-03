@@ -88,6 +88,7 @@ export default function Home() {
             <YouTubeShortCarousel />
             <ContactSection14
                 correo="metropolitanadc@gmail.com"
+                horario="Lunes a Viernes de 7:00 am a 3:00 pm"
                 telefono="2232-6443"
                 direccion="Barrio Morazán, Edificio del Centro Integral de Salud Dr. Alonso Suazo, segundo piso, esquina opuesta del Estadio Nacional Jose de la Paz Herrera Ucles, Tegucigalpa M.D.C., Honduras C.A."
                 foto="/assets/direccion-marco.jpg"

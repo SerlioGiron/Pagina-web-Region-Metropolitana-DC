@@ -17,6 +17,7 @@ export default function Marco_Normativo() {
             <Noticias />
             <ContactSection14
                 correo="dvmn.rsmtegucigalpa@gmail.com"
+                horario="Lunes a Viernes de 7:00 am a 3:00 pm"
                 telefono="2232-1139, 2232-1685"
                 direccion="Barrio Morazán, calle hacia el Parque Cerro Juana Lainez, contiguo a CESCCO, frente al Cuartel General del Heroico y Benemérito Cuerpo de Bomberos de Honduras, Tegucigalpa M.D.C., Honduras C.A."
                 foto="/assets/direccion-marco.jpg"

@@ -1,6 +1,13 @@
 import React from "react";
 import {Button, Input, Textarea, Typography} from "@material-tailwind/react";
-export function ContactSection14({direccion, telefono, correo, maps, foto}) {
+export function ContactSection14({
+    direccion,
+    telefono,
+    correo,
+    maps,
+    foto,
+    horario,
+}) {
     console.log(foto);
 
     return (
@@ -76,29 +83,28 @@ export function ContactSection14({direccion, telefono, correo, maps, foto}) {
                         </div>
                     </div>
 
-                    {/* <div>
+                    <div>
+                        <Typography
+                            variant="small"
+                            className="mb-2 text-left font-medium !text-gray-900"
+                        >
+                            Horario de Atención
+                        </Typography>
+                        <div className="p-3 border border-gray-300 rounded-md bg-gray-50">
                             <Typography
                                 variant="small"
-                                className="mb-2 text-left font-medium !text-gray-900"
+                                className="text-left !text-gray-700"
                             >
-                                Horario de Atención
+                                {horario}
                             </Typography>
-                            <div className="p-3 border border-gray-300 rounded-md bg-gray-50">
-                                <Typography
-                                    variant="small"
-                                    className="text-left !text-gray-700"
-                                >
-                                    Lunes a Viernes: 8:00 AM - 4:00 PM
-                                </Typography>
-                            </div>
-                        </div> */}
+                        </div>
+                    </div>
 
                     <Button
                         className="w-full mt-2 bg-[#68c5d7]"
                         color="gray"
                         onClick={() =>
-                            (window.location.href =
-                                `mailto:${correo}`)
+                            (window.location.href = `mailto:${correo}`)
                         }
                     >
                         Enviar correo
