@@ -18,16 +18,16 @@ export function Establecimientos() {
         const handleResize = () => {
             setIsVertical(window.innerWidth < 768); // 768px is typical tablet breakpoint
         };
-        
+
         // Set initial orientation
         handleResize();
-        
+
         // Add event listener
-        window.addEventListener('resize', handleResize);
-        
+        window.addEventListener("resize", handleResize);
+
         // Clean up
         return () => {
-            window.removeEventListener('resize', handleResize);
+            window.removeEventListener("resize", handleResize);
         };
     }, []);
 
@@ -46,7 +46,19 @@ export function Establecimientos() {
             value: "red-1",
             items: [
                 {
+                    title: "Alemania (CIS)",
+                    desc: "Horarios de atención <br />  Ubicación <br />  Contactos <br />  Servicios que ofrece",
+                },
+                {
                     title: "Crucitas (CIS)",
+                    desc: "Horarios de atención <br />  Ubicación <br />  Contactos <br />  Servicios que ofrece",
+                },
+                {
+                    title: "Divanna (CIS)",
+                    desc: "Horarios de atención <br />  Ubicación <br />  Contactos <br />  Servicios que ofrece",
+                },
+                {
+                    title: "3 de Mayo (CIS)",
                     desc: "Horarios de atención <br />  Ubicación <br />  Contactos <br />  Servicios que ofrece",
                 },
                 {
@@ -57,18 +69,6 @@ export function Establecimientos() {
                     title: "San José de Soroguara (UAPS)",
                     desc: "Horarios de atención <br />  Ubicación <br />  Contactos <br />  Servicios que ofrece",
                 },
-                {
-                    title: "3 de Mayo (CIS)",
-                    desc: "Horarios de atención <br />  Ubicación <br />  Contactos <br />  Servicios que ofrece",
-                },
-                {
-                    title: "Alemania (CIS)",
-                    desc: "Horarios de atención <br />  Ubicación <br />  Contactos <br />  Servicios que ofrece",
-                },
-                {
-                    title: "Divanna (CIS)",
-                    desc: "Horarios de atención <br />  Ubicación <br />  Contactos <br />  Servicios que ofrece",
-                },
             ],
         },
         {
@@ -77,19 +77,11 @@ export function Establecimientos() {
             value: "red-2",
             items: [
                 {
-                    title: "Carrizal (CIS)",
-                    desc: "Horarios de atención <br />  Ubicación <br />  Contactos <br />  Servicios que ofrece",
-                },
-                {
-                    title: "Nueva Capital (UAPS)",
-                    desc: "Horarios de atención <br />  Ubicación <br />  Contactos <br />  Servicios que ofrece",
-                },
-                {
                     title: "Centroamérica Oeste (CIS JAPÓN)",
                     desc: "Horarios de atención <br />  Ubicación <br />  Contactos <br />  Servicios que ofrece",
                 },
                 {
-                    title: "San Francisco (CIS)",
+                    title: "Carrizal (CIS)",
                     desc: "Horarios de atención <br />  Ubicación <br />  Contactos <br />  Servicios que ofrece",
                 },
                 {
@@ -97,9 +89,17 @@ export function Establecimientos() {
                     desc: "Horarios de atención <br />  Ubicación <br />  Contactos <br />  Servicios que ofrece",
                 },
                 {
+                    title: "San Francisco (CIS)",
+                    desc: "Horarios de atención <br />  Ubicación <br />  Contactos <br />  Servicios que ofrece",
+                },
+                {
                     title: "21 de febrero (CIS)",
                     desc: "Horarios de atención <br />  Ubicación <br />  Contactos <br />  Servicios que ofrece",
-                }
+                },
+                {
+                    title: "Nueva Capital (UAPS)",
+                    desc: "Horarios de atención <br />  Ubicación <br />  Contactos <br />  Servicios que ofrece",
+                },
             ],
         },
         {
@@ -107,30 +107,6 @@ export function Establecimientos() {
             label: "RED VILLA ADELA",
             value: "red-3",
             items: [
-                {
-                    title: "Villa Adela (CIS)",
-                    desc: "Horarios de atención <br />  Ubicación <br />  Contactos <br />  Servicios que ofrece",
-                },
-                {
-                    title: "Mateo (UAPS)",
-                    desc: "Horarios de atención <br />  Ubicación <br />  Contactos <br />  Servicios que ofrece",
-                },
-                {
-                    title: "Cruz Roja (UAPS)",
-                    desc: "Horarios de atención <br />  Ubicación <br />  Contactos <br />  Servicios que ofrece",
-                },
-                {
-                    title: "Santa Rosa (UAPS)",
-                    desc: "Horarios de atención <br />  Ubicación <br />  Contactos <br />  Servicios que ofrece",
-                },
-                {
-                    title: "Tizatillo (UAPS)",
-                    desc: "Horarios de atención <br />  Ubicación <br />  Contactos <br />  Servicios que ofrece",
-                },
-                {
-                    title: "Yaguacire (UAPS)",
-                    desc: "Horarios de atención <br />  Ubicación <br />  Contactos <br />  Servicios que ofrece",
-                },
                 {
                     title: "Concepción de Río Grande (CIS)",
                     desc: "Horarios de atención <br />  Ubicación <br />  Contactos <br />  Servicios que ofrece",
@@ -146,7 +122,31 @@ export function Establecimientos() {
                 {
                     title: "Torres (CIS)",
                     desc: "Horarios de atención <br />  Ubicación <br />  Contactos <br />  Servicios que ofrece",
-                }
+                },
+                {
+                    title: "Villa Adela (CIS)",
+                    desc: "Horarios de atención <br />  Ubicación <br />  Contactos <br />  Servicios que ofrece",
+                },
+                {
+                    title: "Cruz Roja (UAPS)",
+                    desc: "Horarios de atención <br />  Ubicación <br />  Contactos <br />  Servicios que ofrece",
+                },
+                {
+                    title: "Mateo (UAPS)",
+                    desc: "Horarios de atención <br />  Ubicación <br />  Contactos <br />  Servicios que ofrece",
+                },
+                {
+                    title: "Santa Rosa (UAPS)",
+                    desc: "Horarios de atención <br />  Ubicación <br />  Contactos <br />  Servicios que ofrece",
+                },
+                {
+                    title: "Tizatillo (UAPS)",
+                    desc: "Horarios de atención <br />  Ubicación <br />  Contactos <br />  Servicios que ofrece",
+                },
+                {
+                    title: "Yaguacire (UAPS)",
+                    desc: "Horarios de atención <br />  Ubicación <br />  Contactos <br />  Servicios que ofrece",
+                },
             ],
         },
         {
@@ -155,11 +155,11 @@ export function Establecimientos() {
             value: "red-4",
             items: [
                 {
-                    title: "San Miguel (CIS)",
+                    title: "El Manchén (CIS)",
                     desc: "Horarios de atención <br />  Ubicación <br />  Contactos <br />  Servicios que ofrece",
                 },
                 {
-                    title: "El Manchén (CIS)",
+                    title: "San Miguel (CIS)",
                     desc: "Horarios de atención <br />  Ubicación <br />  Contactos <br />  Servicios que ofrece",
                 },
                 {
@@ -173,7 +173,7 @@ export function Establecimientos() {
                 {
                     title: "San Juancito (UAPS)",
                     desc: "Horarios de atención <br />  Ubicación <br />  Contactos <br />  Servicios que ofrece",
-                }
+                },
             ],
         },
         {
@@ -182,7 +182,31 @@ export function Establecimientos() {
             value: "red-5",
             items: [
                 {
+                    title: "El Bosque (CIS)",
+                    desc: "Horarios de atención <br />  Ubicación <br />  Contactos <br />  Servicios que ofrece",
+                },
+                {
                     title: "El Chile (CIS)",
+                    desc: "Horarios de atención <br />  Ubicación <br />  Contactos <br />  Servicios que ofrece",
+                },
+                {
+                    title: "Brisas del Picacho (UAPS)",
+                    desc: "Horarios de atención <br />  Ubicación <br />  Contactos <br />  Servicios que ofrece",
+                },
+                {
+                    title: "Carpintero (UAPS)",
+                    desc: "Horarios de atención <br />  Ubicación <br />  Contactos <br />  Servicios que ofrece",
+                },
+                {
+                    title: "Cofradía (UAPS)",
+                    desc: "Horarios de atención <br />  Ubicación <br />  Contactos <br />  Servicios que ofrece",
+                },
+                {
+                    title: "La Venta del Norte (UAPS)",
+                    desc: "Horarios de atención <br />  Ubicación <br />  Contactos <br />  Servicios que ofrece",
+                },
+                {
+                    title: "Las Pilas (UAPS)",
                     desc: "Horarios de atención <br />  Ubicación <br />  Contactos <br />  Servicios que ofrece",
                 },
                 {
@@ -197,30 +221,6 @@ export function Establecimientos() {
                     title: "Río Hondo (UAPS)",
                     desc: "Horarios de atención <br />  Ubicación <br />  Contactos <br />  Servicios que ofrece",
                 },
-                {
-                    title: "Las Pilas (UAPS)",
-                    desc: "Horarios de atención <br />  Ubicación <br />  Contactos <br />  Servicios que ofrece",
-                },
-                {
-                    title: "La Venta del Norte (UAPS)",
-                    desc: "Horarios de atención <br />  Ubicación <br />  Contactos <br />  Servicios que ofrece",
-                },
-                {
-                    title: "El Bosque (CIS)",
-                    desc: "Horarios de atención <br />  Ubicación <br />  Contactos <br />  Servicios que ofrece",
-                },
-                {
-                    title: "Cofradía (UAPS)",
-                    desc: "Horarios de atención <br />  Ubicación <br />  Contactos <br />  Servicios que ofrece",
-                },
-                {
-                    title: "Carpintero (UAPS)",
-                    desc: "Horarios de atención <br />  Ubicación <br />  Contactos <br />  Servicios que ofrece",
-                },
-                {
-                    title: "Brisas del Picacho (UAPS)",
-                    desc: "Horarios de atención <br />  Ubicación <br />  Contactos <br />  Servicios que ofrece",
-                }
             ],
         },
         {
@@ -233,11 +233,7 @@ export function Establecimientos() {
                     desc: "Horarios de atención <br />  Ubicación <br />  Contactos <br />  Servicios que ofrece",
                 },
                 {
-                    title: "Oscar A. Flores (UAPS)",
-                    desc: "Horarios de atención <br />  Ubicación <br />  Contactos <br />  Servicios que ofrece",
-                },
-                {
-                    title: "Monterrey (UAPS)",
+                    title: "La Cañada (UAPS)",
                     desc: "Horarios de atención <br />  Ubicación <br />  Contactos <br />  Servicios que ofrece",
                 },
                 {
@@ -245,13 +241,17 @@ export function Establecimientos() {
                     desc: "Horarios de atención <br />  Ubicación <br />  Contactos <br />  Servicios que ofrece",
                 },
                 {
-                    title: "La Cañada (UAPS)",
+                    title: "Monterrey (UAPS)",
+                    desc: "Horarios de atención <br />  Ubicación <br />  Contactos <br />  Servicios que ofrece",
+                },
+                {
+                    title: "Oscar A. Flores (UAPS)",
                     desc: "Horarios de atención <br />  Ubicación <br />  Contactos <br />  Servicios que ofrece",
                 },
                 {
                     title: "Solidaridad Honduras (UAPS)",
                     desc: "Horarios de atención <br />  Ubicación <br />  Contactos <br />  Servicios que ofrece",
-                }
+                },
             ],
         },
         {
@@ -268,11 +268,19 @@ export function Establecimientos() {
                     desc: "Horarios de atención <br />  Ubicación <br />  Contactos <br />  Servicios que ofrece",
                 },
                 {
+                    title: "San Benito (CIS)",
+                    desc: "Horarios de atención <br />  Ubicación <br />  Contactos <br />  Servicios que ofrece",
+                },
+                {
                     title: "Villanueva (CIS)",
                     desc: "Horarios de atención <br />  Ubicación <br />  Contactos <br />  Servicios que ofrece",
                 },
                 {
-                    title: "San Benito (CIS)",
+                    title: "Aguacate (UAPS)",
+                    desc: "Horarios de atención <br />  Ubicación <br />  Contactos <br />  Servicios que ofrece",
+                },
+                {
+                    title: "La Puerta (UAPS)",
                     desc: "Horarios de atención <br />  Ubicación <br />  Contactos <br />  Servicios que ofrece",
                 },
                 {
@@ -284,17 +292,9 @@ export function Establecimientos() {
                     desc: "Horarios de atención <br />  Ubicación <br />  Contactos <br />  Servicios que ofrece",
                 },
                 {
-                    title: "Aguacate (UAPS)",
-                    desc: "Horarios de atención <br />  Ubicación <br />  Contactos <br />  Servicios que ofrece",
-                },
-                {
                     title: "Villa Vieja (UAPS)",
                     desc: "Horarios de atención <br />  Ubicación <br />  Contactos <br />  Servicios que ofrece",
                 },
-                {
-                    title: "La Puerta (UAPS)",
-                    desc: "Horarios de atención <br />  Ubicación <br />  Contactos <br />  Servicios que ofrece",
-                }
             ],
         },
         {
@@ -302,8 +302,32 @@ export function Establecimientos() {
             label: "RED ZAMBRANO",
             value: "red-8",
             items: [
+                                {
+                    title: "Támara (CIS)",
+                    desc: "Horarios de atención <br />  Ubicación <br />  Contactos <br />  Servicios que ofrece",
+                },
                 {
                     title: "Zambrano (CIS)",
+                    desc: "Horarios de atención <br />  Ubicación <br />  Contactos <br />  Servicios que ofrece",
+                },
+                {
+                    title: "Ciudad España (UAPS)",
+                    desc: "Horarios de atención <br />  Ubicación <br />  Contactos <br />  Servicios que ofrece",
+                },
+                {
+                    title: "Divina Providencia (UAPS)",
+                    desc: "Horarios de atención <br />  Ubicación <br />  Contactos <br />  Servicios que ofrece",
+                },
+                {
+                    title: "Las Botijas (UAPS)",
+                    desc: "Horarios de atención <br />  Ubicación <br />  Contactos <br />  Servicios que ofrece",
+                },
+                {
+                    title: "Penitenciaría Nacional de Támara",
+                    desc: "Horarios de atención <br />  Ubicación <br />  Contactos <br />  Servicios que ofrece",
+                },
+                {
+                    title: "PNFAS",
                     desc: "Horarios de atención <br />  Ubicación <br />  Contactos <br />  Servicios que ofrece",
                 },
                 {
@@ -315,15 +339,7 @@ export function Establecimientos() {
                     desc: "Horarios de atención <br />  Ubicación <br />  Contactos <br />  Servicios que ofrece",
                 },
                 {
-                    title: "Las Botijas (UAPS)",
-                    desc: "Horarios de atención <br />  Ubicación <br />  Contactos <br />  Servicios que ofrece",
-                },
-                {
-                    title: "Divina Providencia (UAPS)",
-                    desc: "Horarios de atención <br />  Ubicación <br />  Contactos <br />  Servicios que ofrece",
-                },
-                {
-                    title: "Támara (CIS)",
+                    title: "San Matías (UAPS)",
                     desc: "Horarios de atención <br />  Ubicación <br />  Contactos <br />  Servicios que ofrece",
                 },
                 {
@@ -331,27 +347,11 @@ export function Establecimientos() {
                     desc: "Horarios de atención <br />  Ubicación <br />  Contactos <br />  Servicios que ofrece",
                 },
                 {
-                    title: "San Matías (UAPS)",
-                    desc: "Horarios de atención <br />  Ubicación <br />  Contactos <br />  Servicios que ofrece",
-                },
-                {
                     title: "Villa Porvenir (UAPS)",
                     desc: "Horarios de atención <br />  Ubicación <br />  Contactos <br />  Servicios que ofrece",
                 },
-                {
-                    title: "Ciudad España (UAPS)",
-                    desc: "Horarios de atención <br />  Ubicación <br />  Contactos <br />  Servicios que ofrece",
-                },
-                {
-                    title: "Penitenciaría Nacional de Támara",
-                    desc: "Horarios de atención <br />  Ubicación <br />  Contactos <br />  Servicios que ofrece",
-                },
-                {
-                    title: "PNFAS",
-                    desc: "Horarios de atención <br />  Ubicación <br />  Contactos <br />  Servicios que ofrece",
-                }
             ],
-        }
+        },
     ];
 
     const handleTabChange = () => {
@@ -360,18 +360,19 @@ export function Establecimientos() {
 
     return (
         <div>
-            
             <Tabs
                 value="red-1"
                 orientation={isVertical ? "vertical" : "horizontal"}
-                className={`pt-12 pb-12 mx-auto ${isVertical ? 'max-w-[95%]' : 'max-w-[1100px]'}`}
+                className={`pt-12 pb-12 mx-auto ${
+                    isVertical ? "max-w-[95%]" : "max-w-[1100px]"
+                }`}
                 onChange={handleTabChange}
             >
                 <TabsHeader
                     className={`bg-transparent ${
-                        isVertical 
-                            ? 'flex-col justify-start items-start w-full max-w-[200px] mr-4'
-                            : ''
+                        isVertical
+                            ? "flex-col justify-start items-start w-full max-w-[200px] mr-4"
+                            : ""
                     }`}
                     indicatorProps={{
                         className: "bg-gray-900/10 shadow-none !text-gray-900",

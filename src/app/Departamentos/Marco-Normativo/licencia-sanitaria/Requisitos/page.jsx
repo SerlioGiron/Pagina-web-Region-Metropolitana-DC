@@ -14,7 +14,7 @@ export default function Requisitos() {
                     fileURL: "/Licencia-Sanitaria/Requisitos Licencia Sanitaria/DVMNR-062, 1era.V., Requisitos de Licencia Sanitaria Nueva y Renovación CC.pdf",
                 },
                 {
-                    title: "Acuerdo Transitorio de Cuotas de Recuperación",
+                    title: "Requisitos de Modificación de Licencia Sanitaria",
                     fileURL: "/Licencia-Sanitaria/Requisitos Licencia Sanitaria/DVMNR-063, 1era.V., Requisitos de Modificación de Licencia Sanitaria CC.pdf",
                 },
             ],
