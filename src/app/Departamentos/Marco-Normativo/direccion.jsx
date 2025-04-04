@@ -16,7 +16,7 @@ export function ContactSection14({
                 <img
                     src={foto}
                     alt="map"
-                    className="h-full lg:max-h-[510px] justify-self-center"
+                    className="h-auto lg:max-h-[510px] justify-self-center"
                 />
                 <div className="w-full h-[400px] lg:h-[510px] rounded-lg overflow-hidden shadow-lg">
                     <iframe
