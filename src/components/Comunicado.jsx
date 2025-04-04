@@ -14,7 +14,7 @@ export function ComunicadoPreview({titulo, imagenPreview, descripcionCorta}) {
 
     return (
         <>
-            <Card className="h-[70vh] my-7 flex flex-row items-center justify-center gap-5 w-full mx-auto overflow-hidden shadow-[0_0_20px_rgba(0,0,0,0.1)] hover:shadow-[0_0_30px_rgba(0,0,0,0.15)] transition-shadow duration-300">                
+            <Card className="h-[70vh] my-7 flex flex-col md:flex-row  items-center justify-center gap-5 w-full mx-auto overflow-hidden shadow-[0_0_20px_rgba(0,0,0,0.1)] hover:shadow-[0_0_30px_rgba(0,0,0,0.15)] transition-shadow duration-300">                
                 <div className="h-full  overflow-hidden">
                     <img
                         src={imagenPreview}
