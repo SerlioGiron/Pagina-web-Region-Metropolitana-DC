@@ -12,7 +12,6 @@ export function StickyNavbar() {
     const [openNav, setOpenNav] = React.useState(false);
     const [navHeight, setNavHeight] = React.useState("h-[10vh]");
 
-
     React.useEffect(() => {
         window.addEventListener(
             "resize",
@@ -21,12 +20,12 @@ export function StickyNavbar() {
     }, []);
 
     React.useEffect(() => {
-      if (openNav) {
-        setNavHeight("h-auto min-h-[30vh]"); // Increase height more when menu is open
-      } else {
-        setNavHeight("h-[10vh]"); // Default height when menu is closed
-      }
-  }, [openNav]);
+        if (openNav) {
+            setNavHeight("h-auto min-h-[30vh]"); // Increase height more when menu is open
+        } else {
+            setNavHeight("h-[10vh]"); // Default height when menu is closed
+        }
+    }, [openNav]);
 
     const navList = (
         <ul className="flex flex-col gap-2 lg:flex-row lg:items-center lg:gap-6">
@@ -83,7 +82,9 @@ export function StickyNavbar() {
     );
 
     return (
-      <Navbar className={`w-full sticky top-0 z-30 mx-auto rounded-none shadow-none transition-all duration-300 h-14 sm:${navHeight} md:h-17 lg:h-20 xl:h-24 `}>
+        <Navbar
+            className={`w-full sticky top-0 z-30 mx-auto rounded-none shadow-none transition-all duration-300 h-14 sm:${navHeight} md:h-17 lg:h-20 xl:h-24 `}
+        >
             <div className="flex items-center justify-between text-blue-gray-900">
                 <Typography
                     as="a"
@@ -98,7 +99,7 @@ export function StickyNavbar() {
                 <div className="hidden lg:flex gap-4 text-blue-gray-900 sm:justify-center">
                     <Typography
                         as="a"
-                        href="#"
+                        href="https://www.facebook.com/RegionSanitariaMetropolitanaDC64/"
                         className="opacity-80 transition-opacity hover:opacity-100"
                     >
                         <svg
@@ -116,7 +117,7 @@ export function StickyNavbar() {
                     </Typography>
                     <Typography
                         as="a"
-                        href="#"
+                        href="https://www.instagram.com/region_metropolitanadc/"
                         className="opacity-80 transition-opacity hover:opacity-100"
                     >
                         <svg
@@ -134,7 +135,7 @@ export function StickyNavbar() {
                     </Typography>
                     <Typography
                         as="a"
-                        href="#"
+                        href="https://twitter.com/regionmetropol3"
                         className="opacity-80 transition-opacity hover:opacity-100"
                     >
                         <svg
@@ -146,27 +147,25 @@ export function StickyNavbar() {
                             <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
                         </svg>
                     </Typography>
+                    {/* tiktok */}
                     <Typography
                         as="a"
-                        href="#"
+                        href="https://www.tiktok.com/@regionmetropolitanadc?_t=8c2PpgYEfFG&_r=1"
                         className="opacity-80 transition-opacity hover:opacity-100"
                     >
                         <svg
                             className="h-5 w-5"
                             fill="currentColor"
-                            viewBox="0 0 24 24"
+                            viewBox="0 0 512 512"
                             aria-hidden="true"
                         >
-                            <path
-                                fillRule="evenodd"
-                                d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
-                                clipRule="evenodd"
-                            />
+                            <path d="M412.19,118.66a109.27,109.27,0,0,1-9.45-5.5,132.87,132.87,0,0,1-24.27-20.62c-18.1-20.71-24.86-41.72-27.35-56.43h.1C349.14,23.9,350,16,350.13,16H267.69V334.78c0,4.28,0,8.51-.18,12.69,0,.52-.05,1-.08,1.56,0,.23,0,.47-.05.71,0,.06,0,.12,0,.18a70,70,0,0,1-35.22,55.56,68.8,68.8,0,0,1-34.11,9c-38.41,0-69.54-31.32-69.54-70s31.13-70,69.54-70a68.9,68.9,0,0,1,21.41,3.39l.1-83.94a153.14,153.14,0,0,0-118,34.52,161.79,161.79,0,0,0-35.3,43.53c-3.48,6-16.61,30.11-18.2,69.24-1,22.21,5.67,45.22,8.85,54.73v.2c2,5.6,9.75,24.71,22.38,40.82A167.53,167.53,0,0,0,115,470.66v-.2l.2.2C155.11,497.78,199.36,496,199.36,496c7.66-.31,33.32,0,62.46-13.81,32.32-15.31,50.72-38.12,50.72-38.12a158.46,158.46,0,0,0,27.64-45.93c7.46-19.61,9.95-43.13,9.95-52.53V176.49c1,.6,14.32,9.41,14.32,9.41s19.19,12.3,49.13,20.31c21.48,5.7,50.42,6.9,50.42,6.9V131.27C453.86,132.37,433.27,129.17,412.19,118.66Z"></path>
                         </svg>
                     </Typography>
+                    {/* youtube */}
                     <Typography
                         as="a"
-                        href="#"
+                        href="https://youtube.com/@regionmetropolitanadc"
                         className="opacity-80 transition-opacity hover:opacity-100"
                     >
                         <svg
@@ -177,7 +176,7 @@ export function StickyNavbar() {
                         >
                             <path
                                 fillRule="evenodd"
-                                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10c5.51 0 10-4.48 10-10S17.51 2 12 2zm6.605 4.61a8.502 8.502 0 011.93 5.314c-.281-.054-3.101-.629-5.943-.271-.065-.141-.12-.293-.184-.445a25.416 25.416 0 00-.564-1.236c3.145-1.28 4.577-3.124 4.761-3.362zM12 3.475c2.17 0 4.154.813 5.662 2.148-.152.216-1.443 1.941-4.48 3.08-1.399-2.57-2.95-4.675-3.189-5A8.687 8.687 0 0112 3.475zm-3.633.803a53.896 53.896 0 013.167 4.935c-3.992 1.063-7.517 1.04-7.896 1.04a8.581 8.581 0 014.729-5.975zM3.453 12.01v-.26c.37.01 4.512.065 8.775-1.215.25.477.477.965.694 1.453-.109.033-.228.065-.336.098-4.404 1.42-6.747 5.303-6.942 5.629a8.522 8.522 0 01-2.19-5.705zM12 20.547a8.482 8.482 0 01-5.239-1.8c.152-.315 1.888-3.656 6.703-5.337.022-.01.033-.01.054-.022a35.318 35.318 0 011.823 6.475 8.4 8.4 0 01-3.341.684zm4.761-1.465c-.086-.52-.542-3.015-1.659-6.084 2.679-.423 5.022.271 5.314.369a8.468 8.468 0 01-3.655 5.715z"
+                                d="M21.582 7.15c-.239-1.007-.982-1.8-1.909-2.053C18.265 4.75 12 4.75 12 4.75s-6.264 0-7.673.347c-.927.254-1.67 1.046-1.909 2.053C2 8.621 2 12 2 12s0 3.379.418 4.85c.239 1.007.982 1.8 1.909 2.053C5.736 19.25 12 19.25 12 19.25s6.264 0 7.673-.347c.927-.254 1.67-1.046 1.909-2.053C22 15.379 22 12 22 12s0-3.379-.418-4.85zM9.955 14.955V9.045L15 12l-5.045 2.955z"
                                 clipRule="evenodd"
                             />
                         </svg>

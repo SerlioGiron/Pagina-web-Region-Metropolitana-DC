@@ -11,7 +11,7 @@ export function ContactSection14({
     console.log(foto);
 
     return (
-        <section className="py-8 lg:py-8 ">
+        <section className="py-8 lg:py-8">
             <div className=" px-8 py-8 grid grid-cols-1 gap-x-12 gap-y-6 lg:grid-cols-2 items-start bg-[#68c5d7]">
                 <img
                     src={foto}
@@ -30,7 +30,7 @@ export function ContactSection14({
                     ></iframe>
                 </div>
             </div>
-            <div className="mt-12 flex flex-col items-center justify-center gap-2">
+            <div className="mt-12 flex flex-col items-center justify-center gap-2 px-8 lg:px-0">
                 <div className="flex flex-col gap-4 lg:max-w-sm mx-auto">
                     <div>
                         <Typography

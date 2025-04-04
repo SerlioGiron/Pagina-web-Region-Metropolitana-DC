@@ -6,18 +6,134 @@ import {FooterWithSocialLinks} from "../../components/Footer";
 import {Galeria} from "../../components/Galeria";
 
 import {Card, CardBody, Typography} from "@material-tailwind/react";
-import {GlobeAltIcon, LightBulbIcon} from "@heroicons/react/24/solid";
+import {
+    GlobeAltIcon,
+    LightBulbIcon,
+    ChartBarIcon,
+    HeartIcon,
+    BuildingLibraryIcon,
+    AcademicCapIcon, // Reemplazo para TargetIcon
+} from "@heroicons/react/24/outline";
+
+// Componente para el Objetivo General
+const ObjetivoGeneral = () => {
+    return (
+        <Card className="shadow-lg rounded-xl w-full bg-[#68c5d7] bg-opacity-10">
+            <CardBody className="p-6 text-justify">
+                <div className="flex justify-center mb-4">
+                    <AcademicCapIcon className="w-12 h-12 text-purple-600" />
+                </div>
+                <Typography
+                    variant="h5"
+                    className="font-bold text-gray-800 mb-2 text-center"
+                >
+                    Objetivo General
+                </Typography>
+                <Typography className="text-gray-600">
+                    Fortalecer la salud de la población de la Región Sanitaria
+                    Metropolitana del Distrito Central mediante la
+                    implementación de estrategias integrales que mejoren la
+                    atención en salud materno-infantil, el control de
+                    enfermedades transmisibles y no transmisibles, y promuevan
+                    intervenciones a lo largo del curso de vida.
+                </Typography>
+            </CardBody>
+        </Card>
+    );
+};
+
+// Componente para los Objetivos Específicos
+const ObjetivosEspecificos = () => {
+    const objetivos = [
+        {
+            icon: <ChartBarIcon className="w-8 h-8 text-blue-500" />,
+            title: "Fortalecer el rol rector",
+            content:
+                "Fortalecer el rol rector de la Región Sanitaria Metropolitana del Distrito Central para proteger y mejorar la salud de la población, garantizando una coordinación efectiva con los establecimientos de salud y promoviendo políticas públicas inclusivas.",
+        },
+        {
+            icon: <HeartIcon className="w-8 h-8 text-red-500" />,
+            title: "Implementar sistema integral",
+            content:
+                "Implementar un sistema integral de atención en salud que garantice el acceso a servicios de calidad para mujeres embarazadas y niños menores de cinco años, y establecer un control efectivo de enfermedades prioritarias, con el objetivo de reducir la morbimortalidad en la Región Sanitaria Metropolitana del Distrito Central.",
+        },
+        {
+            icon: <GlobeAltIcon className="w-8 h-8 text-green-500" />,
+            title: "Desarrollar estrategias de promoción",
+            content:
+                "Desarrollar e implementar estrategias de promoción de la salud que aborden la educación y prevención en salud materno-infantil, enfermedades transmisibles y no transmisibles, así como la salud mental, bucal y ocular, para empoderar a la población del distrito central.",
+        },
+        {
+            icon: <BuildingLibraryIcon className="w-8 h-8 text-amber-500" />,
+            title: "Gestionar mejoras de infraestructura",
+            content:
+                "Desarrollar procesos de gestión internas y externas para compra de inmueble y mejoras de infraestructura en la Región Metropolitana del Distrito Central y sus diferentes establecimientos de salud que se ajusten a las necesidades de acuerdo a los servicios que se prestan a la población.",
+        },
+    ];
+
+    return (
+        <Card className="shadow-lg rounded-xl w-full mt-8 bg-[#68c5d7] bg-opacity-10">
+            <CardBody className="p-6">
+                <Typography
+                    variant="h5"
+                    className="font-bold text-gray-800 mb-6 text-center"
+                >
+                    Objetivos Específicos
+                </Typography>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    {objetivos.map((objetivo, index) => (
+                        <div
+                            key={index}
+                            className="bg-white p-4 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"
+                        >
+                            <div className="flex items-center mb-3">
+                                <div className="bg-gray-100 p-2 rounded-full mr-3">
+                                    {objetivo.icon}
+                                </div>
+                                <Typography
+                                    variant="h6"
+                                    className="font-medium text-gray-800"
+                                >
+                                    {objetivo.title}
+                                </Typography>
+                            </div>
+                            <Typography className="text-gray-600 text-sm text-justify">
+                                {objetivo.content}
+                            </Typography>
+                        </div>
+                    ))}
+                </div>
+            </CardBody>
+        </Card>
+    );
+};
+
+// Sección de Objetivos que combina los componentes anteriores
+const SeccionObjetivos = () => {
+    return (
+        <div className="px-8 py-12 bg-gray-50">
+            <Typography
+                variant="h3"
+                className="font-bold text-gray-800 mb-8 text-center"
+            >
+                Nuestros Objetivos
+            </Typography>
+            <ObjetivoGeneral />
+            <ObjetivosEspecificos />
+        </div>
+    );
+};
 
 const Mision = () => {
     return (
-        <Card className="shadow-lg rounded-xl md:w-1/2 bg-blue-50">
-            <CardBody className="p-6 text-center">
+        <Card className="shadow-lg rounded-xl md:w-1/2 bg-[#68c5d7] bg-opacity-10">
+            <CardBody className="p-6 text-justify">
                 <div className="flex justify-center mb-4">
                     <GlobeAltIcon className="w-12 h-12 text-blue-600" />
                 </div>
                 <Typography
                     variant="h5"
-                    className="font-bold text-gray-800 mb-2"
+                    className="font-bold text-gray-800 mb-2 text-center"
                 >
                     Misión
                 </Typography>
@@ -44,14 +160,14 @@ const Mision = () => {
 
 const Vision = () => {
     return (
-        <Card className="shadow-lg rounded-xl md:w-1/2 bg-green-50">
-            <CardBody className="p-6 text-center">
+        <Card className="shadow-lg rounded-xl md:w-1/2 bg-[#68c5d7] bg-opacity-10 ">
+            <CardBody className="p-6 text-justify">
                 <div className="flex justify-center mb-4">
                     <LightBulbIcon className="w-12 h-12 text-green-600" />
                 </div>
                 <Typography
                     variant="h5"
-                    className="font-bold text-gray-800 mb-2"
+                    className="font-bold text-gray-800 mb-2 text-center"
                 >
                     Visión
                 </Typography>
@@ -77,11 +193,18 @@ export default function Region() {
         <div className="max-h-[768px]">
             <StickyNavbar />
             <CarouselDefault />
-            <div className="flex flex-col md:flex-row gap-8 p-8 items-center justify-center">
+            <div className="flex flex-col md:flex-row gap-8 p-8 items-stretch justify-center">
                 <Mision />
                 <Vision />
             </div>
-            <div className="flex justify-center px-4 sm:px-6 lg:px-8">
+            <SeccionObjetivos />
+            <div className="flex justify-center flex-col items-center px-4 sm:px-6 lg:px-8 py-12 bg-gray-50">
+                <Typography
+                    variant="h3"
+                    className="font-bold text-gray-800 mb-8 text-center relative"
+                >
+                    Organigrama
+                </Typography>
                 <img
                     src="/assets/organigrama_page-0001.jpg"
                     alt="Organigrama"
