@@ -6,7 +6,7 @@ import {noticias} from "../data/noticias";
 
 export function Noticias() {
     return (
-        <div style={{height: "80vh"}} className="bg-white">
+        <div style={{height: "80vh"}} className="bg-white mb-10">
             <Carousel
                 loop={true}
                 prevArrow={({ handlePrev }) => (
@@ -52,7 +52,7 @@ export function Noticias() {
                 autoplay={false}
                 className="rounded-none"
                 navigation={({ setActiveIndex, activeIndex, length }) => (
-                    <div className="absolute bottom-5 left-2/4 z-50 flex -translate-x-2/4 gap-2">
+                    <div className="absolute bottom-0 left-2/4 z-50 flex -translate-x-2/4 gap-2">
                         {new Array(length).fill("").map((_, i) => (
                             <span
                                 key={i}

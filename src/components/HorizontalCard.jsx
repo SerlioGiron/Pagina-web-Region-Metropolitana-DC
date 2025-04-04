@@ -7,7 +7,7 @@ export function HorizontalCard({noticia}) {
     const getContent = () => {
         const content = noticia.content;
         // Use a shorter excerpt for mobile
-        const mobileLength = 150;
+        const mobileLength = 100;
         // Desktop length remains the same
         const desktopLength = 500;
 
@@ -20,30 +20,30 @@ export function HorizontalCard({noticia}) {
     const truncatedContent = getContent();
 
     return (
-        <Card className="rounded-none pt-5" shadow={false}>
+        <Card className="rounded-none pt-5 h-auto" shadow={false}>
             {/* Make card stack vertically on mobile screens */}
             <div className="flex flex-col lg:flex-row ">
                 {/* Added max-h-96 to limit image height and relative positioning for image container */}
                 <CardHeader
                     shadow={false}
                     floated={false}
-                    className="relative m-0  lg:w-2/5 shrink-0 rounded-none h-48 lg:h-96 overflow-hidden flex items-center justify-center"
+                    className="relative m-0 lg:w-2/5 shrink-0 rounded-none h-[30vh] lg:h-[75vh] overflow-hidden flex items-center justify-center"
                 >
                     <img
                         src={noticia.images[0].src}
                         alt="card-image"
-                        className=" h-full object-contain"
+                        className=" h-auto object-contain"
                     />
                 </CardHeader>
-                <CardBody className="flex flex-col h-full px-20">
+                <CardBody className="flex flex-col px-20">
                     <Typography
                         variant="h6"
                         color="gray"
                         className="mb-2 lg:mb-4 uppercase"
                     >
-                        startups
+                        NOTICIA
                     </Typography>
-                    <Typography variant="h4" color="blue-gray" className="mb-2">
+                    <Typography variant="h4" color="blue-gray" className="mb-2 text-base xs:text-lg sm:text-xl md:text-2xl lg:text-3xl">
                         {noticia.title}
                     </Typography>
                     {/* Show different content lengths based on screen size */}
@@ -53,12 +53,12 @@ export function HorizontalCard({noticia}) {
                         </Typography>
                     </div>
                     <div className="lg:hidden">
-                        <Typography color="gray" className="mb-4 font-normal">
+                        <Typography color="gray" className="mb-4 font-normal text-base xs:text-lg ">
                             {truncatedContent.mobile}
                         </Typography>
                     </div>
                     {/* Push button to bottom of card */}
-                    <div className="mt-auto">
+                    <div className="my-auto">
                         <Link
                             href={`/Blog-page?id=${noticia.id}`}
                             className="inline-block"
