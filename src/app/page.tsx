@@ -4,6 +4,7 @@ import Image from "next/image";
 import {StickyNavbar} from "../components/StickyNavbar";
 import {CarouselDefault} from "../components/Carousel.jsx";
 import {FooterWithSocialLinks} from "../components/Footer";
+import {ComunicadoPreview} from "../components/Comunicado";
 import {Carousel} from "./MTailwind";
 import {Noticias} from "../components/Noticias";
 import {YouTubeShort} from "../components/YouTubeShort";
@@ -78,11 +79,14 @@ const defaultImages = [
     },
 ];
 
+
+
 export default function Home() {
     return (
         <div className="max-h-[600px]">
             <StickyNavbar />
             <CarouselDefault images={defaultImages} />
+            <ComunicadoPreview descripcionCorta="Comunicado" imagenPreview="/comunicado/imagen1.jpg" titulo="Comunicado" />
             <YouTubeShort videoId="IUj3Hl0QTQ8" />
             <Noticias />
             <YouTubeShortCarousel />
