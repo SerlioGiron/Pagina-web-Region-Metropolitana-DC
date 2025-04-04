@@ -1,14 +1,8 @@
-'use client';
+"use client";
 import Link from "next/link";
-import {
-    Card,
-    CardHeader,
-    CardBody,
-    Typography,
-    Button,
-} from "../app/MTailwind";
-   
-export function HorizontalCard({ noticia }) {
+import {Card, CardHeader, CardBody, Typography, Button} from "../app/MTailwind";
+
+export function HorizontalCard({noticia}) {
     // Adjust content length based on screen size
     const getContent = () => {
         const content = noticia.content;
@@ -16,33 +10,37 @@ export function HorizontalCard({ noticia }) {
         const mobileLength = 150;
         // Desktop length remains the same
         const desktopLength = 500;
-        
+
         return {
             mobile: content.slice(0, mobileLength).concat("..."),
-            desktop: content.slice(0, desktopLength).concat("...")
+            desktop: content.slice(0, desktopLength).concat("..."),
         };
     };
 
     const truncatedContent = getContent();
 
     return (
-        <Card className="rounded-none w-full pt-9">
+        <Card className="rounded-none pt-5" shadow={false}>
             {/* Make card stack vertically on mobile screens */}
-            <div className="flex flex-col lg:flex-row">
+            <div className="flex flex-col lg:flex-row ">
                 {/* Added max-h-96 to limit image height and relative positioning for image container */}
                 <CardHeader
                     shadow={false}
                     floated={false}
-                    className="relative m-0 w-full lg:w-2/5 shrink-0 rounded-none h-48 lg:h-96 overflow-hidden flex items-center justify-center"
+                    className="relative m-0  lg:w-2/5 shrink-0 rounded-none h-48 lg:h-96 overflow-hidden flex items-center justify-center"
                 >
                     <img
                         src={noticia.images[0].src}
                         alt="card-image"
-                        className="w-full h-full object-contain"
+                        className=" h-full object-contain"
                     />
                 </CardHeader>
-                <CardBody className="flex flex-col h-full">
-                    <Typography variant="h6" color="gray" className="mb-2 lg:mb-4 uppercase">
+                <CardBody className="flex flex-col h-full px-20">
+                    <Typography
+                        variant="h6"
+                        color="gray"
+                        className="mb-2 lg:mb-4 uppercase"
+                    >
                         startups
                     </Typography>
                     <Typography variant="h4" color="blue-gray" className="mb-2">
@@ -61,8 +59,14 @@ export function HorizontalCard({ noticia }) {
                     </div>
                     {/* Push button to bottom of card */}
                     <div className="mt-auto">
-                        <Link href={`/Blog-page?id=${noticia.id}`} className="inline-block">
-                            <Button variant="text" className="flex items-center gap-2">
+                        <Link
+                            href={`/Blog-page?id=${noticia.id}`}
+                            className="inline-block"
+                        >
+                            <Button
+                                variant="text"
+                                className="flex items-center gap-2"
+                            >
                                 Saber Mas
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
