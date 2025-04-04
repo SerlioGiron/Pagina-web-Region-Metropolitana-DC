@@ -19,7 +19,7 @@ export function ComunicadoPreview({titulo, imagenPreview, descripcionCorta}) {
                     <img
                         src={imagenPreview}
                         alt={titulo}
-                        className="w-full h-full object-fit object-center transform hover:scale-105 transition-transform duration-500"
+                        className="h-full object-fit object-center transform hover:scale-105 transition-transform duration-500"
                     />
                 </div>
 
