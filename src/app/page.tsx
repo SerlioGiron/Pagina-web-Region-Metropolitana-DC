@@ -95,7 +95,7 @@ export default function Home() {
                 horario="Lunes a Viernes de 7:00 am a 3:00 pm"
                 telefono="2232-6443"
                 direccion="Barrio Morazán, Edificio del Centro Integral de Salud Dr. Alonso Suazo, segundo piso, esquina opuesta del Estadio Nacional Jose de la Paz Herrera Ucles, Tegucigalpa M.D.C., Honduras C.A."
-                foto="/assets/direccion-marco.jpg"
+                foto="/assets/direccion-region.jpg"
                 maps="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3869.653137007857!2d-87.2052453249034!3d14.097641786331272!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTTCsDA1JzUxLjUiTiA4N8KwMTInMDkuNiJX!5e0!3m2!1ses-419!2shn!4v1743694653585!5m2!1ses-419!2shn"
             />
             <FooterWithSocialLinks />
