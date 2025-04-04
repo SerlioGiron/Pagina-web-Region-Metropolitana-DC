@@ -11,8 +11,8 @@ export function ContactSection14({
     console.log(foto);
 
     return (
-        <section className="py-8 lg:py-8">
-            <div className=" px-8 py-8 grid grid-cols-1 gap-x-12 gap-y-6 lg:grid-cols-2 items-start bg-[#68c5d7]">
+        <section className="">
+            <div className=" px-8 py-16 grid grid-cols-1 gap-x-12 gap-y-6 lg:grid-cols-2 items-start bg-[#68c5d7]">
                 <img
                     src={foto}
                     alt="map"
