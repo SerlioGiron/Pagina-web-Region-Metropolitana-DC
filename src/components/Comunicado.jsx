@@ -2,19 +2,18 @@ import React, {useState} from "react";
 import {Typography, Card, CardBody, CardFooter} from "@material-tailwind/react";
 import {Dialog} from "../app/Departamentos/dialog";
 
-export function ComunicadoPreview({titulo, imagenPreview, descripcionCorta}) {
+export function ComunicadoPreview({titulo, imagenPreview}) {
     const [openDialog, setOpenDialog] = useState(false);
 
     // Contenido del dialog
     const comunicadoInfo = {
         title: titulo,
-        descripcion: descripcionCorta,
         imagenes: ["/comunicado/imagen1.jpg", "/comunicado/imagen2.jpg"],
     };
 
     return (
         <>
-            <Card className="h-[70vh] my-7 flex flex-col md:flex-row  items-center justify-center gap-5 w-full mx-auto overflow-hidden shadow-[0_0_20px_rgba(0,0,0,0.1)] hover:shadow-[0_0_30px_rgba(0,0,0,0.15)] transition-shadow duration-300">                
+            <Card className="h-[70vh] my-7 flex flex-col md:flex-row  items-center justify-center gap-5 w-full mx-auto overflow-hidden shadow-[0_0_20px_rgba(0,0,0,0.1)] hover:shadow-[0_0_30px_rgba(0,0,0,0.15)] transition-shadow duration-300">
                 <div className="h-full  overflow-hidden">
                     <img
                         src={imagenPreview}
@@ -23,28 +22,26 @@ export function ComunicadoPreview({titulo, imagenPreview, descripcionCorta}) {
                     />
                 </div>
 
-                <CardBody>
-                    <Typography
-                        variant="h5"
-                        color="blue-gray"
-                        className="mb-2 font-semibold"
-                    >
-                        {titulo}
-                    </Typography>
+                <div className="flex flex-col items-center justify-center">
+                    <CardBody>
+                        <Typography
+                            variant="h1"
+                            color="blue-gray"
+                            className="mb-2 font-semibold text-center text-2xl md:text-3xl lg:text-4xl italic"
+                        >
+                            {titulo}
+                        </Typography>
+                    </CardBody>
 
-                    <Typography className="text-gray-600 line-clamp-3">
-                        {descripcionCorta}
-                    </Typography>
-                </CardBody>
-
-                <CardFooter className="pt-0">
-                    <button
-                        onClick={() => setOpenDialog(true)}
-                        className="rounded-md bg-[#68c5d7] py-2 px-4 text-sm font-medium text-white shadow-md hover:bg-blue-700 transition-all"
-                    >
-                        Leer Más
-                    </button>
-                </CardFooter>
+                    <CardFooter className="pt-0">
+                        <button
+                            onClick={() => setOpenDialog(true)}
+                            className="rounded-md bg-[#68c5d7] py-2 px-4 text-sm font-medium text-white shadow-md hover:bg-blue-700 transition-all"
+                        >
+                            Leer
+                        </button>
+                    </CardFooter>
+                </div>
             </Card>
 
             {/* Dialog personalizado para mostrar las imágenes */}

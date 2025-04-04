@@ -86,7 +86,7 @@ export default function Home() {
         <div className="max-h-[600px]">
             <StickyNavbar />
             <CarouselDefault images={defaultImages} />
-            <ComunicadoPreview descripcionCorta="Comunicado" imagenPreview="/comunicado/imagen1.jpg" titulo="Comunicado" />
+            <ComunicadoPreview imagenPreview="/comunicado/imagen1.jpg" titulo="Comunicado" />
             <YouTubeShort videoId="IUj3Hl0QTQ8" />
             <Noticias />
             <YouTubeShortCarousel />
