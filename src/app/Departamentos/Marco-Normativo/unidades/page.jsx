@@ -7,6 +7,7 @@ import {
     BookOpenIcon,
     ShieldCheckIcon,
     AcademicCapIcon,
+    UserGroupIcon,
 } from "@heroicons/react/24/outline";
 import { NavbarSimple } from "@/components/NavbarMarco";
 
@@ -35,6 +36,12 @@ export default function Page() {
                     "La Unidad de Fomento Sanitario es una instancia de nivel de dirección operativa. Es la responsable de brindar la capacitación técnica sobre la normativa de atención a las personas y cualquier otra normativa sanitaria, y de brindar información sobre la normativa sanitaria a quien corresponda.",
                 icon: AcademicCapIcon,
             },
+            {
+                nombre: "Unidad de Atención al Cliente",
+                descripcion:
+                    "La Unidad de Atención al Cliente está adscrita al Departamento de Vigilancia del Marco Normativo. Es la responsable de facilitar y desarrollar los procesos para brindar atención al cliente en los diferentes trámites relacionados con licenciamiento de establecimientos y denuncias sanitarias relacionadas, canalizándolas a la instancia que corresponda para ser procesada y resuelta de conformidad.",
+                icon: UserGroupIcon,
+            }
         ],
     };
 
@@ -76,7 +83,7 @@ export default function Page() {
                 </Typography>
 
                 {/* Tarjetas de unidades */}
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 mt-8">
                     {unidadesInfo.subsecciones.map((unidad, index) => (
                         <Card
                             key={index}
