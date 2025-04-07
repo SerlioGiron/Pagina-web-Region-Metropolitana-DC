@@ -39,7 +39,7 @@ function NavList() {
                 as="li"
                 variant="small"
                 color="blue-gray"
-                className="p-1 font-medium"
+                className="p-1 font-medium uppercase"
             >
                 <a
                     href="/Departamentos/Marco-Normativo"
@@ -52,7 +52,7 @@ function NavList() {
                 as="li"
                 variant="small"
                 color="blue-gray"
-                className="p-1 font-medium"
+                className="p-1 font-medium uppercase"
             >
                 <a
                     href="#"
@@ -65,7 +65,7 @@ function NavList() {
                 as="li"
                 variant="small"
                 color="blue-gray"
-                className="p-1 font-medium"
+                className="p-1 font-medium uppercase"
             >
                 <a
                     href="/Departamentos/Marco-Normativo/unidades"
@@ -78,7 +78,7 @@ function NavList() {
                 as="li"
                 variant="small"
                 color="blue-gray"
-                className="p-1 font-medium"
+                className="p-1 font-medium uppercase"
             >
                 <a
                     href="/Departamentos/Marco-Normativo/marco-juridico"
@@ -103,7 +103,7 @@ function NavList() {
                         as="li"
                         variant="small"
                         color="blue-gray"
-                        className="p-1 font-medium cursor-pointer"
+                        className="p-1 font-medium cursor-pointer uppercase"
                     >
                         <span className="flex items-center hover:text-blue-500 transition-colors">
                             Tramites
@@ -118,7 +118,7 @@ function NavList() {
                         allowHover
                         offset={15}
                     >
-                        <MenuHandler className="flex items-center justify-between">
+                        <MenuHandler className="flex items-center justify-between uppercase">
                             <MenuItem>
                                 Licencia Sanitaria
                                 <ChevronUpIcon
@@ -135,6 +135,7 @@ function NavList() {
                         </MenuHandler>
                         <MenuList>
                             <MenuItem
+                                className="uppercase"
                                 onClick={() =>
                                     handleMenuItemClick(
                                         "/Departamentos/Marco-Normativo/licencia-sanitaria/Requisitos"
@@ -144,6 +145,7 @@ function NavList() {
                                 Requisitos
                             </MenuItem>
                             <MenuItem
+                                className="uppercase"
                                 onClick={() =>
                                     handleMenuItemClick(
                                         "/Departamentos/Marco-Normativo/licencia-sanitaria/estandares"
@@ -161,7 +163,7 @@ function NavList() {
                         allowHover
                         offset={15}
                     >
-                        <MenuHandler className="flex items-center justify-between">
+                        <MenuHandler className="flex items-center justify-between uppercase">
                             <MenuItem>
                                 Constancia de Cumplimiento de medidas
                                 ambientales
@@ -179,6 +181,7 @@ function NavList() {
                         </MenuHandler>
                         <MenuList>
                             <MenuItem
+                                className="uppercase"
                                 onClick={() =>
                                     window.open(
                                         "/medidas-ambientales/DVMNR-064, 2da.V., Requisitos de Constancia de Cumplimiento de Medidas Ambientales CC.pdf",

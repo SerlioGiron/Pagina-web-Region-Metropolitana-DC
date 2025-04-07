@@ -33,7 +33,7 @@ export function StickyNavbar() {
                 as="li"
                 variant="small"
                 color="blue-gray"
-                className="p-1 font-normal"
+                className="p-1 font-normal uppercase"
             >
                 <a href="/" className="flex items-center">
                     Inicio
@@ -43,7 +43,7 @@ export function StickyNavbar() {
                 as="li"
                 variant="small"
                 color="blue-gray"
-                className="p-1 font-normal"
+                className="p-1 font-normal uppercase"
             >
                 <a href="/SobreNosotros" className="flex items-center">
                     Sobre Nosotros
@@ -53,7 +53,7 @@ export function StickyNavbar() {
                 as="li"
                 variant="small"
                 color="blue-gray"
-                className="p-1 font-normal"
+                className="p-1 font-normal uppercase"
             >
                 <Link href="/Departamentos" className="flex items-center">
                     Departamentos y unidades
@@ -63,7 +63,7 @@ export function StickyNavbar() {
                 as="li"
                 variant="small"
                 color="blue-gray"
-                className="p-1 font-normal"
+                className="p-1 font-normal uppercase"
             >
                 <Link href="/Establecimientos" className="flex items-center">
                     Establecimientos de Salud
@@ -89,7 +89,7 @@ export function StickyNavbar() {
                 <Typography
                     as="a"
                     href="/"
-                    className="cursor-pointer py-1.5 font-medium text-sm sm:text-base"
+                    className="cursor-pointer py-1.5 font-medium text-sm sm:text-base uppercase"
                 >
                     Region Metropolitana del Distrito Central
                 </Typography>
