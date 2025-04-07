@@ -39,7 +39,7 @@ function NavList() {
                 as="li"
                 variant="small"
                 color="blue-gray"
-                className="p-1 font-medium uppercase"
+                className="p-1 font-bold uppercase "
             >
                 <a
                     href="/Departamentos/Marco-Normativo"
@@ -52,10 +52,10 @@ function NavList() {
                 as="li"
                 variant="small"
                 color="blue-gray"
-                className="p-1 font-medium uppercase"
+                className="p-1 font-bold uppercase "
             >
                 <a
-                    href="#"
+                    href="/Departamentos/Marco-Normativo/sobre-nosotros"
                     className="flex items-center hover:text-blue-500 transition-colors"
                 >
                     Sobre Nosotros
@@ -65,7 +65,7 @@ function NavList() {
                 as="li"
                 variant="small"
                 color="blue-gray"
-                className="p-1 font-medium uppercase"
+                className="p-1 font-bold uppercase "
             >
                 <a
                     href="/Departamentos/Marco-Normativo/unidades"
@@ -78,7 +78,7 @@ function NavList() {
                 as="li"
                 variant="small"
                 color="blue-gray"
-                className="p-1 font-medium uppercase"
+                className="p-1 font-bold uppercase "
             >
                 <a
                     href="/Departamentos/Marco-Normativo/marco-juridico"
@@ -87,23 +87,13 @@ function NavList() {
                     Marco Juridico
                 </a>
             </Typography>
-            {/* <Typography
-        as="li"
-        variant="small"
-        color="blue-gray"
-        className="p-1 font-medium"
-      >
-        <a href="#" className="flex items-center hover:text-blue-500 transition-colors">
-          Tramites
-        </a>
-      </Typography> */}
             <Menu>
                 <MenuHandler>
                     <Typography
                         as="li"
                         variant="small"
                         color="blue-gray"
-                        className="p-1 font-medium cursor-pointer uppercase"
+                        className="p-1 font-bold cursor-pointer uppercase"
                     >
                         <span className="flex items-center hover:text-blue-500 transition-colors">
                             Tramites
@@ -118,7 +108,7 @@ function NavList() {
                         allowHover
                         offset={15}
                     >
-                        <MenuHandler className="flex items-center justify-between uppercase">
+                        <MenuHandler className="flex items-center justify-between uppercase ">
                             <MenuItem>
                                 Licencia Sanitaria
                                 <ChevronUpIcon
@@ -135,7 +125,7 @@ function NavList() {
                         </MenuHandler>
                         <MenuList>
                             <MenuItem
-                                className="uppercase"
+                                className="uppercase font-bold"
                                 onClick={() =>
                                     handleMenuItemClick(
                                         "/Departamentos/Marco-Normativo/licencia-sanitaria/Requisitos"
@@ -145,7 +135,7 @@ function NavList() {
                                 Requisitos
                             </MenuItem>
                             <MenuItem
-                                className="uppercase"
+                                className="uppercase font-bold"
                                 onClick={() =>
                                     handleMenuItemClick(
                                         "/Departamentos/Marco-Normativo/licencia-sanitaria/estandares"
@@ -163,7 +153,7 @@ function NavList() {
                         allowHover
                         offset={15}
                     >
-                        <MenuHandler className="flex items-center justify-between uppercase">
+                        <MenuHandler className="flex items-center justify-between uppercase ">
                             <MenuItem>
                                 Constancia de Cumplimiento de medidas
                                 ambientales
@@ -181,7 +171,7 @@ function NavList() {
                         </MenuHandler>
                         <MenuList>
                             <MenuItem
-                                className="uppercase"
+                                className="uppercase font-bold"
                                 onClick={() =>
                                     window.open(
                                         "/medidas-ambientales/DVMNR-064, 2da.V., Requisitos de Constancia de Cumplimiento de Medidas Ambientales CC.pdf",
