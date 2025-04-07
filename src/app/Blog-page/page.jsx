@@ -15,7 +15,7 @@ function BlogContent() {
     return (
         <>
             <StickyNavbar />
-            <div className="justify-center items-center flex flex-col">
+            <div className="justify-center items-center flex flex-col my-10">
                 <Typography
                     as="h2"
                     variant="h2"
