@@ -1,6 +1,6 @@
 'use client';
 import React from "react";
-import {Typography, Card, CardBody, CardHeader} from "@material-tailwind/react";
+import {Typography, Card, CardBody, CardHeader, Button} from "@material-tailwind/react";
 import {StickyNavbar} from "@/components/StickyNavbar";
 import {FooterWithSocialLinks} from "@/components/Footer";
 import {
@@ -10,6 +10,7 @@ import {
     UserGroupIcon,
 } from "@heroicons/react/24/outline";
 import { NavbarSimple } from "@/components/NavbarMarco";
+import Link from "next/link";
 
 export default function Page() {
     const unidadesInfo = {
@@ -87,7 +88,7 @@ export default function Page() {
                     {unidadesInfo.subsecciones.map((unidad, index) => (
                         <Card
                             key={index}
-                            className="hover:shadow-xl transition-shadow duration-300 h-full"
+                            className="hover:shadow-xl transition-shadow duration-300 h-full flex flex-col"
                         >
                             <CardHeader
                                 floated={false}
@@ -95,7 +96,7 @@ export default function Page() {
                             >
                                 <unidad.icon className="w-10 h-10 text-white" />
                             </CardHeader>
-                            <CardBody className="p-6">
+                            <CardBody className="p-6 flex flex-col flex-grow">
                                 <Typography
                                     variant="h5"
                                     color="blue-gray"
@@ -103,9 +104,20 @@ export default function Page() {
                                 >
                                     {unidad.nombre}
                                 </Typography>
-                                <Typography className="text-gray-600">
+                                <Typography className="text-gray-600 mb-4 flex-grow">
                                     {unidad.descripcion}
                                 </Typography>
+                                {(index === 0 || index === 1) && (
+                                    <Link href={index === 0 ? "/Departamentos/Marco-Normativo/unidades/documentos" : "#"}>
+                                        <Button
+                                            variant="gradient"
+                                            color="blue"
+                                            className="mt-auto w-full"
+                                        >
+                                            Ver más información
+                                        </Button>
+                                    </Link>
+                                )}
                             </CardBody>
                         </Card>
                     ))}

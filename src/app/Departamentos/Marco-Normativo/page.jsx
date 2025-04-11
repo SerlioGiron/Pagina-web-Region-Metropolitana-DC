@@ -14,7 +14,6 @@ export default function Marco_Normativo() {
             <StickyNavbar />
             <NavbarSimple />
             <CarouselDefault />
-            <Noticias />
             <ContactSection14
                 correo="dvmn.rsmtegucigalpa@gmail.com"
                 horario="Lunes a Viernes de 7:00 am a 3:00 pm"

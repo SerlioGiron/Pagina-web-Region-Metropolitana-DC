@@ -4,7 +4,11 @@ import {
     Navbar,
     Collapse,
     Typography,
+    Menu,
+    MenuHandler,
     IconButton,
+    MenuList,
+    MenuItem,
 } from "@material-tailwind/react";
 import Link from "next/link";
 
@@ -59,25 +63,25 @@ export function StickyNavbar() {
                     Departamentos y unidades
                 </Link>
             </Typography>
-            <Typography
-                as="li"
-                variant="small"
-                color="blue-gray"
-                className="p-1 font-normal uppercase font-bold"
-            >
-                <Link href="/Establecimientos" className="flex items-center">
-                    Establecimientos de Salud
-                </Link>
-            </Typography>
-            {/* <Typography
-        as="li"
-        variant="small"
-        color="blue-gray"
-        className="p-1 font-normal"        >
-        <Link href="/Marco-Normativo" className="flex items-center">
-          Marco Normativo
-        </Link>
-      </Typography> */}
+            <Menu>
+                <MenuHandler>
+                    <Typography
+                        as="li"
+                        variant="small"
+                        color="blue-gray"
+                        className="p-1 font-normal uppercase font-bold"
+                    >
+                        <span className="flex items-center">
+                            Establecimientos de Salud
+                        </span>
+                    </Typography>
+                </MenuHandler>
+                <MenuList>
+                    <MenuItem>CSI</MenuItem>
+                    <MenuItem>UAPS</MenuItem>
+                    <MenuItem onClick={() => window.location.href = "/Establecimientos"}>REDES</MenuItem>
+                </MenuList>
+            </Menu>
         </ul>
     );
 
