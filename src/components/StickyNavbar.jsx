@@ -69,7 +69,7 @@ export function StickyNavbar() {
                         as="li"
                         variant="small"
                         color="blue-gray"
-                        className="p-1 font-normal uppercase font-bold"
+                        className="p-1 font-normal uppercase font-bold cursor-pointer"
                     >
                         <span className="flex items-center">
                             Establecimientos de Salud
