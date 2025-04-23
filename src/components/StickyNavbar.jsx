@@ -77,7 +77,7 @@ export function StickyNavbar() {
                     </Typography>
                 </MenuHandler>
                 <MenuList>
-                    <MenuItem onClick={() => window.location.href = "/Establecimientos/CSI"}>CSI</MenuItem>
+                    <MenuItem onClick={() => window.location.href = "/Establecimientos/CIS"}>CIS</MenuItem>
                     <MenuItem onClick={() => window.location.href = "/Establecimientos/UAPS"}>UAPS</MenuItem>
                     <MenuItem onClick={() => window.location.href = "/Establecimientos/Redes"}>REDES</MenuItem>
                 </MenuList>

@@ -11,20 +11,20 @@ import {
     WrenchScrewdriverIcon,
 } from "@heroicons/react/24/outline";
 
-export default function UAPS() {
+export default function CIS() {
     const servicios = [
         {
-            titulo: "Medicina general",
+            titulo: "Medicina General",
             descripcion: "Atención médica integral para pacientes de todas las edades, enfocada en el diagnóstico, tratamiento y seguimiento de condiciones de salud generales.",
             icon: HeartIcon,
         },
         {
-            titulo: "Promoción de la Salud y Prevención de riesgos y enfermedades",
+            titulo: "Promoción de la Salud y Prevención",
             descripcion: "Programas y actividades enfocados en promover estilos de vida saludables y prevenir enfermedades a través de educación y acciones comunitarias.",
             icon: UserGroupIcon,
         },
         {
-            titulo: "Visita y Atención domiciliaria",
+            titulo: "Visita y Atención Domiciliaria",
             descripcion: "Servicio de atención médica y de enfermería en el hogar del paciente, especialmente para aquellos con dificultades de movilidad.",
             icon: HeartIcon,
         },
@@ -39,24 +39,39 @@ export default function UAPS() {
             icon: HeartIcon,
         },
         {
-            titulo: "Terapia Respiratoria (Nebulización)",
+            titulo: "Terapia Respiratoria",
             descripcion: "Servicio de nebulización y tratamiento para condiciones respiratorias, incluyendo asma y otras enfermedades pulmonares.",
             icon: HeartIcon,
         },
         {
-            titulo: "Terapia de rehidratación Oral",
+            titulo: "Terapia de Rehidratación Oral",
             descripcion: "Tratamiento para la deshidratación, especialmente en casos de diarrea y vómitos, utilizando soluciones de rehidratación oral.",
             icon: HeartIcon,
         },
         {
-            titulo: "Toma de muestras para diagnóstico temprano",
-            descripcion: "Servicios de recolección de muestras para pruebas rápidas, pruebas de esputo y otros diagnósticos tempranos.",
+            titulo: "Dispensación de Medicamentos",
+            descripcion: "Servicio de entrega de medicamentos recetados, asegurando el acceso a tratamientos farmacológicos necesarios.",
+            icon: HeartIcon,
+        },
+        {
+            titulo: "Odontología General",
+            descripcion: "Atención dental integral, incluyendo prevención, diagnóstico y tratamiento de condiciones bucales.",
+            icon: HeartIcon,
+        },
+        {
+            titulo: "Laboratorio Clínico I",
+            descripcion: "Servicios básicos de laboratorio para diagnóstico, incluyendo análisis de sangre, orina y otras pruebas clínicas.",
             icon: WrenchScrewdriverIcon,
         },
         {
-            titulo: "Dispensación de medicamentos",
-            descripcion: "Servicio de entrega de medicamentos recetados, asegurando el acceso a tratamientos farmacológicos necesarios.",
+            titulo: "Atención de Partos de Bajo Riesgo",
+            descripcion: "Atención especializada para partos normales y de bajo riesgo, con personal capacitado y equipamiento necesario.",
             icon: HeartIcon,
+        },
+        {
+            titulo: "Transporte de Pacientes",
+            descripcion: "Servicio de transporte para pacientes que requieren traslado a otros centros de salud, especialmente en casos de emergencia.",
+            icon: ClockIcon,
         }
     ];
 
@@ -72,7 +87,7 @@ export default function UAPS() {
                         variant="h1"
                         className="text-3xl md:text-4xl lg:text-5xl font-bold text-blue-900 mb-4"
                     >
-                        Servicios de Salud UAPS
+                        Servicios de Salud CIS
                     </Typography>
 
                     <div className="flex justify-center">
