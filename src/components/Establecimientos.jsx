@@ -47,28 +47,28 @@ export function Establecimientos() {
             value: "red-1",
             items: [
                 {
-                    title: "Alemania (CIS)",
-                    desc: "Correo: alcon2099@gmail.com cisalemania@gmail.com <br /> Teléfono: 95647636 <br /> Código RUPS: 248",
-                },
-                {
-                    title: "Crucitas (CIS)",
-                    desc: "Correo: cesamolascrucitas@yahoo.es ixram93@gmail.com <br /> Teléfono: 33581841 <br /> Código RUPS: 221",
-                },
-                {
-                    title: "Divanna (CIS)",
-                    desc: "Correo: cisdivanna@gmail.com <br /> Teléfono: 96344996 <br /> Código RUPS: 256",
-                },
-                {
-                    title: "3 de Mayo (CIS)",
-                    desc: "Correo: cis3demayo@gmail.com lindarosarubio23@gmail.com <br /> Teléfono: 87682860 <br /> Código RUPS: 213",
-                },
-                {
                     title: "La Cuesta (UAPS)",
-                    desc: "Correo: uapscuesta@gmail.com <br /> Teléfono: 95706290 <br /> Código RUPS: 7315",
+                    desc: "Dirección: Aldea La cuesta, contiguo a aldea Felipe Calix <br /> Teléfono: No tiene <br /> Correo: uapslacuesta@gmail.com",
                 },
                 {
                     title: "San José de Soroguara (UAPS)",
-                    desc: "Correo: uapssanjosedesoroguara@gmail.com <br /> Teléfono: 33359648 <br /> Código RUPS: 272",
+                    desc: "Dirección: Aldea San José de Soroguara al lado del cementerio <br /> Teléfono: No tiene <br /> Correo: uapssanjosedesoroguara@gmail.com",
+                },
+                {
+                    title: "3 de Mayo (CIS)",
+                    desc: "Dirección: Col 3 de mayo calle principal esquina opuesta a instituto Luis Santos Comayagüela <br /> Teléfono: 22236950 <br /> Correo: Cis3mayo@gmail.com",
+                },
+                {
+                    title: "Alemania (CIS)",
+                    desc: "Dirección: Col. Alemania 3 cuadras arriba de reciclaje Diamante <br /> Teléfono: No tiene <br /> Correo: alcon2099@gmail.com",
+                },
+                {
+                    title: "Crucitas (CIS)",
+                    desc: "Dirección: Barrio las Crucitas, calle principal esquina opuesta panadería Las Crucitas, Comayagüela <br /> Teléfono: 2223-8661 <br /> Correo: cesamolascrucitas@yahoo.es",
+                },
+                {
+                    title: "Divanna (CIS)",
+                    desc: "Dirección: Col. Divanna Calle principal contiguo al centro comunal Divanna, Comayagüela <br /> Teléfono: 22273733 <br /> Correo: cisdivanna@gmail.com",
                 },
             ],
         },
@@ -78,28 +78,28 @@ export function Establecimientos() {
             value: "red-2",
             items: [
                 {
-                    title: "Centroamérica Oeste (CIS JAPÓN)",
-                    desc: "Correo: cisjapon@gmail.com <br /> Teléfono: 32158176 <br /> Código RUPS: 8443",
-                },
-                {
-                    title: "Carrizal (CIS)",
-                    desc: "Correo: dabema1964@gmail.com <br /> Teléfono: 98614612 <br /> Código RUPS: 8516",
-                },
-                {
-                    title: "Edén (CIS)",
-                    desc: "Correo: ciseledengustavobardales@gmail.com <br /> Teléfono: 33120000 <br /> Código RUPS: 264",
-                },
-                {
-                    title: "San Francisco (CIS)",
-                    desc: "Correo: cricardoez@gmail.com <br /> Teléfono: 32507373 <br /> Código RUPS: 230",
+                    title: "Nueva Capital (UAPS)",
+                    desc: "Dirección: Col. Nueva Capital, calle principal sector 2, esquina opuesta centro comercial <br /> Teléfono: No tiene <br /> Correo: uapsnuevacapital@hotmail.com",
                 },
                 {
                     title: "21 de febrero (CIS)",
-                    desc: "Correo: reyesandino_308@hotmail.com <br /> Teléfono: 95185008 <br /> Código RUPS: 81647",
+                    desc: "Dirección: Col. 21 de febrero zona 2 <br /> Teléfono: No tiene <br /> Correo: No tiene",
                 },
                 {
-                    title: "Nueva Capital (UAPS)",
-                    desc: "Correo: nuevacapitalu@gmail.com <br /> Teléfono: 95055967 <br /> Código RUPS: 85537",
+                    title: "Carrizal (CIS)",
+                    desc: "Dirección: Col. Centeno No.1 después de iglesia católica Comayagüela <br /> Teléfono: 2201-0300 <br /> Correo: cesamocarrizal@gmail.com",
+                },
+                {
+                    title: "Centroamérica Oeste (CIS JAPÓN)",
+                    desc: "Dirección: Col. Centro América Segunda entrada, frente a escuela Rubén Darío Comayagüela <br /> Teléfono: 2227-1816 <br /> Correo: No tiene",
+                },
+                {
+                    title: "Edén (CIS)",
+                    desc: "Dirección: Colonia El Edén calle principal frente a escuela Amilar Raudales <br /> Teléfono: No tiene <br /> Correo: ciseldengustavobardales@gmail.com",
+                },
+                {
+                    title: "San Francisco (CIS)",
+                    desc: "Dirección: Col. San Francisco, frente al tanque del SANAA, Comayagüela <br /> Teléfono: 22277197 <br /> Correo: cissanfrancisco@gmail.com",
                 },
             ],
         },
@@ -109,44 +109,44 @@ export function Establecimientos() {
             value: "red-3",
             items: [
                 {
-                    title: "Concepción de Río Grande (CIS)",
-                    desc: "Correo: concepcionriogrande504@gmail.com <br /> Teléfono: 32233513 <br /> Código RUPS: 8532",
-                },
-                {
-                    title: "Flor del Campo (CIS)",
-                    desc: "Correo: nidiarosibel@hotmail.com <br /> Teléfono: 99926330 <br /> Código RUPS: 27",
-                },
-                {
-                    title: "Nueva Esperanza (CIS)",
-                    desc: "Correo: pinedahectormartin1102@gmail.com <br /> Teléfono: 99769516 <br /> Código RUPS: 82546",
-                },
-                {
-                    title: "Torres (CIS)",
-                    desc: "Correo: cistorres1692@yahoo.com <br /> Teléfono: 99185612 <br /> Código RUPS: 8460",
-                },
-                {
-                    title: "Villa Adela (CIS)",
-                    desc: "Correo: cisvillaadela@gmail.com <br /> Teléfono: 99899337 <br /> Código RUPS: 60",
-                },
-                {
                     title: "Cruz Roja (UAPS)",
-                    desc: "Correo: mlopez0267@gmail.com <br /> Teléfono: 96010267 <br /> Código RUPS: 80268",
+                    desc: "Dirección: Col. Cruz Roja bloque G, lote 133 frente a escuela Meneca de Mencía Comayagüela <br /> Teléfono: No tiene <br /> Correo: uapscruzroja@gmail.com",
                 },
                 {
                     title: "Mateo (UAPS)",
-                    desc: "Correo: uapsmateo8@gmail.com <br /> Teléfono: 96015595 <br /> Código RUPS: 8478",
+                    desc: "Dirección: Aldea Mateo, frente al campo de futbol, Comayagüela <br /> Teléfono: 2229-0020 <br /> Correo: uapsmateo8@gmail.com",
                 },
                 {
                     title: "Santa Rosa (UAPS)",
-                    desc: "Correo: uapssantarosa07@gmail.com <br /> Teléfono: 98881730 <br /> Código RUPS: 82091",
+                    desc: "Dirección: Aldea Santa Rosa, Manzana 16 casa 14 Comayagüela <br /> Teléfono: No tiene <br /> Correo: uapssantarosa@gmail.com",
                 },
                 {
                     title: "Tizatillo (UAPS)",
-                    desc: "Correo: uapstizatillo@yahoo.com <br /> Teléfono: 88939650 <br /> Código RUPS: 7307",
+                    desc: "Dirección: Col. Reynel Funez, sector 2 contiguo al orfanato jardín Amigo de los niños <br /> Teléfono: No tiene <br /> Correo: No tiene",
                 },
                 {
                     title: "Yaguacire (UAPS)",
-                    desc: "Correo: incha89@hotmail.com <br /> Teléfono: 96103048 <br /> Código RUPS: 94",
+                    desc: "Dirección: Aldea Yaguacire, calle principal contiguo al centro comunal, Comayagüela <br /> Teléfono: No tiene <br /> Correo: Uapsyaguacire94@gmail.com",
+                },
+                {
+                    title: "Concepción de Río Grande (CIS)",
+                    desc: "Dirección: Col. Villeda Morales, contiguo a la represa La Concepción <br /> Teléfono: No tiene <br /> Correo: concepcionriogrande@gmail.com",
+                },
+                {
+                    title: "Flor del Campo (CIS)",
+                    desc: "Dirección: Col. Flor del Campo contiguo a posta policial <br /> Teléfono: No tiene <br /> Correo: nidiareyes@gmail.com",
+                },
+                {
+                    title: "Nueva Esperanza (CIS)",
+                    desc: "Dirección: Col. Nueva Esperanza calle principal al lado de posta policial <br /> Teléfono: 2225-0052 <br /> Correo: cisnuevae@gmail.com",
+                },
+                {
+                    title: "Torres (CIS)",
+                    desc: "Dirección: Colonia Las Torres, manzana 19 ,2 cuadras del punto de taxis Comayagüela <br /> Teléfono: No tiene <br /> Correo: Cistorres1892@yahoo.com",
+                },
+                {
+                    title: "Villa Adela (CIS)",
+                    desc: "Dirección: Barrio Villa Adela, sexta avenida, 22 y 23 calle Comayagüela <br /> Teléfono: 2225-0658 <br /> Correo: cisvillaadela@gmail.com",
                 },
             ],
         },
@@ -156,24 +156,24 @@ export function Establecimientos() {
             value: "red-4",
             items: [
                 {
-                    title: "El Manchén (CIS)",
-                    desc: "Correo: dmarissaes@hotmail.com <br /> Teléfono: 98095847 <br /> Código RUPS: 132",
-                },
-                {
-                    title: "San Miguel (CIS)",
-                    desc: "Correo: cissm1885@gmail.com <br /> Teléfono: 88909604 <br /> Código RUPS: 108",
-                },
-                {
                     title: "Jutiapa (UAPS)",
-                    desc: "Correo: uapsjutiapa@gmail.com <br /> Teléfono: 98831690 <br /> Código RUPS: 167",
+                    desc: "Dirección: Aldea Matasano contiguo a salón de la asociación campesina <br /> Teléfono: No tiene <br /> Correo: uapsjutiapa@gmail.com",
                 },
                 {
                     title: "Piligüin (UAPS)",
-                    desc: "Correo: uapspiliguin@gmail.com eveysanz@gmail.com <br /> Teléfono: 33029066 <br /> Código RUPS: 85405",
+                    desc: "Dirección: Aldea el Piligüin contiguo a la iglesia católica <br /> Teléfono: No tiene <br /> Correo: uapspiligüin@gmail.com",
                 },
                 {
                     title: "San Juancito (UAPS)",
-                    desc: "Correo: uapssanjuancito@gmail.com <br /> Teléfono: 99193091 <br /> Código RUPS: 710",
+                    desc: "Dirección: Aldea Villa de San Juancito, barrio el centro contiguo al salón Kennedy <br /> Teléfono: No tiene <br /> Correo: uapssanjuancito@gmail.com",
+                },
+                {
+                    title: "El Manchen (CIS)",
+                    desc: "Dirección: Col. El Manchen contiguo a Posta Policial <br /> Teléfono: 2222-2176 <br /> Correo: Cismanchen.hn.tgu@gmail.com",
+                },
+                {
+                    title: "San Miguel (CIS)",
+                    desc: "Dirección: Col. San Miguel calle principal, contiguo a posta de Posta policial <br /> Teléfono: No tiene <br /> Correo: Cissm1885@gmail.com",
                 },
             ],
         },
@@ -183,44 +183,44 @@ export function Establecimientos() {
             value: "red-5",
             items: [
                 {
-                    title: "El Bosque (CIS)",
-                    desc: "Correo: meadcarlos@yahoo.com <br /> Teléfono: 99851575 <br /> Código RUPS: 116",
-                },
-                {
-                    title: "El Chile (CIS)",
-                    desc: "Correo: chi.salud.rsm@gmail.com <br /> Teléfono: 88261555 <br /> Código RUPS: 124",
-                },
-                {
                     title: "Brisas del Picacho (UAPS)",
-                    desc: "Correo: averruzgiss@gmail.com <br /> Teléfono: 95960245 <br /> Código RUPS: 7391",
+                    desc: "Dirección: Col. Brisas del Picacho calle principal por el punto de taxis <br /> Teléfono: No tiene <br /> Correo: No tiene",
                 },
                 {
                     title: "Carpintero (UAPS)",
-                    desc: "Correo: uapscarpintero2023@gmail.com aritacesar16@gmail.com <br /> Teléfono: 99268730 <br /> Código RUPS: 80144",
+                    desc: "Dirección: Aldea carpintero carretera vieja a Olancho, dos cuadras de la escuela Mariano Folgar <br /> Teléfono: No tiene <br /> Correo: Uapscarpintero2023@gmail.com",
                 },
                 {
                     title: "Cofradía (UAPS)",
-                    desc: "Correo: alfredogalo91@gmail.com <br /> Teléfono: 88885467 <br /> Código RUPS: 833",
-                },
-                {
-                    title: "La Venta del Norte (UAPS)",
-                    desc: "Correo: duronolmeda@gmail.com <br /> Teléfono: 33757925 <br /> Código RUPS: 973",
+                    desc: "Dirección: Aldea Cofradía km 13 carretera a Olancho contiguo a Centro Renacer <br /> Teléfono: No tiene <br /> Correo: No tiene",
                 },
                 {
                     title: "Las Pilas (UAPS)",
-                    desc: "Correo: elviaval13@gmail.com <br /> Teléfono: 33676028 <br /> Código RUPS: 10146",
+                    desc: "Dirección: Aldea Las Pilas Distrito Central, entrada a Mata de Plátano <br /> Teléfono: No tiene <br /> Correo: laspilasuaps@gmail.com",
+                },
+                {
+                    title: "La Venta del Norte (UAPS)",
+                    desc: "Dirección: Aldea Venta del Norte km36 carretera, Olancho <br /> Teléfono: No tiene <br /> Correo: No tiene",
                 },
                 {
                     title: "Monte Redondo (UAPS)",
-                    desc: "Correo: uapsmonteredondo@gmail.com drleonardomoranf@gmail.com <br /> Teléfono: 99632825 <br /> Código RUPS: 175",
+                    desc: "Dirección: Aldea Monte redondo, carretea a Olancho, frente a escuela José Cecilio del Valle <br /> Teléfono: No tiene <br /> Correo: monteredondo2022@hotmail.com",
                 },
                 {
                     title: "Río Abajo (UAPS)",
-                    desc: "Correo: orusvela1990@yahoo.com <br /> Teléfono: 96361112 <br /> Código RUPS: 80276",
+                    desc: "Dirección: Aldea Rio abajo carretera a Olancho km 11 frente a piscinas <br /> Teléfono: No tiene <br /> Correo: No tiene",
                 },
                 {
                     title: "Río Hondo (UAPS)",
-                    desc: "Correo: jessicanellydacas@gmail.com <br /> Teléfono: 98349897 <br /> Código RUPS: 183",
+                    desc: "Dirección: Aldea Rio Hondo, carretera a Olancho km24 <br /> Teléfono: No tiene <br /> Correo: No tiene",
+                },
+                {
+                    title: "El Bosque (CIS)",
+                    desc: "Dirección: Barrio El Bosque, calle principal media cuadra antes del punto de taxis <br /> Teléfono: 2222-1756 <br /> Correo: meadcarlos@yahoo.com",
+                },
+                {
+                    title: "El Chile (CIS)",
+                    desc: "Dirección: Barrio abajo, calle Morelos casa 1255, contiguo a farmacia Pavón <br /> Teléfono: 2222-1779 <br /> Correo: ciselchile@yahoo.com",
                 },
             ],
         },
@@ -230,28 +230,28 @@ export function Establecimientos() {
             value: "red-6",
             items: [
                 {
-                    title: "Pedregal (CIS)",
-                    desc: "Correo: cispedregal051@yahoo.com <br /> Teléfono: 31556489 <br /> Código RUPS: 51",
-                },
-                {
                     title: "La Cañada (UAPS)",
-                    desc: "Correo: juliosolis3176@gmail.com <br /> Teléfono: 32768732 <br /> Código RUPS: 80136",
+                    desc: "Dirección: Aldea la cañada, anillo periférico, calle principal frente a DPI <br /> Teléfono: No tiene <br /> Correo: Cisnerzapaz01@gmail.com",
                 },
                 {
                     title: "La Joya (UAPS)",
-                    desc: "Correo: ramcasgladys@gmail.com <br /> Teléfono: 32720708 <br /> Código RUPS: 8524",
+                    desc: "Dirección: Col. La Joya al lado del instituto Pineda Gómez <br /> Teléfono: 2230-75-87 <br /> Correo: No tiene",
                 },
                 {
                     title: "Monterrey (UAPS)",
-                    desc: "Correo: zoesanchez211@gmail.com <br /> Teléfono: 99439393 <br /> Código RUPS: 141",
+                    desc: "Dirección: Col. Monterrey, esquina opuesta del instituto Monterrey <br /> Teléfono: No tiene <br /> Correo: Cismonterrey1985@gmail.com",
                 },
                 {
                     title: "Oscar A. Flores (UAPS)",
-                    desc: "Correo: uapsoscarflores@gmail.com <br /> Teléfono: 87720877 <br /> Código RUPS: 8494",
+                    desc: "Dirección: Col. Oscar A. a la par de kínder Jorge Maradiaga, Comayagüela <br /> Teléfono: 22458326 <br /> Correo: No tiene",
                 },
                 {
                     title: "Solidaridad Honduras (UAPS)",
-                    desc: "Correo: freyescalix@gmail.com <br /> Teléfono: 96105074 <br /> Código RUPS: 85235",
+                    desc: "Dirección: Col. La Peña sector 5, entrada a la colonia San Isidro, contiguo a iglesia católica <br /> Teléfono: No tiene <br /> Correo: No tiene",
+                },
+                {
+                    title: "Pedregal (CIS)",
+                    desc: "Dirección: Col Pedregal contiguo a Kínder San José Frente a campo de Futbol <br /> Teléfono: 22467035 <br /> Correo: Ciselpedregal051@yahoo.com",
                 },
             ],
         },
@@ -261,48 +261,40 @@ export function Establecimientos() {
             value: "red-7",
             items: [
                 {
-                    title: "Alonso Suazo (Policlínico)",
-                    desc: "Correo: alonsosuazo574@gmail.com <br /> Teléfono: 99383204 <br /> Código RUPS: 19",
-                },
-                {
-                    title: "Nueva Suyapa (CIS)",
-                    desc: "Correo: nsuyapacis@gmail.com <br /> Teléfono: 98645644 <br /> Código RUPS: 159",
-                },
-                {
-                    title: "San Benito (CIS)",
-                    desc: "Correo: c.sanbenitohn@gmail.com <br /> Teléfono: 87719153 <br /> Código RUPS: 35",
-                },
-                {
-                    title: "Villanueva (CIS)",
-                    desc: "Correo: cis.villanueva.rsm@gmail.com <br /> Teléfono: 89313742 <br /> Código RUPS: 8541",
-                },
-                {
-                    title: "Ciudad Mujer (CIS)",
-                    desc: "Correo: fcalix@ciudadmujer.gob.hn <br /> Teléfono: 88796849 <br /> Código RUPS: 83391",
-                },
-                {
                     title: "Aguacate (UAPS)",
-                    desc: "Correo: uapselaguacate@gmail.com <br /> Teléfono: 98154040 <br /> Código RUPS: 78",
+                    desc: "Dirección: Aldea Aguacate, montaña de Asacualpa contiguo a escuela Manuel Bonilla <br /> Teléfono: No tiene <br /> Correo: uapselaguacate@gmial.com",
                 },
                 {
                     title: "La Puerta (UAPS)",
-                    desc: "Correo: normaberrios168@gmail.com <br /> Teléfono: 32627906 <br /> Código RUPS: 81744",
+                    desc: "Dirección: Aldea La Puerta km16, montaña Asacualpa, 3 casas de pulpería Patricia <br /> Teléfono: No tiene <br /> Correo: Uaps.lapuerta@gmail.com",
                 },
                 {
                     title: "San Juan del Rancho (UAPS)",
-                    desc: "Correo: kelincanales2@gmail.com <br /> Teléfono: 87718815 <br /> Código RUPS: 191",
+                    desc: "Dirección: Aldea San Juan del Rancho contiguo a iglesia católica <br /> Teléfono: No tiene <br /> Correo: sanjuandelrancho@gmail.com",
                 },
                 {
                     title: "Santa Elena (UAPS)",
-                    desc: "Correo: ferflores@gmail.com <br /> Teléfono: 94831814 <br /> Código RUPS: 205",
+                    desc: "Dirección: Aldea Santa Elena, Montaña de Asacualpa contiguo a escuela Víctor Lozano <br /> Teléfono: 9874-9869 <br /> Correo: santaelenauaps@gmial.com",
                 },
                 {
                     title: "Villa Vieja (UAPS)",
-                    desc: "Correo: elizacapri@yahoo.com <br /> Teléfono: 99662441 <br /> Código RUPS: 81655",
+                    desc: "Dirección: Aldea Villa Vieja, km 6.5 carretera a Danlí <br /> Teléfono: No tiene <br /> Correo: Villaviejacentrosalud@gmail.com",
                 },
                 {
-                    title: "CODOPA (Clínica)",
-                    desc: "Correo: maryfigueroa_u@hotmail.com <br /> Teléfono: 994650145 <br /> Código RUPS: 19003",
+                    title: "Alonso Suazo (CIS)",
+                    desc: "Dirección: Barrio Morazán, Boulevard Suyapa contiguo al estadio nacional José de la Paz Herrera <br /> Teléfono: No tiene <br /> Correo: alonzosuazo574@gmail.com",
+                },
+                {
+                    title: "Nueva Suyapa (CIS)",
+                    desc: "Dirección: Col. Nueva Suyapa sector 1, contiguo a posta policial <br /> Teléfono: No tiene <br /> Correo: nsuyapacis@gmail.com",
+                },
+                {
+                    title: "San Benito (CIS)",
+                    desc: "Dirección: Col. Los Pinos, sector B, calle principal <br /> Teléfono: 2291-3916 <br /> Correo: c.sanbenitohn@gmail.com",
+                },
+                {
+                    title: "Villanueva (CIS)",
+                    desc: "Dirección: Colonia Villa Nueva sector 6, atrás del Técnico Honduras <br /> Teléfono: 22284891 <br /> Correo: Cisvillanueva.15m@gmail.com",
                 },
             ],
         },
@@ -312,52 +304,52 @@ export function Establecimientos() {
             value: "red-8",
             items: [
                 {
-                    title: "Támara (CIS)",
-                    desc: "Correo: oris0506@yahoo.es <br /> Teléfono: 99917994 <br /> Código RUPS: 868",
-                },
-                {
-                    title: "Zambrano (CIS)",
-                    desc: "Correo: ciszambrano92@gmail.com <br /> Teléfono: 98989978 <br /> Código RUPS: 876",
-                },
-                {
                     title: "Ciudad España (UAPS)",
-                    desc: "Correo: carolitaumanzor@hotmail.com <br /> Teléfono: 96427385 <br /> Código RUPS: 81609",
+                    desc: "Dirección: Valle de Amarateca, colonia Ciudad España, contiguo a posta policial, carretera al norte <br /> Teléfono: No tiene <br /> Correo: No tiene",
                 },
                 {
                     title: "Divina Providencia (UAPS)",
-                    desc: "Correo: divinaprovidenciauaps@gmail.com <br /> Teléfono: 98430595 <br /> Código RUPS: 82015",
+                    desc: "Dirección: Valle de Amarateca Col. Divina Providencia <br /> Teléfono: No tiene <br /> Correo: No tiene",
                 },
                 {
                     title: "Las Botijas (UAPS)",
-                    desc: "Información no disponible <br /> Código RUPS: 9407",
-                },
-                {
-                    title: "Penitenciaría Nacional de Támara (PNMAS)",
-                    desc: "Correo: Montes.asdrubal@yahoo.es <br /> Teléfono: 95103205 <br /> Código RUPS: 8842",
-                },
-                {
-                    title: "PNFAS",
-                    desc: "Correo: scarlettmaldonado18@gmail.com <br /> Teléfono: 89772694 <br /> Código RUPS: 80438",
+                    desc: "Dirección: Aldea Las Botijas Municipio Villa de San Antonio Comayagua <br /> Teléfono: No tiene <br /> Correo: No tiene",
                 },
                 {
                     title: "Río Frío (UAPS)",
-                    desc: "Correo: Sifontes2512@gmail.com <br /> Teléfono: 33373943 <br /> Código RUPS: 9431",
+                    desc: "Dirección: Aldea Bonita Valle de Amarateca, entrada principal contiguo a Sol y Arena <br /> Teléfono: No tiene <br /> Correo: riofriouaps@gmail.com",
                 },
                 {
                     title: "San Francisco de Soroguara (UAPS)",
-                    desc: "Correo: uaps_sfs_2022@outlook.com <br /> Teléfono: 96025909 <br /> Código RUPS: 850",
+                    desc: "Dirección: Aldea San Francisco de Soroguara, barrio el Centro, calle principal <br /> Teléfono: No tiene <br /> Correo: No tiene",
                 },
                 {
                     title: "San Matías (UAPS)",
-                    desc: "Correo: uaps.sanmatias@gmail.com <br /> Teléfono: 32633518 <br /> Código RUPS: 841",
+                    desc: "Dirección: Aldea San Matías, carretera al norte, calle principal <br /> Teléfono: No tiene <br /> Correo: No tiene",
                 },
                 {
                     title: "San Miguel Arcángel (UAPS)",
-                    desc: "Correo: eliops22005@gmail.com <br /> Teléfono: 99105499 <br /> Código RUPS: 82066",
+                    desc: "Dirección: Co. San Miguel Arcángel Bloque Q casa #1 <br /> Teléfono: No tiene <br /> Correo: uapssanmiguelarcabgel@gmail.com",
                 },
                 {
                     title: "Villa Porvenir (UAPS)",
-                    desc: "Correo: fcbarralagaa@gmail.com <br /> Teléfono: 33050224 <br /> Código RUPS: 80349",
+                    desc: "Dirección: Col. Villa Porvenir, Amarateca <br /> Teléfono: No tiene <br /> Correo: No tiene",
+                },
+                {
+                    title: "Támara (CIS)",
+                    desc: "Dirección: Aldea Tamara Calle Principal <br /> Teléfono: No tiene <br /> Correo: Cistamara2022@gmail.com",
+                },
+                {
+                    title: "Zambrano (CIS)",
+                    desc: "Dirección: Aldea zambrano, barrio El Centro contiguo a salón social <br /> Teléfono: No tiene <br /> Correo: Ciszambrano92@gmail.com",
+                },
+                {
+                    title: "Penitenciaría Nacional de Támara (PNMAS)",
+                    desc: "Dirección: No disponible <br /> Teléfono: No disponible <br /> Correo: No disponible",
+                },
+                {
+                    title: "PNFAS",
+                    desc: "Dirección: No disponible <br /> Teléfono: No disponible <br /> Correo: No disponible",
                 },
             ],
         },
@@ -441,3 +433,4 @@ export function Establecimientos() {
         </div>
     );
 }
+
