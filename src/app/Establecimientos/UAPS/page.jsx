@@ -1,9 +1,9 @@
-'use client';
+"use client";
 import React from "react";
 import {Typography, Card, CardBody, CardHeader} from "@material-tailwind/react";
 import {StickyNavbar} from "@/components/StickyNavbar";
 import {FooterWithSocialLinks} from "@/components/Footer";
-import { NavbarSimple } from "@/components/NavbarMarco";
+import {NavbarSimple} from "@/components/NavbarMarco";
 import {
     UserGroupIcon,
     ClockIcon,
@@ -15,49 +15,40 @@ export default function UAPS() {
     const servicios = [
         {
             titulo: "Medicina general",
-            descripcion: "Atención médica integral para pacientes de todas las edades, enfocada en el diagnóstico, tratamiento y seguimiento de condiciones de salud generales.",
             icon: HeartIcon,
         },
         {
             titulo: "Promoción de la Salud y Prevención de riesgos y enfermedades",
-            descripcion: "Programas y actividades enfocados en promover estilos de vida saludables y prevenir enfermedades a través de educación y acciones comunitarias.",
             icon: UserGroupIcon,
         },
         {
             titulo: "Visita y Atención domiciliaria",
-            descripcion: "Servicio de atención médica y de enfermería en el hogar del paciente, especialmente para aquellos con dificultades de movilidad.",
             icon: HeartIcon,
         },
         {
             titulo: "Rehabilitación con Base Comunitaria",
-            descripcion: "Programas de rehabilitación física y terapéutica integrados en la comunidad, facilitando la recuperación y reintegración social.",
             icon: WrenchScrewdriverIcon,
         },
         {
             titulo: "Vacunación",
-            descripcion: "Programa de inmunización para prevenir enfermedades infecciosas, siguiendo el esquema nacional de vacunación.",
             icon: HeartIcon,
         },
         {
             titulo: "Terapia Respiratoria (Nebulización)",
-            descripcion: "Servicio de nebulización y tratamiento para condiciones respiratorias, incluyendo asma y otras enfermedades pulmonares.",
             icon: HeartIcon,
         },
         {
             titulo: "Terapia de rehidratación Oral",
-            descripcion: "Tratamiento para la deshidratación, especialmente en casos de diarrea y vómitos, utilizando soluciones de rehidratación oral.",
             icon: HeartIcon,
         },
         {
             titulo: "Toma de muestras para diagnóstico temprano",
-            descripcion: "Servicios de recolección de muestras para pruebas rápidas, pruebas de esputo y otros diagnósticos tempranos.",
             icon: WrenchScrewdriverIcon,
         },
         {
             titulo: "Dispensación de medicamentos",
-            descripcion: "Servicio de entrega de medicamentos recetados, asegurando el acceso a tratamientos farmacológicos necesarios.",
             icon: HeartIcon,
-        }
+        },
     ];
 
     return (
@@ -80,10 +71,64 @@ export default function UAPS() {
                     </div>
                 </div>
 
+                {/* Información general */}
+                <div className="mb-12 bg-white p-8 rounded-lg shadow-lg">
+
+                    <Typography
+                        variant="h3"
+                        className="text-xl font-semibold text-blue-800 mb-4"
+                    >
+                        Categoría Ambulatorio del Primer Nivel de Atención con
+                        Escalón de Complejidad 1.
+                    </Typography>
+
+                    <Typography
+                        variant="h4"
+                        className="text-lg font-semibold text-blue-700 mb-4"
+                    >
+                        UNIDAD DE ATENCION PRIMARIA DE SALUD (UAPS)
+                    </Typography>
+
+                    <Typography className="text-gray-700 mb-4">
+                        Establecimiento de salud, del Primer Nivel de Atención,
+                        de Complejidad 1, ambulatorio.
+                    </Typography>
+
+                    <Typography className="text-gray-700 mb-4">
+                        Su horario es de 8 horas, con servicios integrales de
+                        medicina general, con énfasis en la promoción y
+                        protección de la salud, prevención, atención y control
+                        de enfermedades, riesgos y daños a la salud de menor
+                        severidad, y de rehabilitación basada en la comunidad.
+                    </Typography>
+
+                    <Typography className="text-gray-700 mb-4">
+                        Fomenta la participacion de la comunidad, mantiene
+                        contacto directo y permanente con autoridades locales.
+                        Agentes intersectoriales, organizaciones comunitarias
+                        vinculadas o no al sector salud, y con los Agentes
+                        Comunitarios de Salud, en el marco de la APS.
+                    </Typography>
+
+                    <Typography className="text-gray-700 mb-4">
+                        Todo el personal del Establecimiento de Salud es el
+                        Equipo de Salud Familiar, responsable del cuidado de la
+                        salud de las familias asignadas bajo su responsabilidad.
+                    </Typography>
+
+                    <Typography className="text-gray-700">
+                        Este funcionará de acuerdo a los lineamientos
+                        establecidos por la SESAL
+                    </Typography>
+                </div>
+
                 {/* Grid de servicios */}
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
                     {servicios.map((servicio, index) => (
-                        <Card key={index} className="hover:shadow-xl transition-shadow duration-300">
+                        <Card
+                            key={index}
+                            className="hover:shadow-xl transition-shadow duration-300"
+                        >
                             <CardHeader
                                 floated={false}
                                 className="h-16 bg-gradient-to-r from-blue-600 to-cyan-500 flex items-center justify-center"
@@ -97,9 +142,6 @@ export default function UAPS() {
                                     className="mb-3 font-semibold"
                                 >
                                     {servicio.titulo}
-                                </Typography>
-                                <Typography className="text-gray-600">
-                                    {servicio.descripcion}
                                 </Typography>
                             </CardBody>
                         </Card>

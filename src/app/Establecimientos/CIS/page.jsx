@@ -1,9 +1,9 @@
-'use client';
+"use client";
 import React from "react";
 import {Typography, Card, CardBody, CardHeader} from "@material-tailwind/react";
 import {StickyNavbar} from "@/components/StickyNavbar";
 import {FooterWithSocialLinks} from "@/components/Footer";
-import { NavbarSimple } from "@/components/NavbarMarco";
+import {NavbarSimple} from "@/components/NavbarMarco";
 import {
     UserGroupIcon,
     ClockIcon,
@@ -15,64 +15,52 @@ export default function CIS() {
     const servicios = [
         {
             titulo: "Medicina General",
-            descripcion: "Atención médica integral para pacientes de todas las edades, enfocada en el diagnóstico, tratamiento y seguimiento de condiciones de salud generales.",
             icon: HeartIcon,
         },
         {
             titulo: "Promoción de la Salud y Prevención",
-            descripcion: "Programas y actividades enfocados en promover estilos de vida saludables y prevenir enfermedades a través de educación y acciones comunitarias.",
             icon: UserGroupIcon,
         },
         {
             titulo: "Visita y Atención Domiciliaria",
-            descripcion: "Servicio de atención médica y de enfermería en el hogar del paciente, especialmente para aquellos con dificultades de movilidad.",
             icon: HeartIcon,
         },
         {
             titulo: "Rehabilitación con Base Comunitaria",
-            descripcion: "Programas de rehabilitación física y terapéutica integrados en la comunidad, facilitando la recuperación y reintegración social.",
             icon: WrenchScrewdriverIcon,
         },
         {
             titulo: "Vacunación",
-            descripcion: "Programa de inmunización para prevenir enfermedades infecciosas, siguiendo el esquema nacional de vacunación.",
             icon: HeartIcon,
         },
         {
             titulo: "Terapia Respiratoria",
-            descripcion: "Servicio de nebulización y tratamiento para condiciones respiratorias, incluyendo asma y otras enfermedades pulmonares.",
             icon: HeartIcon,
         },
         {
             titulo: "Terapia de Rehidratación Oral",
-            descripcion: "Tratamiento para la deshidratación, especialmente en casos de diarrea y vómitos, utilizando soluciones de rehidratación oral.",
             icon: HeartIcon,
         },
         {
             titulo: "Dispensación de Medicamentos",
-            descripcion: "Servicio de entrega de medicamentos recetados, asegurando el acceso a tratamientos farmacológicos necesarios.",
             icon: HeartIcon,
         },
         {
             titulo: "Odontología General",
-            descripcion: "Atención dental integral, incluyendo prevención, diagnóstico y tratamiento de condiciones bucales.",
             icon: HeartIcon,
         },
         {
             titulo: "Laboratorio Clínico I",
-            descripcion: "Servicios básicos de laboratorio para diagnóstico, incluyendo análisis de sangre, orina y otras pruebas clínicas.",
             icon: WrenchScrewdriverIcon,
         },
         {
             titulo: "Atención de Partos de Bajo Riesgo",
-            descripcion: "Atención especializada para partos normales y de bajo riesgo, con personal capacitado y equipamiento necesario.",
             icon: HeartIcon,
         },
         {
             titulo: "Transporte de Pacientes",
-            descripcion: "Servicio de transporte para pacientes que requieren traslado a otros centros de salud, especialmente en casos de emergencia.",
             icon: ClockIcon,
-        }
+        },
     ];
 
     return (
@@ -95,10 +83,51 @@ export default function CIS() {
                     </div>
                 </div>
 
+                {/* Información general */}
+                <div className="mb-12 bg-white p-8 rounded-lg shadow-lg">
+                    
+                    <Typography
+                        variant="h3"
+                        className="text-xl font-semibold text-blue-800 mb-4"
+                    >
+                        Categoría Ambulatorio del Primer Nivel de Atención con Escalón de Complejidad 2.
+                    </Typography>
+
+                    <Typography
+                        variant="h4"
+                        className="text-lg font-semibold text-blue-700 mb-4"
+                    >
+                        CENTRO INTEGRAL DE SALUD (CIS)
+                    </Typography>
+
+                    <Typography className="text-gray-700 mb-4">
+                        Establecimiento de Salud, del Primer Nivel de Atención, de complejidad 2, ambulatorio, centro de referencia de la Red a la que pertenece, por lo que atiende referencias de Establecimientos Tipo I (Unidad de Atención Primaria de Salud UAPS).
+                    </Typography>
+
+                    <Typography className="text-gray-700 mb-4">
+                        Su horario de atención es de 8 horas, con servicios integrales de medicina general para atención de la morbilidad prevalente de la red a la que pertenece, odontología general, laboratorio, farmacia; hace énfasis en la promoción y protección de la salud, prevención y control de enfermedades, riesgos y daños a la salud, de mediana severidad, y rehabilitación con base comunitaria.
+                    </Typography>
+
+                    <Typography className="text-gray-700 mb-4">
+                        Fomenta la participación de la comunidad, mantiene contacto directo y permanente con autoridades locales. Agentes intersectoriales, organizaciones comunitarias vinculadas o no al sector salud, y los Agentes Comunitarios de Salud, en el marco de la APS.
+                    </Typography>
+
+                    <Typography className="text-gray-700 mb-4">
+                        Todo el personal del Establecimiento de Salud es el equipo de Salud Familiar, responsable del cuidado de la salud de las familias asignadas bajo su responsabilidad.
+                    </Typography>
+
+                    <Typography className="text-gray-700">
+                        Puede o no brindar atencion de partos de bajo riesgo, las 24 horas, como un servicio excepcional.
+                    </Typography>
+                </div>
+
                 {/* Grid de servicios */}
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
                     {servicios.map((servicio, index) => (
-                        <Card key={index} className="hover:shadow-xl transition-shadow duration-300">
+                        <Card
+                            key={index}
+                            className="hover:shadow-xl transition-shadow duration-300"
+                        >
                             <CardHeader
                                 floated={false}
                                 className="h-16 bg-gradient-to-r from-blue-600 to-cyan-500 flex items-center justify-center"
@@ -112,9 +141,6 @@ export default function CIS() {
                                     className="mb-3 font-semibold"
                                 >
                                     {servicio.titulo}
-                                </Typography>
-                                <Typography className="text-gray-600">
-                                    {servicio.descripcion}
                                 </Typography>
                             </CardBody>
                         </Card>

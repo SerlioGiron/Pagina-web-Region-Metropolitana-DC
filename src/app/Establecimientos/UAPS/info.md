@@ -1,5 +1,3 @@
-# Nivel de Atención, Categoría, Escalón de Complejidad y nueva Denominación
-
 ## Categoría Ambulatorio del Primer Nivel de Atención con Escalón de Complejidad 1.
 
 ### UNIDAD DE ATENCION PRIMARIA DE SALUD (UAPS)
@@ -13,10 +11,6 @@ Fomenta la participacion de la comunidad, mantiene contacto directo y permanente
 Todo el personal del Establecimiento de Salud es el Equipo de Salud Familiar, responsable del cuidado de la salud de las familias asignadas bajo su responsabilidad.
 
 Este funcionará de acuerdo a los lineamientos establecidos por la SESAL
-
-# Recursos Humanos
-
-Médico (a) General. Auxiliar de enfermería. Un promotor (a) de Salud por cada 300 familias.
 
 # Servicios de
 Medicina general.
