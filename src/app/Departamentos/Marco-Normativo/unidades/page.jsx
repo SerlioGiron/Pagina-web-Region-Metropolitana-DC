@@ -108,7 +108,7 @@ export default function Page() {
                                     {unidad.descripcion}
                                 </Typography>
                                 {(index === 0 || index === 1) && (
-                                    <Link href={index === 0 ? "/Departamentos/Marco-Normativo/unidades/documentos" : "#"}>
+                                    <Link href={index === 0 ? "/Departamentos/Marco-Normativo/unidades/documentos" : "/Departamentos/Marco-Normativo/unidades/normativa"}>
                                         <Button
                                             variant="gradient"
                                             color="blue"
