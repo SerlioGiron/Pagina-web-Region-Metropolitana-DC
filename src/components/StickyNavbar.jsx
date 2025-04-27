@@ -87,16 +87,20 @@ export function StickyNavbar() {
 
     return (
         <Navbar
-            className={`w-full sticky top-0 z-30 mx-auto rounded-none shadow-none transition-all duration-300 h-14 sm:${navHeight} md:h-17 lg:h-20 xl:h-24 `}
+            // className={`w-full sticky top-0 z-30 mx-auto rounded-none shadow-none transition-all duration-300 h-14 sm:${navHeight} md:h-17 lg:h-20 xl:h-24 `}
+            className={`w-full sticky top-0 z-30 mx-auto rounded-none shadow-none transition-all duration-300 h-[15 vh] `}
         >
             <div className="flex items-center justify-between text-blue-gray-900">
-                <Typography
-                    as="a"
+                <a
                     href="/"
-                    className="cursor-pointer py-1.5 font-medium text-sm sm:text-base uppercase font-bold"
+                    className="cursor-pointer"
                 >
-                    Region Metropolitana del Distrito Central
-                </Typography>
+                    <img 
+                        src="/assets/logo RSM-DC BG.png" 
+                        alt="Región Sanitaria del Distrito Central" 
+                        className="h-[10vh] w-auto"
+                    />
+                </a>
                 <div className="hidden lg:flex justify-center w-full">
                     {navList}
                 </div>
