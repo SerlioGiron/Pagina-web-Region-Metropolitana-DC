@@ -37,7 +37,7 @@ export function StickyNavbar() {
                 as="li"
                 variant="small"
                 color="blue-gray"
-                className="p-1 font-normal uppercase font-bold"
+                className="p-1 font-normal uppercase font-bold text-[#005f6b]"
             >
                 <a href="/" className="flex items-center">
                     Inicio
@@ -47,7 +47,7 @@ export function StickyNavbar() {
                 as="li"
                 variant="small"
                 color="blue-gray"
-                className="p-1 font-normal uppercase font-bold"
+                className="p-1 font-normal uppercase font-bold text-[#005f6b]"
             >
                 <a href="/SobreNosotros" className="flex items-center">
                     Sobre Nosotros
@@ -57,7 +57,7 @@ export function StickyNavbar() {
                 as="li"
                 variant="small"
                 color="blue-gray"
-                className="p-1 font-normal uppercase font-bold"
+                className="p-1 font-normal uppercase font-bold text-[#005f6b]"
             >
                 <Link href="/Departamentos" className="flex items-center">
                     Departamentos y unidades
@@ -69,7 +69,7 @@ export function StickyNavbar() {
                         as="li"
                         variant="small"
                         color="blue-gray"
-                        className="p-1 font-normal uppercase font-bold cursor-pointer"
+                        className="p-1 font-normal uppercase font-bold cursor-pointer text-[#005f6b]"
                     >
                         <span className="flex items-center">
                             Establecimientos de Salud
@@ -117,7 +117,7 @@ export function StickyNavbar() {
                         className="opacity-80 transition-opacity hover:opacity-100"
                     >
                         <svg
-                            className="h-5 w-5"
+                            className="h-5 w-5 text-[#005f6b]"
                             fill="currentColor"
                             viewBox="0 0 24 24"
                             aria-hidden="true"
@@ -135,7 +135,7 @@ export function StickyNavbar() {
                         className="opacity-80 transition-opacity hover:opacity-100"
                     >
                         <svg
-                            className="h-5 w-5"
+                            className="h-5 w-5 text-[#005f6b]"
                             fill="currentColor"
                             viewBox="0 0 24 24"
                             aria-hidden="true"
@@ -153,7 +153,7 @@ export function StickyNavbar() {
                         className="opacity-80 transition-opacity hover:opacity-100"
                     >
                         <svg
-                            className="h-5 w-5"
+                            className="h-5 w-5 text-[#005f6b]"
                             fill="currentColor"
                             viewBox="0 0 24 24"
                             aria-hidden="true"
@@ -168,7 +168,7 @@ export function StickyNavbar() {
                         className="opacity-80 transition-opacity hover:opacity-100"
                     >
                         <svg
-                            className="h-5 w-5"
+                            className="h-5 w-5 text-[#005f6b]"
                             fill="currentColor"
                             viewBox="0 0 512 512"
                             aria-hidden="true"
@@ -183,7 +183,7 @@ export function StickyNavbar() {
                         className="opacity-80 transition-opacity hover:opacity-100"
                     >
                         <svg
-                            className="h-5 w-5"
+                            className="h-5 w-5 text-[#005f6b]"
                             fill="currentColor"
                             viewBox="0 0 24 24"
                             aria-hidden="true"

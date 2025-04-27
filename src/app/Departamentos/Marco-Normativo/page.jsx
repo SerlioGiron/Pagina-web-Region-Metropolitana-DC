@@ -7,13 +7,22 @@ import {FooterWithSocialLinks} from "../../../components/Footer";
 import {DescargasTab} from "../../../components/Descargas";
 import {NavbarSimple} from "../../../components/NavbarMarco";
 import {ContactSection14} from "./direccion";
+import Image from 'next/image';
 
 export default function Marco_Normativo() {
     return (
         <div className="max-h-[768px]">
             <StickyNavbar />
             <NavbarSimple />
-            <CarouselDefault />
+            <div className="w-full flex justify-center my-8">
+                <Image
+                    src="/assets/marco-normativo.jpg"
+                    alt="Equipo de trabajo Marco Normativo"
+                    width={1024}
+                    height={576}
+                    className="rounded-lg shadow-lg"
+                />
+            </div>
             <ContactSection14
                 correo="dvmn.rsmtegucigalpa@gmail.com"
                 horario="Lunes a Viernes de 7:00 am a 3:00 pm"

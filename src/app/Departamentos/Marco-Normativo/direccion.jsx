@@ -12,7 +12,7 @@ export function ContactSection14({
 
     return (
         <section className="">
-            <div className=" px-8 py-16 grid grid-cols-1 gap-x-12 gap-y-6 lg:grid-cols-2 items-start bg-[#68c5d7]">
+            <div className=" px-8 py-16 grid grid-cols-1 gap-x-12 gap-y-6 lg:grid-cols-2 items-center bg-[#68c5d7]">
                 <img
                     src={foto}
                     alt="map"
