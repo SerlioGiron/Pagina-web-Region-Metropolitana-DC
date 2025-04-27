@@ -1,5 +1,5 @@
 import {Typography} from "@material-tailwind/react";
-const links = [{name:"Inicio", link:"/"}, {name:"Sobre Nosotros", link:"/SobreNosotros"}, {name:"Departamentos y unidades", link:"/Departamentos"}, {name:"Establecimientos de Salud", link:"/Establecimientos"}];
+const links = [{name:"Inicio", link:"/"}, {name:"Sobre Nosotros", link:"/SobreNosotros"}, {name:"Departamentos y unidades", link:"/Departamentos"}, {name:"Establecimientos de Salud", link:"/Establecimientos/Redes"}];
 const currentYear = new Date().getFullYear();
 
 export function FooterWithSocialLinks() {
