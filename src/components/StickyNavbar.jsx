@@ -88,22 +88,28 @@ export function StickyNavbar() {
     return (
         <Navbar
             // className={`w-full sticky top-0 z-30 mx-auto rounded-none shadow-none transition-all duration-300 h-14 sm:${navHeight} md:h-17 lg:h-20 xl:h-24 `}
-            className={`w-full sticky top-0 z-30 mx-auto rounded-none shadow-none transition-all duration-300 h-[15 vh] `}
+            className={`w-full sticky top-0 z-30 mx-auto rounded-none shadow-none transition-all duration-300 h-[15vh] `}
         >
             <div className="flex items-center justify-between text-blue-gray-900">
+                
+                {/* Logo */}
                 <a
                     href="/"
-                    className="cursor-pointer"
+                    className="cursor-pointer flex items-center h-full"
                 >
                     <img 
                         src="/assets/logo RSM-DC BG.png" 
                         alt="Región Sanitaria del Distrito Central" 
-                        className="h-[10vh] w-auto"
+                        className="h-[10vh] w-auto object-contain max-w-[200px] sm:max-w-[250px] md:max-w-[300px] lg:max-w-[350px]"
                     />
                 </a>
+
+                {/* Subtitulos */}
                 <div className="hidden lg:flex justify-center w-full">
                     {navList}
                 </div>
+
+                {/* Redes Sociales */}
                 <div className="hidden lg:flex gap-4 text-blue-gray-900 sm:justify-center">
                     <Typography
                         as="a"
@@ -190,6 +196,8 @@ export function StickyNavbar() {
                         </svg>
                     </Typography>
                 </div>
+
+                {/* En celular */}
                 <IconButton
                     variant="text"
                     className="ml-auto h-6 w-6 text-inherit hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden"
