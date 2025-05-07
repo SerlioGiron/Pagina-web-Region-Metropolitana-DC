@@ -58,7 +58,7 @@ export default function Page() {
                             floated={false}
                             className="h-16 bg-gradient-to-r from-blue-600 to-cyan-500 flex items-center justify-center"
                         >
-                            <BookOpenIcon className="w-10 h-10 text-white" />
+                            <img src="/assets/mision.png" alt="Misión" className="w-auto h-4/5" />
                         </CardHeader>
                         <CardBody className="p-6 md:p-8">
                             <Typography className="text-gray-700 leading-relaxed text-center">
@@ -93,7 +93,7 @@ export default function Page() {
                             floated={false}
                             className="h-16 bg-gradient-to-r from-blue-600 to-cyan-500 flex items-center justify-center"
                         >
-                            <EyeIcon className="w-10 h-10 text-white" />
+                            <img src="/assets/vision.png" alt="Visión" className="w-auto h-4/5" />
                         </CardHeader>
                         <CardBody className="p-6 md:p-8">
                             <Typography className="text-gray-700 leading-relaxed text-center">
