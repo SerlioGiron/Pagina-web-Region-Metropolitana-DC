@@ -344,11 +344,11 @@ export function Establecimientos() {
                     desc: "Dirección: Aldea zambrano, barrio El Centro contiguo a salón social <br /> Teléfono: No tiene <br /> Correo: Ciszambrano92@gmail.com",
                 },
                 {
-                    title: "Penitenciaría Nacional de Támara (PNMAS)",
+                    title: "Centro Penitenciarío Nacional de Támara (PNMAS)",
                     desc: "Dirección: No disponible <br /> Teléfono: No disponible <br /> Correo: No disponible",
                 },
                 {
-                    title: "PNFAS",
+                    title: "Penitenciaria Nacional Femenina de Adaptación Social (PNFAS)",
                     desc: "Dirección: No disponible <br /> Teléfono: No disponible <br /> Correo: No disponible",
                 },
             ],

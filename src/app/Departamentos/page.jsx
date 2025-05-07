@@ -19,7 +19,10 @@ const UnitCard = ({title, link, descripcion, subsecciones, tipo}) => {
             <Card
                 className="shadow-md rounded-xl cursor-pointer"
                 onClick={() => {
-                    if (title === "Departamento de Vigilancia del Marco Normativo") {
+                    if (
+                        title ===
+                        "Departamento de Vigilancia del Marco Normativo"
+                    ) {
                         window.location.href = "/Departamentos/Marco-Normativo";
                     } else {
                         handleClick();
@@ -53,7 +56,7 @@ export default function Departamentos() {
         <div className=" items-center">
             <StickyNavbar />
             <Typography className="text-2xl font-bold text-gray-800 text-center pt-8">
-                Unidades y Departamentos
+                Departamentos y unidades
             </Typography>
             <div className="p-4 md:p-8 lg:p-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {units.map((unit, index) => (

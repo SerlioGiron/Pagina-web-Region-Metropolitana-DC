@@ -54,7 +54,6 @@ export default function UAPS() {
     return (
         <div className="min-h-screen bg-gray-50">
             <StickyNavbar />
-            <NavbarSimple />
 
             <div className="container mx-auto px-4 py-8">
                 {/* Encabezado principal */}

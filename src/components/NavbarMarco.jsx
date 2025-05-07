@@ -84,7 +84,7 @@ function NavList() {
                     href="/Departamentos/Marco-Normativo/marco-juridico"
                     className="flex items-center hover:text-blue-500 transition-colors"
                 >
-                    Marco Juridico
+                    Marco Jurídico
                 </a>
             </Typography>
             <Menu>
@@ -96,7 +96,7 @@ function NavList() {
                         className="p-1 font-bold cursor-pointer uppercase text-[#4cc7d7]"
                     >
                         <span className="flex items-center hover:text-blue-500 transition-colors">
-                            Tramites
+                            Trámites
                         </span>
                     </Typography>
                 </MenuHandler>
@@ -142,7 +142,7 @@ function NavList() {
                                     )
                                 }
                             >
-                                Estandares
+                                Estándares
                             </MenuItem>
                         </MenuList>
                     </Menu>
