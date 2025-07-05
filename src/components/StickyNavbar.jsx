@@ -27,7 +27,7 @@ export function StickyNavbar() {
         if (openNav) {
             setNavHeight("h-auto min-h-[30vh]"); // Increase height more when menu is open
         } else {
-            setNavHeight("h-[10vh]"); // Default height when menu is closed
+            setNavHeight("h-[15vh]"); // Default height when menu is closed
         }
     }, [openNav]);
 
@@ -87,8 +87,7 @@ export function StickyNavbar() {
 
     return (
         <Navbar
-            // className={`w-full sticky top-0 z-30 mx-auto rounded-none shadow-none transition-all duration-300 h-14 sm:${navHeight} md:h-17 lg:h-20 xl:h-24 `}
-            className={`w-full sticky top-0 z-30 mx-auto rounded-none shadow-none transition-all duration-300 h-[15vh] `}
+            className={`w-full sticky top-0 z-30 mx-auto rounded-none shadow-none transition-all duration-300 ${navHeight}`}
         >
             <div className="flex items-center justify-between text-blue-gray-900">
                 
@@ -243,7 +242,7 @@ export function StickyNavbar() {
                 </IconButton>
             </div>
             <Collapse open={openNav}>
-                <div className="flex justify-center">{navList}</div>
+                <div className="flex justify-center py-4">{navList}</div>
             </Collapse>
         </Navbar>
     );
