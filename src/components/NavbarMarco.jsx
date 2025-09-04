@@ -13,11 +13,14 @@ import {
 } from "@material-tailwind/react";
 import {Bars3Icon, XMarkIcon} from "@heroicons/react/24/outline";
 import {ChevronUpIcon} from "@heroicons/react/24/solid";
+import Link from "next/link";
+import {useRouter} from "next/navigation";
 
 function NavList() {
     const [openMenu, setOpenMenu] = React.useState(false);
     const [openMenu2, setOpenMenu2] = React.useState(false);
     const [isMobile, setIsMobile] = React.useState(false);
+    const router = useRouter();
 
     React.useEffect(() => {
         const checkIfMobile = () => {
@@ -30,7 +33,7 @@ function NavList() {
     }, []);
 
     const handleMenuItemClick = (url) => {
-        window.location.href = url;
+        router.push(url);
     };
 
     return (
@@ -41,12 +44,12 @@ function NavList() {
                 color="blue-gray"
                 className="p-1 font-bold uppercase text-[#4cc7d7]"
             >
-                <a
+                <Link
                     href="/Departamentos/Marco-Normativo"
                     className="flex items-center hover:text-blue-500 transition-colors"
                 >
                     Inicio
-                </a>
+                </Link>
             </Typography>
             <Typography
                 as="li"
@@ -54,12 +57,12 @@ function NavList() {
                 color="blue-gray"
                 className="p-1 font-bold uppercase text-[#4cc7d7]"
             >
-                <a
+                <Link
                     href="/Departamentos/Marco-Normativo/sobre-nosotros"
                     className="flex items-center hover:text-blue-500 transition-colors"
                 >
                     Sobre Nosotros
-                </a>
+                </Link>
             </Typography>
             <Typography
                 as="li"
@@ -67,12 +70,12 @@ function NavList() {
                 color="blue-gray"
                 className="p-1 font-bold uppercase text-[#4cc7d7]"
             >
-                <a
+                <Link
                     href="/Departamentos/Marco-Normativo/unidades"
                     className="flex items-center hover:text-blue-500 transition-colors"
                 >
                     Unidades
-                </a>
+                </Link>
             </Typography>
             <Typography
                 as="li"
@@ -80,12 +83,12 @@ function NavList() {
                 color="blue-gray"
                 className="p-1 font-bold uppercase text-[#4cc7d7]"
             >
-                <a
+                <Link
                     href="/Departamentos/Marco-Normativo/marco-juridico"
                     className="flex items-center hover:text-blue-500 transition-colors"
                 >
                     Marco Jurídico
-                </a>
+                </Link>
             </Typography>
             <Menu>
                 <MenuHandler>

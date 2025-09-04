@@ -1,36 +1,104 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Página Web - Región Sanitaria Metropolitana DC
 
-## Getting Started
+Esta es una aplicación web desarrollada con [Next.js](https://nextjs.org) para la Región Sanitaria Metropolitana del Distrito Central.
 
-First, run the development server:
+## Desarrollo Local
+
+Para ejecutar el proyecto en modo desarrollo:
 
 ```bash
 npm run dev
-# or
+# o
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Abre [http://localhost:3000](http://localhost:3000) en tu navegador.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Build para Producción
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Para servidores con Node.js
+```bash
+npm run build
+npm run start
+```
 
-## Learn More
+### Para servidores NGINX (exportación estática)
 
-To learn more about Next.js, take a look at the following resources:
+El proyecto está configurado para exportarse como sitio estático compatible con NGINX.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+# Build normal para servidores web (NGINX, Apache, etc.)
+npm run build
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+# Build con rutas relativas para abrir directamente desde el sistema de archivos
+npm run build-static
+```
+
+#### En Windows:
+```bash
+# Ejecutar el script de build
+build-for-nginx.bat
+```
+
+#### En Linux/Mac:
+```bash
+# Hacer ejecutable el script
+chmod +x build-for-nginx.sh
+# Ejecutar el script
+./build-for-nginx.sh
+```
+
+#### Manual:
+```bash
+npm install
+npm run build
+```
+
+Esto generará una carpeta `out` con todos los archivos estáticos listos para servir con NGINX.
+
+## Configuración de NGINX
+
+1. Copia el contenido de la carpeta `out` a tu directorio web (ej: `/var/www/html/`)
+2. Usa la configuración de `nginx.conf` incluida en el proyecto
+3. Ajusta las rutas en el archivo de configuración según tu setup
+4. Reinicia NGINX
+
+### Ejemplo de configuración NGINX:
+```nginx
+server {
+    listen 80;
+    server_name tu-dominio.com;
+    root /var/www/html;
+    index index.html;
+    
+    location / {
+        try_files $uri $uri/ $uri.html /index.html;
+    }
+}
+```
+
+## Estructura del Proyecto
+
+- `/src/app` - Páginas de la aplicación (App Router)
+- `/src/components` - Componentes reutilizables
+- `/public` - Archivos estáticos (imágenes, documentos, etc.)
+- `/public/assets` - Assets principales (logos, imágenes)
+- `/public/documents` - Documentos PDF y archivos descargables
+
+## Problemas Comunes
+
+### Error con rutas en NGINX
+Si tienes problemas con las rutas:
+1. Verifica que `output: 'export'` esté en `next.config.ts`
+2. Asegúrate de usar la configuración correcta de NGINX
+3. Verifica que todos los enlaces usen rutas absolutas
+
+### Imágenes no cargan
+1. Verifica que `images: { unoptimized: true }` esté en `next.config.ts`
+2. Asegúrate de que las imágenes estén en la carpeta `/public`
 
 ## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+También puedes desplegar fácilmente en [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme).
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Consulta la [documentación de deployment de Next.js](https://nextjs.org/docs/app/building-your-application/deploying) para más detalles.

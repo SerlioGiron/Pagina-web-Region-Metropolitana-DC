@@ -6,28 +6,28 @@ import {BuildingOfficeIcon} from "@heroicons/react/24/solid";
 import {units} from "./info";
 import {Dialog} from "./dialog";
 import {useState} from "react";
+import {useRouter} from "next/navigation";
 
 const UnitCard = ({title, link, descripcion, subsecciones, tipo}) => {
     const [open, setOpen] = useState(false);
+    const router = useRouter();
 
     const handleClick = () => {
-        setOpen(true);
+        if (
+            title ===
+            "Departamento de Vigilancia del Marco Normativo"
+        ) {
+            router.push("/Departamentos/Marco-Normativo");
+        } else {
+            setOpen(true);
+        }
     };
 
     return (
         <>
             <Card
                 className="shadow-md rounded-xl cursor-pointer"
-                onClick={() => {
-                    if (
-                        title ===
-                        "Departamento de Vigilancia del Marco Normativo"
-                    ) {
-                        window.location.href = "/Departamentos/Marco-Normativo";
-                    } else {
-                        handleClick();
-                    }
-                }}
+                onClick={handleClick}
             >
                 <CardBody className="flex items-center space-x-4 p-4">
                     <div className="bg-[#68c5d7] p-3 rounded-full">

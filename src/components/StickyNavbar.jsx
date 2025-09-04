@@ -39,9 +39,9 @@ export function StickyNavbar() {
                 color="blue-gray"
                 className="p-1 font-normal uppercase font-bold text-[#005f6b]"
             >
-                <a href="/" className="flex items-center">
+                <Link href="/" className="flex items-center">
                     Inicio
-                </a>
+                </Link>
             </Typography>
             <Typography
                 as="li"
@@ -49,9 +49,9 @@ export function StickyNavbar() {
                 color="blue-gray"
                 className="p-1 font-normal uppercase font-bold text-[#005f6b]"
             >
-                <a href="/SobreNosotros" className="flex items-center">
+                <Link href="/SobreNosotros" className="flex items-center">
                     Sobre Nosotros
-                </a>
+                </Link>
             </Typography>
             <Typography
                 as="li"
@@ -77,9 +77,15 @@ export function StickyNavbar() {
                     </Typography>
                 </MenuHandler>
                 <MenuList>
-                    <MenuItem onClick={() => window.location.href = "/Establecimientos/CIS"}>CIS</MenuItem>
-                    <MenuItem onClick={() => window.location.href = "/Establecimientos/UAPS"}>UAPS</MenuItem>
-                    <MenuItem onClick={() => window.location.href = "/Establecimientos/Redes"}>REDES</MenuItem>
+                    <Link href="/Establecimientos/CIS">
+                        <MenuItem>CIS</MenuItem>
+                    </Link>
+                    <Link href="/Establecimientos/UAPS">
+                        <MenuItem>UAPS</MenuItem>
+                    </Link>
+                    <Link href="/Establecimientos/Redes">
+                        <MenuItem>REDES</MenuItem>
+                    </Link>
                 </MenuList>
             </Menu>
         </ul>
@@ -92,16 +98,13 @@ export function StickyNavbar() {
             <div className="flex items-center justify-between text-blue-gray-900">
                 
                 {/* Logo */}
-                <a
-                    href="/"
-                    className="cursor-pointer flex items-center h-full"
-                >
+                <Link href="/" className="cursor-pointer flex items-center h-full">
                     <img 
                         src="/assets/logo RSM-DC BG.png" 
                         alt="Región Sanitaria del Distrito Central" 
                         className="h-[10vh] w-auto object-contain max-w-[200px] sm:max-w-[250px] md:max-w-[300px] lg:max-w-[350px]"
                     />
-                </a>
+                </Link>
 
                 {/* Subtitulos */}
                 <div className="hidden lg:flex justify-center w-full">

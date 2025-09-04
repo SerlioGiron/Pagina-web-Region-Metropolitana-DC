@@ -1,4 +1,6 @@
 import {Typography} from "@material-tailwind/react";
+import Link from "next/link";
+
 const links = [{name:"Inicio", link:"/"}, {name:"Sobre Nosotros", link:"/SobreNosotros"}, {name:"Departamentos y unidades", link:"/Departamentos"}, {name:"Establecimientos de Salud", link:"/Establecimientos/Redes"}];
 const currentYear = new Date().getFullYear();
 
@@ -10,14 +12,14 @@ export function FooterWithSocialLinks() {
                     {links.map((link, index) => (
                         <ul key={index}>
                             <li>
-                                <Typography
-                                    as="a"
-                                    href={link.link}
-                                    color="white"
-                                    className="font-medium !text-gray-500 transition-colors hover:!text-gray-900"
-                                >
-                                    {link.name}
-                                </Typography>
+                                <Link href={link.link}>
+                                    <Typography
+                                        color="white"
+                                        className="font-medium !text-gray-500 transition-colors hover:!text-gray-900 cursor-pointer"
+                                    >
+                                        {link.name}
+                                    </Typography>
+                                </Link>
                             </li>
                         </ul>
                     ))}
